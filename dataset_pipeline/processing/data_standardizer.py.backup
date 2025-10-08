@@ -1,0 +1,993 @@
+"""
+DataStandardizer Orchestration Class
+
+Enterprise-grade orchestration system that unifies all data processing components
+into a cohesive, scalable pipeline for therapeutic conversation dataset standardization.
+
+Features:
+- Unified format conversion pipeline
+- Automatic format detection and routing
+- Quality assessment integration
+- Batch processing with progress tracking
+- Error handling and recovery
+- Performance optimization
+- Comprehensive reporting and analytics
+"""
+
+import asyncio
+import concurrent.futures
+from typing import Dict, List, Any, Optional, Tuple, Callable, Union
+from dataclasses import dataclass, field
+from pathlib import Path
+import logging
+from datetime import datetime, timezone
+import json
+from enum import Enum
+import time
+
+from conversation_schema import StandardConversation, ConversationCategory, DatasetTier
+
+# Optional imports - handle gracefully for testing
+try:
+    from format_converters import UniversalFormatConverter
+except ImportError:
+    UniversalFormatConverter = None
+
+try:
+    from local_dataset_loader import LocalDatasetLoader
+except ImportError:
+    LocalDatasetLoader = None
+
+try:
+    from edge_case_loader import EdgeCaseLoader
+except ImportError:
+    EdgeCaseLoader = None
+
+try:
+    from psychology_knowledge_loader import PsychologyKnowledgeLoader
+except ImportError:
+    PsychologyKnowledgeLoader = None
+
+try:
+    from comprehensive_quality_validator import ComprehensiveQualityValidator, ValidationLevel
+except ImportError:
+    ComprehensiveQualityValidator = None
+    ValidationLevel = None
+
+try:
+    from continuous_quality_monitor import ContinuousQualityMonitor
+except ImportError:
+    ContinuousQualityMonitor = None
+
+try:
+    from deduplication_system import DeduplicationSystem
+except ImportError:
+    DeduplicationSystem = None
+
+try:
+    from quality_filter import QualityFilteringSystem, FilteringProfile
+except ImportError:
+    QualityFilteringSystem = None
+    # Define fallback FilteringProfile enum
+    class FilteringProfile(Enum):
+        STRICT = "strict"
+        MODERATE = "moderate"
+        LENIENT = "lenient"
+        RESEARCH = "research"
+        PRODUCTION = "production"
+        DEVELOPMENT = "development"
+
+# Define fallback ValidationLevel enum if not imported
+if ValidationLevel is None:
+    class ValidationLevel(Enum):
+        BASIC = "basic"
+        STANDARD = "standard"
+        STRICT = "strict"
+        COMPREHENSIVE = "comprehensive"
+
+
+class ProcessingStage(Enum):
+    """Data processing pipeline stages."""
+    LOADING = "loading"
+    FORMAT_CONVERSION = "format_conversion"
+    QUALITY_ASSESSMENT = "quality_assessment"
+    DEDUPLICATION = "deduplication"
+    FILTERING = "filtering"
+    VALIDATION = "validation"
+    FINALIZATION = "finalization"
+
+
+class ProcessingMode(Enum):
+    """Processing execution modes."""
+    SEQUENTIAL = "sequential"
+    PARALLEL = "parallel"
+    STREAMING = "streaming"
+
+
+@dataclass
+class ProcessingConfig:
+    """Configuration for data standardization processing."""
+    
+    # Processing behavior
+    processing_mode: ProcessingMode = ProcessingMode.PARALLEL
+    max_workers: int = 4
+    batch_size: int = 100
+    
+    # Quality settings
+    validation_level: ValidationLevel = ValidationLevel.STANDARD
+    filtering_profile: FilteringProfile = FilteringProfile.MODERATE
+    enable_deduplication: bool = True
+    enable_continuous_monitoring: bool = True
+    
+    # Performance settings
+    enable_caching: bool = True
+    cache_size: int = 1000
+    memory_limit_mb: int = 2048
+    
+    # Output settings
+    output_format: str = "jsonl"  # jsonl, json, parquet
+    save_intermediate_results: bool = False
+    detailed_reporting: bool = True
+    
+    # Error handling
+    continue_on_error: bool = True
+    max_error_rate: float = 0.1  # 10% max error rate
+    retry_failed_items: bool = True
+
+
+@dataclass
+class ProcessingResult:
+    """Result of data standardization processing."""
+    
+    # Processing summary
+    total_input_items: int = 0
+    successfully_processed: int = 0
+    failed_items: int = 0
+    duplicate_items_removed: int = 0
+    filtered_items: int = 0
+    
+    # Quality metrics
+    average_quality_score: float = 0.0
+    validation_pass_rate: float = 0.0
+    
+    # Performance metrics
+    total_processing_time: float = 0.0
+    items_per_second: float = 0.0
+    memory_usage_mb: float = 0.0
+    
+    # Stage-specific results
+    stage_results: Dict[str, Dict[str, Any]] = field(default_factory=dict)
+    
+    # Output information
+    output_conversations: List[StandardConversation] = field(default_factory=list)
+    output_files: List[str] = field(default_factory=list)
+    
+    # Error information
+    error_summary: Dict[str, int] = field(default_factory=dict)
+    failed_items_details: List[Dict[str, Any]] = field(default_factory=list)
+    
+    # Metadata
+    processing_timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
+    config_used: Optional[ProcessingConfig] = None
+
+
+class DataStandardizer:
+    """Enterprise-grade data standardization orchestration system."""
+    
+    def __init__(self, config: Optional[ProcessingConfig] = None):
+        self.config = config or ProcessingConfig()
+        self.logger = logging.getLogger(__name__)
+        
+        # Initialize processing components with fallbacks
+        self.format_converter = UniversalFormatConverter("data_standardizer") if UniversalFormatConverter else None
+        self.local_loader = LocalDatasetLoader() if LocalDatasetLoader else None
+        self.edge_case_loader = EdgeCaseLoader() if EdgeCaseLoader else None
+        self.psychology_loader = PsychologyKnowledgeLoader() if PsychologyKnowledgeLoader else None
+        self.quality_validator = ComprehensiveQualityValidator() if ComprehensiveQualityValidator else None
+        self.deduplication_system = DeduplicationSystem() if DeduplicationSystem else None
+        self.quality_filter = QualityFilteringSystem() if QualityFilteringSystem else None
+        
+        # Initialize monitoring if enabled and available
+        self.quality_monitor = None
+        if self.config.enable_continuous_monitoring and ContinuousQualityMonitor:
+            self.quality_monitor = ContinuousQualityMonitor()
+        
+        # Processing state
+        self.processing_cache = {}
+        self.processing_stats = {
+            'items_processed': 0,
+            'errors_encountered': 0,
+            'start_time': None,
+            'current_stage': None
+        }
+    
+    def standardize_dataset(
+        self,
+        input_data: Union[List[Dict[str, Any]], List[StandardConversation], str, Path],
+        dataset_name: str,
+        category: ConversationCategory = ConversationCategory.MENTAL_HEALTH,
+        tier: DatasetTier = DatasetTier.TIER_2_PROFESSIONAL,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> ProcessingResult:
+        """
+        Standardize a dataset through the complete processing pipeline.
+        
+        Args:
+            input_data: Input data (raw data, conversations, or file path)
+            dataset_name: Name of the dataset
+            category: Conversation category
+            tier: Dataset tier
+            progress_callback: Optional progress callback function
+        
+        Returns:
+            ProcessingResult with comprehensive processing information
+        """
+        
+        start_time = time.time()
+        self.processing_stats['start_time'] = start_time
+        
+        self.logger.info(f"Starting data standardization for dataset: {dataset_name}")
+        
+        # Initialize result
+        result = ProcessingResult(config_used=self.config)
+        
+        try:
+            # Start quality monitoring if enabled
+            if self.quality_monitor:
+                self.quality_monitor.start_monitoring()
+            
+            # Stage 1: Data Loading
+            conversations = self._execute_loading_stage(
+                input_data, dataset_name, category, tier, result, progress_callback
+            )
+            
+            # Stage 2: Format Conversion
+            conversations = self._execute_format_conversion_stage(
+                conversations, result, progress_callback
+            )
+            
+            # Stage 3: Quality Assessment
+            conversations = self._execute_quality_assessment_stage(
+                conversations, result, progress_callback
+            )
+            
+            # Stage 4: Deduplication
+            if self.config.enable_deduplication:
+                conversations = self._execute_deduplication_stage(
+                    conversations, result, progress_callback
+                )
+            
+            # Stage 5: Quality Filtering
+            conversations = self._execute_filtering_stage(
+                conversations, result, progress_callback
+            )
+            
+            # Stage 6: Final Validation
+            conversations = self._execute_validation_stage(
+                conversations, result, progress_callback
+            )
+            
+            # Stage 7: Finalization
+            self._execute_finalization_stage(
+                conversations, dataset_name, result, progress_callback
+            )
+            
+            # Calculate final metrics
+            self._calculate_final_metrics(result, start_time)
+            
+            self.logger.info(f"Data standardization completed: {result.successfully_processed}/{result.total_input_items} items processed")
+            
+        except Exception as e:
+            self.logger.error(f"Critical error in data standardization: {e}")
+            result.error_summary['critical_error'] = 1
+            result.failed_items_details.append({
+                'error_type': 'critical_error',
+                'error_message': str(e),
+                'stage': self.processing_stats.get('current_stage', 'unknown')
+            })
+        
+        finally:
+            # Stop quality monitoring
+            if self.quality_monitor:
+                self.quality_monitor.stop_monitoring()
+        
+        return result
+    
+    def standardize_multiple_datasets(
+        self,
+        datasets: List[Tuple[Any, str, ConversationCategory, DatasetTier]],
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> Dict[str, ProcessingResult]:
+        """Standardize multiple datasets in batch."""
+        
+        results = {}
+        
+        for i, (input_data, dataset_name, category, tier) in enumerate(datasets):
+            self.logger.info(f"Processing dataset {i+1}/{len(datasets)}: {dataset_name}")
+            
+            # Update progress
+            if progress_callback:
+                progress_callback(f"Processing dataset: {dataset_name}", i, len(datasets))
+            
+            # Process dataset
+            result = self.standardize_dataset(
+                input_data, dataset_name, category, tier, progress_callback
+            )
+            results[dataset_name] = result
+        
+        return results
+    
+    def _execute_loading_stage(
+        self,
+        input_data: Union[List[Dict[str, Any]], List[StandardConversation], str, Path],
+        dataset_name: str,
+        category: ConversationCategory,
+        tier: DatasetTier,
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> List[StandardConversation]:
+        """Execute data loading stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.LOADING.value
+        stage_start = time.time()
+        
+        if progress_callback:
+            progress_callback("Loading data...", 0, 1)
+        
+        conversations = []
+        
+        try:
+            if isinstance(input_data, (str, Path)):
+                # Load from file path
+                file_path = Path(input_data)
+                if file_path.exists():
+                    loading_result = self.local_loader.load_dataset_file(
+                        file_path, dataset_name, category, tier
+                    )
+                    conversations = loading_result.conversations
+                    result.total_input_items = loading_result.total_loaded + loading_result.total_failed
+                else:
+                    raise FileNotFoundError(f"Input file not found: {file_path}")
+            
+            elif isinstance(input_data, list):
+                if input_data and isinstance(input_data[0], StandardConversation):
+                    # Already standardized conversations
+                    conversations = input_data
+                    result.total_input_items = len(conversations)
+                else:
+                    # Raw data that needs conversion
+                    result.total_input_items = len(input_data)
+                    # Will be converted in format conversion stage
+                    conversations = input_data
+            
+            else:
+                raise ValueError(f"Unsupported input data type: {type(input_data)}")
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.LOADING.value] = {
+                'items_loaded': len(conversations),
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            if progress_callback:
+                progress_callback("Data loading completed", 1, 1)
+            
+        except Exception as e:
+            self.logger.error(f"Error in loading stage: {e}")
+            result.error_summary['loading_errors'] = result.error_summary.get('loading_errors', 0) + 1
+            result.stage_results[ProcessingStage.LOADING.value] = {
+                'items_loaded': 0,
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+        
+        return conversations
+    
+    def _execute_format_conversion_stage(
+        self,
+        input_data: List[Any],
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> List[StandardConversation]:
+        """Execute format conversion stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.FORMAT_CONVERSION.value
+        stage_start = time.time()
+        
+        # Skip if already StandardConversation objects
+        if input_data and isinstance(input_data[0], StandardConversation):
+            result.stage_results[ProcessingStage.FORMAT_CONVERSION.value] = {
+                'items_converted': len(input_data),
+                'processing_time': time.time() - stage_start,
+                'success': True,
+                'skipped': True
+            }
+            return input_data
+        
+        if progress_callback:
+            progress_callback("Converting formats...", 0, len(input_data))
+        
+        conversations = []
+        conversion_errors = 0
+        
+        try:
+            # Process in batches for better performance
+            batch_size = self.config.batch_size
+            
+            for i in range(0, len(input_data), batch_size):
+                batch = input_data[i:i + batch_size]
+                
+                # Convert batch
+                batch_results = self.format_converter.convert_batch(batch)
+                
+                for j, conversion_result in enumerate(batch_results):
+                    if conversion_result.success:
+                        conversations.append(conversion_result.conversation)
+                    else:
+                        conversion_errors += 1
+                        result.failed_items_details.append({
+                            'item_index': i + j,
+                            'error_type': 'conversion_error',
+                            'error_message': conversion_result.error_message,
+                            'stage': ProcessingStage.FORMAT_CONVERSION.value
+                        })
+                
+                # Update progress
+                if progress_callback:
+                    progress_callback("Converting formats...", i + len(batch), len(input_data))
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.FORMAT_CONVERSION.value] = {
+                'items_converted': len(conversations),
+                'conversion_errors': conversion_errors,
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            result.error_summary['conversion_errors'] = conversion_errors
+            
+        except Exception as e:
+            self.logger.error(f"Error in format conversion stage: {e}")
+            result.error_summary['format_conversion_errors'] = result.error_summary.get('format_conversion_errors', 0) + 1
+            result.stage_results[ProcessingStage.FORMAT_CONVERSION.value] = {
+                'items_converted': len(conversations),
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+        
+        return conversations
+    
+    def _execute_quality_assessment_stage(
+        self,
+        conversations: List[StandardConversation],
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> List[StandardConversation]:
+        """Execute quality assessment stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.QUALITY_ASSESSMENT.value
+        stage_start = time.time()
+        
+        if progress_callback:
+            progress_callback("Assessing quality...", 0, len(conversations))
+        
+        try:
+            # Perform comprehensive quality validation
+            validated_conversations, validation_report = self.quality_validator.validate_dataset(
+                conversations,
+                "standardization_pipeline",
+                validation_level=self.config.validation_level,
+                progress_callback=lambda current, total: progress_callback("Assessing quality...", current, total) if progress_callback else None
+            )
+            
+            # Record quality metrics in monitoring system
+            if self.quality_monitor:
+                # This would be implemented with individual metrics
+                pass
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.QUALITY_ASSESSMENT.value] = {
+                'items_assessed': len(conversations),
+                'items_passed': len(validated_conversations),
+                'average_quality_score': validation_report.average_quality_score,
+                'pass_rate': validation_report.overall_pass_rate,
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            result.average_quality_score = validation_report.average_quality_score
+            result.validation_pass_rate = validation_report.overall_pass_rate / 100
+            
+        except Exception as e:
+            self.logger.error(f"Error in quality assessment stage: {e}")
+            result.error_summary['quality_assessment_errors'] = result.error_summary.get('quality_assessment_errors', 0) + 1
+            result.stage_results[ProcessingStage.QUALITY_ASSESSMENT.value] = {
+                'items_assessed': len(conversations),
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+            validated_conversations = conversations  # Continue with original conversations
+        
+        return validated_conversations
+    
+    def _execute_deduplication_stage(
+        self,
+        conversations: List[StandardConversation],
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> List[StandardConversation]:
+        """Execute deduplication stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.DEDUPLICATION.value
+        stage_start = time.time()
+        
+        if progress_callback:
+            progress_callback("Removing duplicates...", 0, 1)
+        
+        try:
+            # Perform deduplication
+            unique_conversations, dedup_report = self.deduplication_system.deduplicate_conversations(
+                conversations,
+                similarity_threshold=0.85,
+                algorithm='hybrid'
+            )
+            
+            duplicates_removed = len(conversations) - len(unique_conversations)
+            result.duplicate_items_removed = duplicates_removed
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.DEDUPLICATION.value] = {
+                'items_input': len(conversations),
+                'items_output': len(unique_conversations),
+                'duplicates_removed': duplicates_removed,
+                'deduplication_rate': (duplicates_removed / len(conversations) * 100) if conversations else 0,
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            if progress_callback:
+                progress_callback("Deduplication completed", 1, 1)
+            
+        except Exception as e:
+            self.logger.error(f"Error in deduplication stage: {e}")
+            result.error_summary['deduplication_errors'] = result.error_summary.get('deduplication_errors', 0) + 1
+            result.stage_results[ProcessingStage.DEDUPLICATION.value] = {
+                'items_input': len(conversations),
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+            unique_conversations = conversations  # Continue with original conversations
+        
+        return unique_conversations
+    
+    def _execute_filtering_stage(
+        self,
+        conversations: List[StandardConversation],
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> List[StandardConversation]:
+        """Execute quality filtering stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.FILTERING.value
+        stage_start = time.time()
+        
+        if progress_callback:
+            progress_callback("Filtering by quality...", 0, 1)
+        
+        try:
+            # Apply quality filtering
+            filtered_conversations, filtering_report = self.quality_filter.filter_conversations(
+                conversations,
+                profile=self.config.filtering_profile
+            )
+            
+            filtered_count = len(conversations) - len(filtered_conversations)
+            result.filtered_items = filtered_count
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.FILTERING.value] = {
+                'items_input': len(conversations),
+                'items_output': len(filtered_conversations),
+                'items_filtered': filtered_count,
+                'filter_rate': (filtered_count / len(conversations) * 100) if conversations else 0,
+                'success_rate': filtering_report.success_rate_overall,
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            if progress_callback:
+                progress_callback("Quality filtering completed", 1, 1)
+            
+        except Exception as e:
+            self.logger.error(f"Error in filtering stage: {e}")
+            result.error_summary['filtering_errors'] = result.error_summary.get('filtering_errors', 0) + 1
+            result.stage_results[ProcessingStage.FILTERING.value] = {
+                'items_input': len(conversations),
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+            filtered_conversations = conversations  # Continue with original conversations
+        
+        return filtered_conversations
+    
+    def _execute_validation_stage(
+        self,
+        conversations: List[StandardConversation],
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ) -> List[StandardConversation]:
+        """Execute final validation stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.VALIDATION.value
+        stage_start = time.time()
+        
+        if progress_callback:
+            progress_callback("Final validation...", 0, len(conversations))
+        
+        try:
+            # Perform final validation checks
+            validated_conversations = []
+            validation_errors = 0
+            
+            for i, conversation in enumerate(conversations):
+                try:
+                    # Basic structure validation
+                    if conversation.validate_structure():
+                        validated_conversations.append(conversation)
+                    else:
+                        validation_errors += 1
+                        result.failed_items_details.append({
+                            'conversation_id': conversation.metadata.conversation_id,
+                            'error_type': 'validation_error',
+                            'error_message': 'Failed structure validation',
+                            'stage': ProcessingStage.VALIDATION.value
+                        })
+                
+                except Exception as e:
+                    validation_errors += 1
+                    result.failed_items_details.append({
+                        'conversation_id': getattr(conversation, 'metadata', {}).get('conversation_id', f'conv_{i}'),
+                        'error_type': 'validation_exception',
+                        'error_message': str(e),
+                        'stage': ProcessingStage.VALIDATION.value
+                    })
+                
+                # Update progress
+                if progress_callback and (i + 1) % 10 == 0:
+                    progress_callback("Final validation...", i + 1, len(conversations))
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.VALIDATION.value] = {
+                'items_input': len(conversations),
+                'items_validated': len(validated_conversations),
+                'validation_errors': validation_errors,
+                'validation_rate': (len(validated_conversations) / len(conversations) * 100) if conversations else 0,
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            result.error_summary['validation_errors'] = validation_errors
+            
+        except Exception as e:
+            self.logger.error(f"Error in validation stage: {e}")
+            result.error_summary['final_validation_errors'] = result.error_summary.get('final_validation_errors', 0) + 1
+            result.stage_results[ProcessingStage.VALIDATION.value] = {
+                'items_input': len(conversations),
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+            validated_conversations = conversations  # Continue with original conversations
+        
+        return validated_conversations
+    
+    def _execute_finalization_stage(
+        self,
+        conversations: List[StandardConversation],
+        dataset_name: str,
+        result: ProcessingResult,
+        progress_callback: Optional[Callable[[str, int, int], None]] = None
+    ):
+        """Execute finalization stage."""
+        
+        self.processing_stats['current_stage'] = ProcessingStage.FINALIZATION.value
+        stage_start = time.time()
+        
+        if progress_callback:
+            progress_callback("Finalizing results...", 0, 1)
+        
+        try:
+            # Store final conversations
+            result.output_conversations = conversations
+            result.successfully_processed = len(conversations)
+            
+            # Save intermediate results if requested
+            if self.config.save_intermediate_results:
+                output_dir = Path(f"output/{dataset_name}")
+                output_dir.mkdir(parents=True, exist_ok=True)
+                
+                # Save conversations
+                if self.config.output_format == "jsonl":
+                    output_file = output_dir / f"{dataset_name}_standardized.jsonl"
+                    with open(output_file, 'w', encoding='utf-8') as f:
+                        for conv in conversations:
+                            f.write(conv.to_json() + '\n')
+                    result.output_files.append(str(output_file))
+                
+                elif self.config.output_format == "json":
+                    output_file = output_dir / f"{dataset_name}_standardized.json"
+                    with open(output_file, 'w', encoding='utf-8') as f:
+                        conversations_data = [conv.to_dict() for conv in conversations]
+                        json.dump(conversations_data, f, indent=2, ensure_ascii=False)
+                    result.output_files.append(str(output_file))
+            
+            # Record stage results
+            stage_time = time.time() - stage_start
+            result.stage_results[ProcessingStage.FINALIZATION.value] = {
+                'items_finalized': len(conversations),
+                'output_files_created': len(result.output_files),
+                'processing_time': stage_time,
+                'success': True
+            }
+            
+            if progress_callback:
+                progress_callback("Finalization completed", 1, 1)
+            
+        except Exception as e:
+            self.logger.error(f"Error in finalization stage: {e}")
+            result.error_summary['finalization_errors'] = result.error_summary.get('finalization_errors', 0) + 1
+            result.stage_results[ProcessingStage.FINALIZATION.value] = {
+                'items_finalized': len(conversations),
+                'processing_time': time.time() - stage_start,
+                'success': False,
+                'error': str(e)
+            }
+            if not self.config.continue_on_error:
+                raise
+    
+    def _calculate_final_metrics(self, result: ProcessingResult, start_time: float):
+        """Calculate final processing metrics."""
+        
+        # Calculate processing time and throughput
+        total_time = time.time() - start_time
+        result.total_processing_time = total_time
+        
+        if total_time > 0:
+            result.items_per_second = result.successfully_processed / total_time
+        
+        # Calculate error rates
+        result.failed_items = sum(result.error_summary.values())
+        
+        # Update processing stats
+        self.processing_stats['items_processed'] = result.successfully_processed
+        self.processing_stats['errors_encountered'] = result.failed_items
+    
+    def get_processing_statistics(self) -> Dict[str, Any]:
+        """Get current processing statistics."""
+        
+        current_time = time.time()
+        start_time = self.processing_stats.get('start_time')
+        
+        stats = {
+            'items_processed': self.processing_stats['items_processed'],
+            'errors_encountered': self.processing_stats['errors_encountered'],
+            'current_stage': self.processing_stats.get('current_stage'),
+            'uptime_seconds': current_time - start_time if start_time else 0,
+            'cache_size': len(self.processing_cache),
+            'config': {
+                'processing_mode': self.config.processing_mode.value,
+                'max_workers': self.config.max_workers,
+                'batch_size': self.config.batch_size,
+                'validation_level': self.config.validation_level.value,
+                'filtering_profile': self.config.filtering_profile.value
+            }
+        }
+        
+        return stats
+    
+    def save_processing_report(self, result: ProcessingResult, output_path: Path) -> bool:
+        """Save comprehensive processing report."""
+        
+        try:
+            # Convert result to dictionary
+            report_dict = {
+                'summary': {
+                    'total_input_items': result.total_input_items,
+                    'successfully_processed': result.successfully_processed,
+                    'failed_items': result.failed_items,
+                    'duplicate_items_removed': result.duplicate_items_removed,
+                    'filtered_items': result.filtered_items,
+                    'success_rate': (result.successfully_processed / result.total_input_items * 100) if result.total_input_items > 0 else 0
+                },
+                'quality_metrics': {
+                    'average_quality_score': result.average_quality_score,
+                    'validation_pass_rate': result.validation_pass_rate
+                },
+                'performance_metrics': {
+                    'total_processing_time': result.total_processing_time,
+                    'items_per_second': result.items_per_second,
+                    'memory_usage_mb': result.memory_usage_mb
+                },
+                'stage_results': result.stage_results,
+                'error_analysis': {
+                    'error_summary': result.error_summary,
+                    'failed_items_count': len(result.failed_items_details),
+                    'error_rate': (result.failed_items / result.total_input_items * 100) if result.total_input_items > 0 else 0
+                },
+                'output_information': {
+                    'output_files': result.output_files,
+                    'output_conversations_count': len(result.output_conversations)
+                },
+                'configuration': {
+                    'processing_mode': result.config_used.processing_mode.value if result.config_used else None,
+                    'validation_level': result.config_used.validation_level.value if result.config_used else None,
+                    'filtering_profile': result.config_used.filtering_profile.value if result.config_used else None,
+                    'enable_deduplication': result.config_used.enable_deduplication if result.config_used else None
+                },
+                'metadata': {
+                    'processing_timestamp': result.processing_timestamp,
+                    'report_version': '1.0'
+                }
+            }
+            
+            # Save to file
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(report_dict, f, indent=2, ensure_ascii=False)
+            
+            self.logger.info(f"Processing report saved to {output_path}")
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"Error saving processing report: {e}")
+            return False
+    
+    def create_custom_config(
+        self,
+        processing_mode: ProcessingMode = ProcessingMode.PARALLEL,
+        validation_level: ValidationLevel = ValidationLevel.STANDARD,
+        filtering_profile: FilteringProfile = FilteringProfile.MODERATE,
+        **kwargs
+    ) -> ProcessingConfig:
+        """Create custom processing configuration."""
+        
+        config = ProcessingConfig(
+            processing_mode=processing_mode,
+            validation_level=validation_level,
+            filtering_profile=filtering_profile
+        )
+        
+        # Apply any additional overrides
+        for key, value in kwargs.items():
+            if hasattr(config, key):
+                setattr(config, key, value)
+        
+        return config
+
+
+# Example usage and testing
+if __name__ == "__main__":
+    # Configure logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    
+    # Test the DataStandardizer
+    from conversation_schema import StandardConversation, Message, ConversationMetadata, MessageRole
+    
+    # Create test configuration
+    config = ProcessingConfig(
+        processing_mode=ProcessingMode.PARALLEL,
+        validation_level=ValidationLevel.STANDARD,
+        filtering_profile=FilteringProfile.MODERATE,
+        enable_deduplication=True,
+        enable_continuous_monitoring=False,  # Disable for testing
+        save_intermediate_results=True,
+        max_workers=2
+    )
+    
+    # Initialize standardizer
+    standardizer = DataStandardizer(config)
+    
+    # Create test data
+    test_data = [
+        {
+            "messages": [
+                {"role": "user", "content": "I'm feeling anxious about my job interview tomorrow."},
+                {"role": "assistant", "content": "It's natural to feel anxious before an important interview. Can you tell me what specifically worries you?"}
+            ]
+        },
+        {
+            "messages": [
+                {"role": "user", "content": "I can't sleep because I keep worrying about everything."},
+                {"role": "assistant", "content": "Sleep difficulties often stem from racing thoughts. Have you tried any relaxation techniques?"}
+            ]
+        },
+        {
+            "instruction": "Provide therapeutic support",
+            "input": "I feel overwhelmed with stress.",
+            "output": "I hear that you're feeling overwhelmed. Let's explore some coping strategies together."
+        }
+    ]
+    
+    print("DataStandardizer Orchestration Test")
+    print("=" * 50)
+    
+    # Progress callback
+    def progress_callback(stage, current, total):
+        if total > 0:
+            percentage = (current / total) * 100
+            print(f"  {stage}: {current}/{total} ({percentage:.1f}%)")
+    
+    # Run standardization
+    result = standardizer.standardize_dataset(
+        input_data=test_data,
+        dataset_name="test_dataset",
+        category=ConversationCategory.MENTAL_HEALTH,
+        tier=DatasetTier.TIER_2_PROFESSIONAL,
+        progress_callback=progress_callback
+    )
+    
+    # Display results
+    print(f"\nProcessing Results:")
+    print(f"Total input items: {result.total_input_items}")
+    print(f"Successfully processed: {result.successfully_processed}")
+    print(f"Failed items: {result.failed_items}")
+    print(f"Duplicates removed: {result.duplicate_items_removed}")
+    print(f"Items filtered: {result.filtered_items}")
+    print(f"Average quality score: {result.average_quality_score:.3f}")
+    print(f"Processing time: {result.total_processing_time:.2f}s")
+    print(f"Items per second: {result.items_per_second:.1f}")
+    
+    # Show stage results
+    print(f"\nStage Results:")
+    for stage, stage_result in result.stage_results.items():
+        success = "✅" if stage_result.get('success', False) else "❌"
+        time_taken = stage_result.get('processing_time', 0)
+        print(f"  {success} {stage}: {time_taken:.3f}s")
+    
+    # Show errors if any
+    if result.error_summary:
+        print(f"\nError Summary: {result.error_summary}")
+    
+    # Show output files
+    if result.output_files:
+        print(f"\nOutput Files: {result.output_files}")
+    
+    # Save processing report
+    report_path = Path("test_processing_report.json")
+    success = standardizer.save_processing_report(result, report_path)
+    print(f"\nProcessing report saved: {success}")
+    
+    # Get processing statistics
+    stats = standardizer.get_processing_statistics()
+    print(f"\nProcessing Statistics:")
+    print(f"  Items processed: {stats['items_processed']}")
+    print(f"  Errors encountered: {stats['errors_encountered']}")
+    print(f"  Current stage: {stats['current_stage']}")
+    print(f"  Uptime: {stats['uptime_seconds']:.1f}s")
