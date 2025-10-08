@@ -1,0 +1,71 @@
+{
+  "model_config": {
+    "base_model": "microsoft/DialoGPT-medium",
+    "lora_config": {
+      "r": 16,
+      "lora_alpha": 32,
+      "target_modules": [
+        "q_proj",
+        "v_proj",
+        "k_proj",
+        "o_proj"
+      ],
+      "lora_dropout": 0.05,
+      "bias": "none"
+    }
+  },
+  "training_config": {
+    "num_experts": 4,
+    "expert_mapping": {
+      "therapeutic": 0,
+      "educational": 1,
+      "empathetic": 2,
+      "practical": 3
+    },
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "num_epochs": 3,
+    "warmup_steps": 100,
+    "max_length": 1024,
+    "gradient_accumulation_steps": 4
+  },
+  "data_config": {
+    "train_file": "train.json",
+    "validation_file": "validation.json",
+    "total_conversations": 2895,
+    "train_size": 2605,
+    "val_size": 290,
+    "style_distribution": {
+      "therapeutic": 1107,
+      "educational": 186,
+      "empathetic": 752,
+      "practical": 850
+    },
+    "quality_distribution": {
+      "high": 38,
+      "medium": 2857
+    }
+  },
+  "expert_config": {
+    "therapeutic": {
+      "expert_id": 0,
+      "description": "Handles trauma, healing, and therapeutic guidance",
+      "count": 1107
+    },
+    "educational": {
+      "expert_id": 1,
+      "description": "Provides clinical explanations and educational content",
+      "count": 186
+    },
+    "empathetic": {
+      "expert_id": 2,
+      "description": "Offers emotional support and validation",
+      "count": 752
+    },
+    "practical": {
+      "expert_id": 3,
+      "description": "Gives actionable advice and practical strategies",
+      "count": 850
+    }
+  }
+}
