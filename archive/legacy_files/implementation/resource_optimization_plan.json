@@ -1,0 +1,233 @@
+{
+  "executive_summary": {
+    "total_budget_analyzed": 38600,
+    "optimization_opportunities_identified": 2,
+    "total_resources_optimized": 1220.0,
+    "net_cost_savings": -1180.0,
+    "efficiency_improvement": 0.125,
+    "implementation_timeline_weeks": 4,
+    "success_probability": 0.75
+  },
+  "current_state_analysis": {
+    "total_budget": 38600,
+    "total_conversations": 94818,
+    "average_cost_per_conversation": 0.4070956991288574,
+    "dataset_allocations": {
+      "additional_specialized": {
+        "conversations": 53246,
+        "quality": 0.4546,
+        "current_budget": 15000
+      },
+      "professional_psychology": {
+        "conversations": 9846,
+        "quality": 0.4388,
+        "current_budget": 8000
+      },
+      "priority_1": {
+        "conversations": 1225,
+        "quality": 0.499,
+        "current_budget": 3000
+      },
+      "priority_2": {
+        "conversations": 30000,
+        "quality": 0.42,
+        "current_budget": 12000
+      },
+      "test_dataset": {
+        "conversations": 1,
+        "quality": 0.5598,
+        "current_budget": 100
+      },
+      "test_search": {
+        "conversations": 500,
+        "quality": 0.38,
+        "current_budget": 500
+      }
+    },
+    "efficiency_metrics": {
+      "additional_specialized": {
+        "cost_per_conversation": 0.28171130225744656,
+        "quality_per_dollar": 3.0306666666666666e-05,
+        "efficiency_score": 1.6137087733333333,
+        "resource_utilization": 0.38860103626943004
+      },
+      "professional_psychology": {
+        "cost_per_conversation": 0.8125126955108674,
+        "quality_per_dollar": 5.4850000000000005e-05,
+        "efficiency_score": 0.5400531,
+        "resource_utilization": 0.20725388601036268
+      },
+      "priority_1": {
+        "cost_per_conversation": 2.4489795918367347,
+        "quality_per_dollar": 0.00016633333333333333,
+        "efficiency_score": 0.20375833333333332,
+        "resource_utilization": 0.07772020725388601
+      },
+      "priority_2": {
+        "cost_per_conversation": 0.4,
+        "quality_per_dollar": 3.5e-05,
+        "efficiency_score": 1.05,
+        "resource_utilization": 0.31088082901554404
+      },
+      "test_dataset": {
+        "cost_per_conversation": 100.0,
+        "quality_per_dollar": 0.005598,
+        "efficiency_score": 0.005598,
+        "resource_utilization": 0.0025906735751295338
+      },
+      "test_search": {
+        "cost_per_conversation": 1.0,
+        "quality_per_dollar": 0.00076,
+        "efficiency_score": 0.38,
+        "resource_utilization": 0.012953367875647668
+      }
+    },
+    "optimization_opportunities": [
+      {
+        "type": "reduce_allocation",
+        "dataset": "test_dataset",
+        "current_efficiency": 0.005598,
+        "recommended_reduction": 0.2,
+        "justification": "Low efficiency score (0.006) indicates poor resource utilization"
+      },
+      {
+        "type": "increase_allocation",
+        "dataset": "professional_psychology",
+        "current_efficiency": 0.5400531,
+        "recommended_increase": 0.15,
+        "justification": "High efficiency (0.540) with low resource utilization (20.7%)"
+      }
+    ],
+    "analysis_timestamp": "2025-08-07T14:10:27.428271"
+  },
+  "optimization_strategy": {
+    "resource_reallocations": [
+      {
+        "dataset_name": "test_dataset",
+        "current_allocation": 100,
+        "optimized_allocation": 80.0,
+        "allocation_change": -20.0,
+        "justification": "Low efficiency score (0.006) indicates poor resource utilization",
+        "expected_impact": 0.05,
+        "implementation_priority": "HIGH"
+      },
+      {
+        "dataset_name": "professional_psychology",
+        "current_allocation": 8000,
+        "optimized_allocation": 9200.0,
+        "allocation_change": 1200.0,
+        "justification": "High efficiency (0.540) with low resource utilization (20.7%)",
+        "expected_impact": 0.2,
+        "implementation_priority": "MEDIUM"
+      }
+    ],
+    "total_adjustments": 2,
+    "high_priority_adjustments": 1,
+    "expected_performance_gains": {
+      "test_dataset": {
+        "expected_quality_improvement": 0.05,
+        "resource_efficiency_gain": 0.025,
+        "cost_effectiveness_improvement": 0.015
+      },
+      "professional_psychology": {
+        "expected_quality_improvement": 0.2,
+        "resource_efficiency_gain": 0.1,
+        "cost_effectiveness_improvement": 0.06
+      }
+    }
+  },
+  "scaling_framework": {
+    "scaling_methodology": {
+      "phase_1_validation": {
+        "description": "Validate improvement results with pilot program",
+        "duration_weeks": 2,
+        "success_criteria": "Quality improvement >= 0.15",
+        "resource_requirement": 0.1
+      },
+      "phase_2_gradual_scaling": {
+        "description": "Gradually scale successful improvements",
+        "duration_weeks": 4,
+        "success_criteria": "Maintain quality gains while scaling",
+        "resource_requirement": 0.5
+      },
+      "phase_3_full_deployment": {
+        "description": "Full deployment of validated improvements",
+        "duration_weeks": 6,
+        "success_criteria": "Achieve target quality across full dataset",
+        "resource_requirement": 1.0
+      }
+    },
+    "scaling_candidates": [],
+    "resource_requirements": {
+      "total_scaling_budget": 0,
+      "phased_investment": {
+        "phase_1": "Low risk, low investment validation",
+        "phase_2": "Medium risk, medium investment scaling",
+        "phase_3": "Controlled risk, full investment deployment"
+      }
+    },
+    "success_metrics": {
+      "quality_improvement_targets": {},
+      "roi_targets": {},
+      "timeline_targets": {
+        "validation_complete": "2 weeks",
+        "scaling_complete": "6 weeks",
+        "full_deployment": "12 weeks"
+      }
+    },
+    "risk_mitigation": {
+      "quality_monitoring": "Continuous quality assessment during scaling",
+      "rollback_procedures": "Immediate rollback if quality degrades",
+      "resource_protection": "Phased investment to limit exposure",
+      "performance_gates": "Quality gates between scaling phases"
+    },
+    "framework_timestamp": "2025-08-07T14:10:27.428662"
+  },
+  "financial_impact": {
+    "immediate_cost_savings": 0,
+    "required_investment": 1180.0,
+    "roi_timeline": "6-12 months",
+    "break_even_analysis": {
+      "break_even_weeks": 12,
+      "long_term_savings_annual": -4720.0
+    }
+  },
+  "implementation_roadmap": {
+    "week_1_2": "Resource reallocation implementation",
+    "week_3_4": "Performance monitoring and adjustment",
+    "week_5_8": "Scaling framework pilot programs",
+    "week_9_12": "Full optimization deployment",
+    "ongoing": "Continuous monitoring and optimization"
+  },
+  "risk_assessment": {
+    "implementation_risks": [
+      "Resource reallocation may temporarily disrupt operations",
+      "Quality improvements may take time to materialize",
+      "Staff may resist resource changes"
+    ],
+    "mitigation_strategies": [
+      "Phased implementation to minimize disruption",
+      "Continuous monitoring with rollback procedures",
+      "Change management and communication plan"
+    ],
+    "success_factors": [
+      "Executive support for resource changes",
+      "Clear communication of optimization benefits",
+      "Robust monitoring and adjustment processes"
+    ]
+  },
+  "recommendations": [
+    "Implement resource optimization to save $-1,180 annually",
+    "Focus on 1 high-priority optimizations first",
+    "Establish continuous resource optimization process",
+    "Create resource optimization center of excellence",
+    "Deploy scaling framework for 0 high-potential datasets"
+  ],
+  "system_statistics": {
+    "optimizations_implemented": 2,
+    "total_resources_reallocated": 1220.0,
+    "efficiency_gains": 0.125,
+    "cost_savings": -1180.0
+  },
+  "report_timestamp": "2025-08-07T14:10:27.428751"
+}

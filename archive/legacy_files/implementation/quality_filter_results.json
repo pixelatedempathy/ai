@@ -1,0 +1,130 @@
+{
+  "filter_results": [
+    {
+      "dataset_name": "priority_1",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.081737
+    },
+    {
+      "dataset_name": "priority_2",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.072104
+    },
+    {
+      "dataset_name": "priority_3",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.17021
+    },
+    {
+      "dataset_name": "professional_psychology",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.102351
+    },
+    {
+      "dataset_name": "professional_soulchat",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.113852
+    },
+    {
+      "dataset_name": "professional_neuro",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.10705
+    },
+    {
+      "dataset_name": "additional_specialized",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.11984
+    },
+    {
+      "dataset_name": "reddit_mental_health",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.099991
+    },
+    {
+      "dataset_name": "cot_reasoning",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.107316
+    },
+    {
+      "dataset_name": "research_datasets",
+      "original_count": 1000,
+      "filtered_count": 300,
+      "removed_count": 700,
+      "removal_percentage": 70.0,
+      "quality_improvement": 0.12650000000000017,
+      "processing_time_seconds": 0.094151
+    }
+  ],
+  "summary_statistics": {
+    "total_datasets_filtered": 10,
+    "total_original_conversations": 10000,
+    "total_filtered_conversations": 3000,
+    "total_removed_conversations": 7000,
+    "overall_removal_rate": 70.0,
+    "average_quality_improvement": 0.12650000000000014,
+    "total_processing_time": 1.0686019999999998
+  },
+  "filter_criteria_used": {
+    "strict": {
+      "min_quality_score": 0.75,
+      "min_conversation_length": 50,
+      "max_conversation_length": 5000,
+      "forbidden_patterns_count": 4,
+      "min_empathy_indicators": 1
+    },
+    "moderate": {
+      "min_quality_score": 0.65,
+      "min_conversation_length": 30,
+      "max_conversation_length": 8000,
+      "forbidden_patterns_count": 3,
+      "min_empathy_indicators": 0
+    },
+    "lenient": {
+      "min_quality_score": 0.5,
+      "min_conversation_length": 20,
+      "max_conversation_length": 10000,
+      "forbidden_patterns_count": 1,
+      "min_empathy_indicators": 0
+    }
+  },
+  "export_metadata": {
+    "export_timestamp": "2025-08-07T15:04:03.311723",
+    "filter_version": "quality_filter_v1.0"
+  }
+}
