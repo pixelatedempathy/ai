@@ -1,0 +1,38 @@
+{
+  "model_info": {
+    "parameters": "12B",
+    "memory_footprint_gb": 22.4,
+    "recommended_gpu": "A100 80GB x2"
+  },
+  "batch_configuration": {
+    "per_device_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "effective_batch_size": 8,
+    "dataloader_num_workers": 4
+  },
+  "learning_rate": {
+    "learning_rate": 2.5e-05,
+    "warmup_steps": 1013,
+    "lr_scheduler_type": "cosine",
+    "weight_decay": 0.01
+  },
+  "training_schedule": {
+    "num_train_epochs": 2,
+    "total_steps": 10130,
+    "steps_per_epoch": 5065,
+    "estimated_hours": 5.6
+  },
+  "checkpointing": {
+    "save_steps": 506,
+    "logging_steps": 50,
+    "eval_steps": 506,
+    "save_total_limit": 3
+  },
+  "optimization": {
+    "fp16": false,
+    "bf16": true,
+    "gradient_checkpointing": true,
+    "dataloader_pin_memory": false,
+    "remove_unused_columns": false
+  }
+}
