@@ -1,0 +1,167 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Wayfarer Model Production Dashboard",
+    "tags": ["wayfarer", "ml", "production"],
+    "style": "dark",
+    "timezone": "browser",
+    "refresh": "30s",
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "Model Health Status",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "up{job=~\"wayfarer.*\"}",
+            "legendFormat": "{{instance}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "green", "value": 1}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Response Times",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(wayfarer_response_time_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile - {{instance}}"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(wayfarer_response_time_seconds_bucket[5m]))",
+            "legendFormat": "50th percentile - {{instance}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s",
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Request Rate",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(wayfarer_requests_total[5m])",
+            "legendFormat": "{{instance}} - {{method}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "reqps",
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "GPU Memory Usage",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "nvidia_ml_py_memory_used_bytes / nvidia_ml_py_memory_total_bytes * 100",
+            "legendFormat": "GPU {{gpu}} Memory %"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "min": 0,
+            "max": 100,
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Model Quality Metrics",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "wayfarer_response_quality_score",
+            "legendFormat": "Quality Score - {{instance}}"
+          },
+          {
+            "expr": "wayfarer_response_confidence",
+            "legendFormat": "Confidence - {{instance}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "short",
+            "min": 0,
+            "max": 10,
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Error Rate",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(wayfarer_requests_total{status=~\"5..\"}[5m])",
+            "legendFormat": "5xx Errors - {{instance}}"
+          },
+          {
+            "expr": "rate(wayfarer_requests_total{status=~\"4..\"}[5m])",
+            "legendFormat": "4xx Errors - {{instance}}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "reqps",
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 24}
+      },
+      {
+        "id": 7,
+        "title": "CPU Usage",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "100 - (avg by (instance) (rate(node_cpu_seconds_total{mode=\"idle\"}[5m])) * 100)",
+            "legendFormat": "CPU Usage %"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "min": 0,
+            "max": 100,
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24}
+      }
+    ]
+  }
+}

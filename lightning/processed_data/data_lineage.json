@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-10-19T12:57:33.773317",
+  "ghost_records": 728531,
+  "existing_records": 182193,
+  "merged_records": 910724,
+  "sources": {
+    "ghost": {
+      "count": 728531
+    },
+    "existing": {
+      "count": 182193
+    }
+  }
+}

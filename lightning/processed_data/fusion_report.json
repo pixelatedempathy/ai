@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-19T12:58:51.244569",
+  "total_datasets": 27,
+  "ghost_datasets": 26,
+  "existing_datasets": 1,
+  "ghost_files": 7487,
+  "existing_files": 294,
+  "ghost_records": 728531,
+  "existing_records": 182193,
+  "merged_records": 910724,
+  "deduplication_ratio": 0.034740780331373594,
+  "quality_score": 0.76,
+  "category_balance": {
+    "mental_health": 0.4,
+    "psychology_knowledge": 0.25,
+    "cot_reasoning": 0.2,
+    "voice_training": 0.1,
+    "quality_enhancement": 0.05
+  },
+  "data_lineage_tracked": true,
+  "lineage_file": "ai/lightning/processed_data/data_lineage.json",
+  "merged_dataset_file": "ai/lightning/processed_data/merged_dataset.jsonl",
+  "fusion_strategy": "balanced",
+  "summary": {
+    "total_records_fused": 910724,
+    "ghost_contribution": "80.0%",
+    "existing_contribution": "20.0%",
+    "quality_score": 0.76,
+    "bias_level": "low"
+  }
+}

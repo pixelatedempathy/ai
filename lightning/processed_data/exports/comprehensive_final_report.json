@@ -1,0 +1,133 @@
+{
+  "timestamp": "2025-10-19T14:03:03.967545",
+  "project": "Ghost Dataset Pipeline - Pixelated Empathy",
+  "status": "COMPLETE",
+  "total_phases": 10,
+  "phases_completed": 10,
+  "final_dataset": {
+    "path": "ai/lightning/processed_data/merged_dataset.jsonl",
+    "records": 608458,
+    "size_gb": 2.5,
+    "quality": "100% valid, 0 PII, 0 duplicates",
+    "safety": "100% pass",
+    "source_attribution": "Yes"
+  },
+  "phase_reports": {
+    "phase_8_fusion": {
+      "timestamp": "2025-10-19T12:58:51.244569",
+      "total_datasets": 27,
+      "ghost_datasets": 26,
+      "existing_datasets": 1,
+      "ghost_files": 7487,
+      "existing_files": 294,
+      "ghost_records": 728531,
+      "existing_records": 182193,
+      "merged_records": 910724,
+      "deduplication_ratio": 0.034740780331373594,
+      "quality_score": 0.76,
+      "category_balance": {
+        "mental_health": 0.4,
+        "psychology_knowledge": 0.25,
+        "cot_reasoning": 0.2,
+        "voice_training": 0.1,
+        "quality_enhancement": 0.05
+      },
+      "data_lineage_tracked": true,
+      "lineage_file": "ai/lightning/processed_data/data_lineage.json",
+      "merged_dataset_file": "ai/lightning/processed_data/merged_dataset.jsonl",
+      "fusion_strategy": "balanced",
+      "summary": {
+        "total_records_fused": 910724,
+        "ghost_contribution": "80.0%",
+        "existing_contribution": "20.0%",
+        "quality_score": 0.76,
+        "bias_level": "low"
+      }
+    },
+    "phase_5_rerun_validation": {
+      "timestamp": "2025-10-19T13:49:39.798760",
+      "phase": "5_rerun_merged_validation",
+      "dataset": "ai/lightning/processed_data/merged_dataset.jsonl",
+      "total_records": 910724,
+      "valid_records": 910724,
+      "invalid_records": 0,
+      "validity_ratio": 1.0,
+      "average_quality_score": 0.7036603844826421,
+      "quality_distribution": {
+        "medium": 877388,
+        "high": 33336
+      },
+      "source_distribution": {
+        "ghost": 728531,
+        "existing": 182193
+      },
+      "pii_detected_count": 0,
+      "pii_ratio": 0.0,
+      "issues": []
+    },
+    "phase_6_rerun_deduplication": {
+      "timestamp": "2025-10-19T13:51:34.084825",
+      "phase": "6_rerun_merged_deduplication",
+      "input_dataset": "ai/lightning/processed_data/merged_dataset.jsonl",
+      "output_dataset": "ai/lightning/processed_data/merged_dataset_deduplicated.jsonl",
+      "total_records_input": 910724,
+      "total_records_output": 608458,
+      "duplicates_removed": 302266,
+      "low_quality_removed": 0,
+      "deduplication_ratio": 0.3318963813405598,
+      "retention_ratio": 0.6681036186594402,
+      "source_statistics": {
+        "ghost": {
+          "total": 728531,
+          "kept": 426265,
+          "duplicates": 302266
+        },
+        "existing": {
+          "total": 182193,
+          "kept": 182193,
+          "duplicates": 0
+        }
+      }
+    },
+    "phase_9_final_validation": {
+      "timestamp": "2025-10-19T13:56:20.655250",
+      "phase": "9_final_validation",
+      "dataset": "ai/lightning/processed_data/merged_dataset.jsonl",
+      "total_records": 608458,
+      "safety_passed": 608458,
+      "safety_failed": 0,
+      "safety_pass_ratio": 1.0,
+      "average_safety_score": 0.6885111051177846,
+      "safety_distribution": {
+        "pass": 608458
+      },
+      "source_distribution": {
+        "ghost": 426265,
+        "existing": 182193
+      },
+      "crisis_records_detected": 7660,
+      "crisis_detection_ratio": 0.012589200898007752,
+      "crisis_types": {
+        "self_harm": 587,
+        "abuse": 1826,
+        "substance_abuse": 293,
+        "suicidal_ideation": 395,
+        "severe_depression": 989,
+        "severe_anxiety": 4987
+      },
+      "quality_threshold_met": true,
+      "safety_gates_passed": true
+    }
+  },
+  "project_summary": {
+    "total_datasets_processed": 27,
+    "ghost_datasets": 26,
+    "existing_datasets": 1,
+    "total_records_merged": 910724,
+    "final_records": 608458,
+    "duplicates_removed": 302266,
+    "crisis_records_detected": 7660,
+    "execution_time_minutes": 90,
+    "status": "\u2705 COMPLETE - AHEAD OF SCHEDULE"
+  }
+}
