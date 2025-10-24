@@ -1,0 +1,23 @@
+{
+  "total_segments": 61548,
+  "high_quality": 56638,
+  "medium_quality": 4910,
+  "quality_distribution": {
+    "therapeutic": {
+      "high": 15372,
+      "medium": 207
+    },
+    "educational": {
+      "high": 17936,
+      "medium": 1
+    },
+    "empathetic": {
+      "high": 3982,
+      "medium": 647
+    },
+    "practical": {
+      "high": 19348,
+      "medium": 4055
+    }
+  }
+}

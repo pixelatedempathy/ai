@@ -1,0 +1,462 @@
+{
+  "timestamp": "2025-10-19T04:35:26.124807",
+  "total_datasets": 26,
+  "successful": 26,
+  "failed": 0,
+  "datasets": [
+    {
+      "name": "1.PsychologyTest",
+      "path": "ai/lightning/ghost/1.PsychologyTest",
+      "status": "standardized",
+      "files_processed": 97,
+      "files_converted": 97,
+      "files_failed": 0,
+      "file_types": {
+        ".py": 6,
+        ".txt": 2,
+        "": 70,
+        ".md": 1,
+        ".jpeg": 1,
+        ".png": 2,
+        ".pkl": 1,
+        ".faiss": 1,
+        ".sample": 13
+      },
+      "size_gb": 0.02,
+      "errors": []
+    },
+    {
+      "name": "F12",
+      "path": "ai/lightning/ghost/F12",
+      "status": "standardized",
+      "files_processed": 10,
+      "files_converted": 10,
+      "files_failed": 0,
+      "file_types": {
+        ".psd": 4,
+        ".png": 5,
+        ".jpg": 1
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "GroundedEmotions",
+      "path": "ai/lightning/ghost/GroundedEmotions",
+      "status": "standardized",
+      "files_processed": 12,
+      "files_converted": 12,
+      "files_failed": 0,
+      "file_types": {
+        "": 1,
+        ".txt": 9,
+        ".py": 2
+      },
+      "size_gb": 0.02,
+      "errors": []
+    },
+    {
+      "name": "HighLowQualityCounseling",
+      "path": "ai/lightning/ghost/HighLowQualityCounseling",
+      "status": "standardized",
+      "files_processed": 261,
+      "files_converted": 261,
+      "files_failed": 0,
+      "file_types": {
+        ".csv": 2,
+        ".txt": 1,
+        "": 258
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "Real-life_Deception_Detection_2016",
+      "path": "ai/lightning/ghost/Real-life_Deception_Detection_2016",
+      "status": "standardized",
+      "files_processed": 244,
+      "files_converted": 244,
+      "files_failed": 0,
+      "file_types": {
+        ".txt": 122,
+        ".csv": 1,
+        ".mp4": 121
+      },
+      "size_gb": 0.25,
+      "errors": []
+    },
+    {
+      "name": "UsageExpressions",
+      "path": "ai/lightning/ghost/UsageExpressions",
+      "status": "standardized",
+      "files_processed": 3586,
+      "files_converted": 3586,
+      "files_failed": 0,
+      "file_types": {
+        ".txt": 3586
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "Wendy",
+      "path": "ai/lightning/ghost/Wendy",
+      "status": "standardized",
+      "files_processed": 27,
+      "files_converted": 27,
+      "files_failed": 0,
+      "file_types": {
+        ".md": 8,
+        ".zip": 1,
+        ".jsonl": 7,
+        ".json": 4,
+        ".mp3": 4,
+        ".sh": 1,
+        ".py": 2
+      },
+      "size_gb": 1.71,
+      "errors": []
+    },
+    {
+      "name": "Wendy-master",
+      "path": "ai/lightning/ghost/Wendy-master",
+      "status": "standardized",
+      "files_processed": 90,
+      "files_converted": 90,
+      "files_failed": 0,
+      "file_types": {
+        ".conf": 1,
+        ".json": 6,
+        ".ipynb": 2,
+        ".ts": 39,
+        "": 3,
+        ".yaml": 1,
+        ".md": 2,
+        ".png": 8,
+        ".html": 1,
+        ".svg": 5,
+        ".css": 1,
+        ".js": 4,
+        ".prisma": 1,
+        ".toml": 1,
+        ".sql": 5,
+        ".gif": 2,
+        ".txt": 8
+      },
+      "size_gb": 0.01,
+      "errors": []
+    },
+    {
+      "name": "boolq",
+      "path": "ai/lightning/ghost/boolq",
+      "status": "standardized",
+      "files_processed": 89,
+      "files_converted": 89,
+      "files_failed": 0,
+      "file_types": {
+        ".md": 1,
+        ".parquet": 2,
+        "": 73,
+        ".sample": 13
+      },
+      "size_gb": 0.01,
+      "errors": []
+    },
+    {
+      "name": "datasets",
+      "path": "ai/lightning/ghost/datasets",
+      "status": "standardized",
+      "files_processed": 7,
+      "files_converted": 7,
+      "files_failed": 0,
+      "file_types": {
+        ".jsonl": 3,
+        ".json": 3,
+        ".md": 1
+      },
+      "size_gb": 1.14,
+      "errors": []
+    },
+    {
+      "name": "drive-download-20251014T100018Z-1-001",
+      "path": "ai/lightning/ghost/drive-download-20251014T100018Z-1-001",
+      "status": "standardized",
+      "files_processed": 17,
+      "files_converted": 17,
+      "files_failed": 0,
+      "file_types": {
+        ".md": 17
+      },
+      "size_gb": 0.05,
+      "errors": []
+    },
+    {
+      "name": "drive-download-20251014T100709Z-1-001",
+      "path": "ai/lightning/ghost/drive-download-20251014T100709Z-1-001",
+      "status": "standardized",
+      "files_processed": 11,
+      "files_converted": 11,
+      "files_failed": 0,
+      "file_types": {
+        ".md": 11
+      },
+      "size_gb": 0.01,
+      "errors": []
+    },
+    {
+      "name": "drive-download-20251014T104217Z-1-001",
+      "path": "ai/lightning/ghost/drive-download-20251014T104217Z-1-001",
+      "status": "standardized",
+      "files_processed": 33,
+      "files_converted": 33,
+      "files_failed": 0,
+      "file_types": {
+        ".epub": 12,
+        ".txt": 14,
+        ".pdf": 3,
+        ".azw3": 1,
+        ".mobi": 1,
+        ".jpg": 1,
+        ".url": 1
+      },
+      "size_gb": 0.09,
+      "errors": []
+    },
+    {
+      "name": "drive-download-20251014T134038Z-1-001",
+      "path": "ai/lightning/ghost/drive-download-20251014T134038Z-1-001",
+      "status": "standardized",
+      "files_processed": 15,
+      "files_converted": 15,
+      "files_failed": 0,
+      "file_types": {
+        ".json": 9,
+        ".csv": 6
+      },
+      "size_gb": 1.27,
+      "errors": []
+    },
+    {
+      "name": "dual_persona_training",
+      "path": "ai/lightning/ghost/dual_persona_training",
+      "status": "standardized",
+      "files_processed": 7,
+      "files_converted": 7,
+      "files_failed": 0,
+      "file_types": {
+        ".jsonl": 5,
+        ".json": 2
+      },
+      "size_gb": 0.04,
+      "errors": []
+    },
+    {
+      "name": "edge_case_pipeline_standalone",
+      "path": "ai/lightning/ghost/edge_case_pipeline_standalone",
+      "status": "standardized",
+      "files_processed": 11,
+      "files_converted": 11,
+      "files_failed": 0,
+      "file_types": {
+        ".py": 5,
+        ".txt": 1,
+        ".jsonl": 1,
+        ".ipynb": 1,
+        ".zip": 1,
+        ".md": 2
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "edge_case_pipeline_standalone_unzipped",
+      "path": "ai/lightning/ghost/edge_case_pipeline_standalone_unzipped",
+      "status": "standardized",
+      "files_processed": 8,
+      "files_converted": 8,
+      "files_failed": 0,
+      "file_types": {
+        ".py": 4,
+        ".txt": 1,
+        ".ipynb": 1,
+        ".md": 2
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "empathetic_dialogues",
+      "path": "ai/lightning/ghost/empathetic_dialogues",
+      "status": "standardized",
+      "files_processed": 77,
+      "files_converted": 77,
+      "files_failed": 0,
+      "file_types": {
+        ".py": 2,
+        ".md": 1,
+        ".csv": 3,
+        "": 58,
+        ".sample": 13
+      },
+      "size_gb": 0.09,
+      "errors": []
+    },
+    {
+      "name": "generated",
+      "path": "ai/lightning/ghost/generated",
+      "status": "standardized",
+      "files_processed": 6,
+      "files_converted": 6,
+      "files_failed": 0,
+      "file_types": {
+        ".jsonl": 6
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "generated_dialogues",
+      "path": "ai/lightning/ghost/generated_dialogues",
+      "status": "standardized",
+      "files_processed": 2,
+      "files_converted": 2,
+      "files_failed": 0,
+      "file_types": {
+        ".txt": 1,
+        ".jsonl": 1
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "human_activity_phrase_data",
+      "path": "ai/lightning/ghost/human_activity_phrase_data",
+      "status": "standardized",
+      "files_processed": 2,
+      "files_converted": 2,
+      "files_failed": 0,
+      "file_types": {
+        ".txt": 1,
+        ".csv": 1
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "master_integration",
+      "path": "ai/lightning/ghost/master_integration",
+      "status": "standardized",
+      "files_processed": 8,
+      "files_converted": 8,
+      "files_failed": 0,
+      "file_types": {
+        ".jsonl": 6,
+        ".md": 1,
+        ".json": 1
+      },
+      "size_gb": 0.08,
+      "errors": []
+    },
+    {
+      "name": "mental-health-conversational-data",
+      "path": "ai/lightning/ghost/mental-health-conversational-data",
+      "status": "standardized",
+      "files_processed": 54,
+      "files_converted": 54,
+      "files_failed": 0,
+      "file_types": {
+        ".json": 3,
+        ".csv": 1,
+        ".md": 1,
+        ".parquet": 1,
+        "": 34,
+        ".sample": 14
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "pipeline_configs",
+      "path": "ai/lightning/ghost/pipeline_configs",
+      "status": "standardized",
+      "files_processed": 65,
+      "files_converted": 65,
+      "files_failed": 0,
+      "file_types": {
+        ".json": 65
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "targetedSentiment.2017",
+      "path": "ai/lightning/ghost/targetedSentiment.2017",
+      "status": "standardized",
+      "files_processed": 3,
+      "files_converted": 3,
+      "files_failed": 0,
+      "file_types": {
+        ".py": 1,
+        ".txt": 1,
+        "": 1
+      },
+      "size_gb": 0.0,
+      "errors": []
+    },
+    {
+      "name": "yodalib.crosslingual.humor",
+      "path": "ai/lightning/ghost/yodalib.crosslingual.humor",
+      "status": "standardized",
+      "files_processed": 9,
+      "files_converted": 9,
+      "files_failed": 0,
+      "file_types": {
+        ".json": 8,
+        ".txt": 1
+      },
+      "size_gb": 0.0,
+      "errors": []
+    }
+  ],
+  "file_types_converted": {
+    ".py": 22,
+    ".txt": 3748,
+    "": 498,
+    ".md": 48,
+    ".jpeg": 1,
+    ".png": 15,
+    ".pkl": 1,
+    ".faiss": 1,
+    ".sample": 53,
+    ".psd": 4,
+    ".jpg": 2,
+    ".csv": 14,
+    ".mp4": 121,
+    ".zip": 2,
+    ".jsonl": 29,
+    ".json": 101,
+    ".mp3": 4,
+    ".sh": 1,
+    ".conf": 1,
+    ".ipynb": 4,
+    ".ts": 39,
+    ".yaml": 1,
+    ".html": 1,
+    ".svg": 5,
+    ".css": 1,
+    ".js": 4,
+    ".prisma": 1,
+    ".toml": 1,
+    ".sql": 5,
+    ".gif": 2,
+    ".parquet": 3,
+    ".epub": 12,
+    ".pdf": 3,
+    ".azw3": 1,
+    ".mobi": 1,
+    ".url": 1
+  },
+  "total_files_processed": 4751,
+  "total_size_gb": 4.789999999999998,
+  "errors": []
+}

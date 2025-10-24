@@ -1,0 +1,74 @@
+{
+  "task": "5.10: Counsel-Chat Professional Counseling Conversation Archive",
+  "processing_summary": {
+    "dataset_name": "counsel_chat",
+    "total_conversations": 2484,
+    "target_conversations": 3000,
+    "completion_percentage": 82.8,
+    "files_processed": 3,
+    "processing_timestamp": "2025-07-29T02:01:27.682508"
+  },
+  "quality_metrics": {
+    "total_processed": 2484,
+    "total_accepted": 2484,
+    "acceptance_rate": 100.0,
+    "format_errors": 0
+  },
+  "conversation_analysis": {
+    "therapeutic_approaches": {
+      "emotion_focused": 774,
+      "cognitive_behavioral": 360,
+      "integrative": 503,
+      "behavioral": 174,
+      "interpersonal": 512,
+      "mindfulness_based": 97,
+      "solution_focused": 64
+    },
+    "topics": {
+      "general": 357,
+      "depression": 330,
+      "anxiety": 248,
+      "parenting": 145,
+      "self-esteem": 83,
+      "relationship-dissolution": 76,
+      "workplace-relationships": 26,
+      "spirituality": 34,
+      "trauma": 66,
+      "domestic-violence": 21,
+      "anger-management": 38,
+      "sleep-improvement": 10,
+      "intimacy": 205,
+      "grief-and-loss": 18,
+      "substance-abuse": 35,
+      "family-conflict": 116,
+      "marriage": 46,
+      "eating-disorders": 10,
+      "relationships": 174,
+      "lgbtq": 38,
+      "behavioral-change": 51,
+      "addiction": 5,
+      "legal-regulatory": 8,
+      "professional-ethics": 32,
+      "stress": 7,
+      "human-sexuality": 4,
+      "social-relationships": 20,
+      "children-adolescents": 6,
+      "military-issues": 3,
+      "self-harm": 11,
+      "diagnosis": 22,
+      "counseling-fundamentals": 239
+    },
+    "conversation_length_stats": {
+      "min": 2,
+      "max": 2,
+      "average": 2.0
+    }
+  },
+  "dataset_characteristics": {
+    "source": "Counsel-Chat Counseling Dataset",
+    "quality_level": "Counseling Chat Grade",
+    "tier": 2,
+    "expected_quality": 0.85,
+    "counseling_chat_validation": true
+  }
+}

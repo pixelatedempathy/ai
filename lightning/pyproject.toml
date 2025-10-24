@@ -1,0 +1,15 @@
+[project]
+name = "this-studio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=5.47.2",
+    "mutagen>=1.47.0",
+    "pillow>=11.3.0",
+    "pyperclip>=1.11.0",
+    "requests>=2.32.5",
+    "rich>=14.1.0",
+    "yt-dlp>=2025.9.26",
+]

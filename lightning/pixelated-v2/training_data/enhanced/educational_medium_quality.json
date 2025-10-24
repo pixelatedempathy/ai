@@ -1,0 +1,26 @@
+[
+  {
+    "text": "It's a neurological trait that deserves support, compassion, and a heck of a lot more awareness. And outside of having a neurological, psychological, or physical health condition, under certain circumstances like, I don't know, war and economic instability, it totally fits the facts that have been said about women.",
+    "style": "educational",
+    "confidence": 0.5102040816326531,
+    "quality_score": 0.46214285714285713,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.0,
+        "educational": 0.5102040816326531,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 49,
+      "clusters": {
+        "brain_cluster": [
+          "neurological"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  }
+]
