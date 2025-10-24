@@ -1,0 +1,106 @@
+[
+  {
+    "prompt_id": "edge_case_0001",
+    "scenario_id": "suicidality_001",
+    "category": "suicidality",
+    "difficulty_level": "very_high",
+    "expected_challenges": [
+      "crisis_intervention",
+      "safety_assessment",
+      "resource_provision"
+    ],
+    "instructions": "Simulate a therapy session set in a tense, dimly lit room. Bob is a 35-year-old man who has been struggling with severe depression. He expresses thoughts of ending his life.",
+    "created_at": "2025-10-23T20:06:06.859555"
+  },
+  {
+    "prompt_id": "edge_case_0002",
+    "scenario_id": "suicidality_002",
+    "category": "suicidality",
+    "difficulty_level": "very_high",
+    "expected_challenges": [
+      "crisis_intervention",
+      "safety_assessment",
+      "resource_provision"
+    ],
+    "instructions": "Simulate a therapy session set in a tense, dimly lit room. Bob is a 32-year-old man who has been struggling with severe depression. He expresses thoughts of ending his life.",
+    "created_at": "2025-10-23T20:06:06.859635"
+  },
+  {
+    "prompt_id": "edge_case_0003",
+    "scenario_id": "homicidal_client_001",
+    "category": "homicidal_client",
+    "difficulty_level": "very_high",
+    "expected_challenges": [
+      "duty_to_warn",
+      "safety_planning",
+      "legal_considerations"
+    ],
+    "instructions": "Simulate a therapy session with Sarah, a 28-year-old woman who has been having violent fantasies about harming her coworkers.",
+    "created_at": "2025-10-23T20:06:06.859652"
+  },
+  {
+    "prompt_id": "edge_case_0004",
+    "scenario_id": "homicidal_client_002",
+    "category": "homicidal_client",
+    "difficulty_level": "very_high",
+    "expected_challenges": [
+      "duty_to_warn",
+      "safety_planning",
+      "legal_considerations"
+    ],
+    "instructions": "Simulate a therapy session with Sarah, a 27-year-old woman who has been having violent fantasies about harming her coworkers.",
+    "created_at": "2025-10-23T20:06:06.859671"
+  },
+  {
+    "prompt_id": "edge_case_0007",
+    "scenario_id": "psychotic_episode_001",
+    "category": "psychotic_episode",
+    "difficulty_level": "very_high",
+    "expected_challenges": [
+      "reality_testing",
+      "therapeutic_alliance",
+      "psychiatric_emergency"
+    ],
+    "instructions": "Simulate a session with Lisa, a 24-year-old who believes the government is monitoring her through the therapy cameras.",
+    "created_at": "2025-10-23T20:06:06.859699"
+  },
+  {
+    "prompt_id": "edge_case_0008",
+    "scenario_id": "psychotic_episode_002",
+    "category": "psychotic_episode",
+    "difficulty_level": "very_high",
+    "expected_challenges": [
+      "reality_testing",
+      "therapeutic_alliance",
+      "psychiatric_emergency"
+    ],
+    "instructions": "Simulate a session with Lisa, a 24-year-old who believes the government is monitoring her through the therapy cameras.",
+    "created_at": "2025-10-23T20:06:06.859711"
+  },
+  {
+    "prompt_id": "edge_case_0021",
+    "scenario_id": "sexual_trauma_disclosure_001",
+    "category": "sexual_trauma_disclosure",
+    "difficulty_level": "high",
+    "expected_challenges": [
+      "trauma_sensitive_response",
+      "reporting_requirements",
+      "safety_planning"
+    ],
+    "instructions": "Create a session where the client breaks down while revealing childhood sexual abuse.",
+    "created_at": "2025-10-23T20:06:06.859826"
+  },
+  {
+    "prompt_id": "edge_case_0022",
+    "scenario_id": "sexual_trauma_disclosure_002",
+    "category": "sexual_trauma_disclosure",
+    "difficulty_level": "high",
+    "expected_challenges": [
+      "trauma_sensitive_response",
+      "reporting_requirements",
+      "safety_planning"
+    ],
+    "instructions": "Create a session where the client breaks down while revealing childhood sexual abuse.",
+    "created_at": "2025-10-23T20:06:06.859834"
+  }
+]
