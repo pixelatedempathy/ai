@@ -1,0 +1,518 @@
+{
+  "timestamp": "2025-10-19T12:07:48.813712",
+  "total_datasets": 26,
+  "validated": 26,
+  "failed": 0,
+  "average_quality_score": 0.7595949273729341,
+  "validation_results": [
+    {
+      "dataset_name": "1.PsychologyTest",
+      "total_files": 2,
+      "files_validated": 2,
+      "files_with_issues": 1,
+      "pii_detected": 0,
+      "phi_detected": 1,
+      "coherence_score": 0.8,
+      "authenticity_score": 0.6,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.8,
+      "issues": [
+        "PHI keywords in description.txt: ['diagnosis', 'clinical', 'healthcare', 'provider']"
+      ],
+      "recommendations": [
+        "Review 1 files with PHI keywords"
+      ]
+    },
+    {
+      "dataset_name": "F12",
+      "total_files": 0,
+      "files_validated": 0,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.5,
+      "authenticity_score": 0.5,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.6799999999999999,
+      "issues": [],
+      "recommendations": [
+        "Improve conversation coherence in some files",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "GroundedEmotions",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 4,
+      "pii_detected": 4,
+      "phi_detected": 0,
+      "coherence_score": 0.7195921183526895,
+      "authenticity_score": 0.0,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.5958776355058069,
+      "issues": [
+        "PII detected in derived_user_history_dataset.txt: ['credit_card']",
+        "PII detected in derived_timing_data.txt: ['phone']",
+        "PII detected in derived_news_dataset.txt: ['credit_card']",
+        "PII detected in derived_friend_history_dataset.txt: ['credit_card']"
+      ],
+      "recommendations": [
+        "Sanitize 4 files with PII detected",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "HighLowQualityCounseling",
+      "total_files": 3,
+      "files_validated": 3,
+      "files_with_issues": 1,
+      "pii_detected": 1,
+      "phi_detected": 1,
+      "coherence_score": 0.84,
+      "authenticity_score": 0.06666666666666667,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.652,
+      "issues": [
+        "PII detected in README.txt: ['email']",
+        "PHI keywords in README.txt: ['medication']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Review 1 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "Real-life_Deception_Detection_2016",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 1,
+      "pii_detected": 1,
+      "phi_detected": 0,
+      "coherence_score": 0.9719999999999999,
+      "authenticity_score": 0.06000000000000001,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.6896,
+      "issues": [
+        "PII detected in README.txt: ['email']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "UsageExpressions",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 1,
+      "pii_detected": 1,
+      "phi_detected": 0,
+      "coherence_score": 0.7199999999999999,
+      "authenticity_score": 0.02,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.602,
+      "issues": [
+        "PII detected in README.txt: ['email']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "Wendy",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 5,
+      "pii_detected": 5,
+      "phi_detected": 5,
+      "coherence_score": 0.728,
+      "authenticity_score": 0.54,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.7604,
+      "issues": [
+        "PII detected in priority_2_FINAL.jsonl: ['credit_card']",
+        "PHI keywords in priority_2_FINAL.jsonl: ['patient', 'diagnosis', 'treatment', 'hospital', 'medication', 'clinical']",
+        "PII detected in priority_2_FINAL_summary.json: ['credit_card']",
+        "PHI keywords in priority_2_FINAL_summary.json: ['diagnosis', 'clinical']",
+        "PHI keywords in priority_3_FINAL.jsonl: ['patient']"
+      ],
+      "recommendations": [
+        "Sanitize 5 files with PII detected",
+        "Review 5 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "Wendy-master",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 1,
+      "pii_detected": 1,
+      "phi_detected": 0,
+      "coherence_score": 0.8800000000000001,
+      "authenticity_score": 0.31999999999999995,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.74,
+      "issues": [
+        "PII detected in settings.json: ['email']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "boolq",
+      "total_files": 0,
+      "files_validated": 0,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.5,
+      "authenticity_score": 0.5,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.6799999999999999,
+      "issues": [],
+      "recommendations": [
+        "Improve conversation coherence in some files",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "datasets",
+      "total_files": 6,
+      "files_validated": 6,
+      "files_with_issues": 5,
+      "pii_detected": 5,
+      "phi_detected": 3,
+      "coherence_score": 0.8799999999999999,
+      "authenticity_score": 0.5666666666666668,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.814,
+      "issues": [
+        "PII detected in priority_2_FINAL.jsonl: ['credit_card']",
+        "PHI keywords in priority_2_FINAL.jsonl: ['patient', 'diagnosis', 'treatment', 'hospital', 'medication', 'clinical']",
+        "PII detected in priority_2_FINAL_summary.json: ['credit_card']",
+        "PHI keywords in priority_2_FINAL_summary.json: ['diagnosis', 'clinical']",
+        "PHI keywords in priority_3_FINAL.jsonl: ['patient']"
+      ],
+      "recommendations": [
+        "Sanitize 5 files with PII detected",
+        "Review 3 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "drive-download-20251014T100018Z-1-001",
+      "total_files": 0,
+      "files_validated": 0,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.5,
+      "authenticity_score": 0.5,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.6799999999999999,
+      "issues": [],
+      "recommendations": [
+        "Improve conversation coherence in some files",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "drive-download-20251014T100709Z-1-001",
+      "total_files": 0,
+      "files_validated": 0,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.5,
+      "authenticity_score": 0.5,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.6799999999999999,
+      "issues": [],
+      "recommendations": [
+        "Improve conversation coherence in some files",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "drive-download-20251014T104217Z-1-001",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 1.0,
+      "authenticity_score": 0.13999999999999999,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.722,
+      "issues": [],
+      "recommendations": [
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "drive-download-20251014T134038Z-1-001",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 8,
+      "pii_detected": 6,
+      "phi_detected": 6,
+      "coherence_score": 0.952,
+      "authenticity_score": 0.7,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.8755999999999999,
+      "issues": [
+        "PHI keywords in iCliniq.json: ['diagnosis', 'treatment', 'doctor', 'prescription', 'medication', 'healthcare', 'provider']",
+        "PHI keywords in HealthCareMagic-100k.json: ['patient', 'diagnosis', 'doctor', 'medication', 'surgery']",
+        "PII detected in reddit_depression_dataset.csv: ['phone']",
+        "PHI keywords in sentiment_data.csv: ['patient', 'doctor']",
+        "PII detected in human_labeled_Suicidewatch.csv: ['phone']"
+      ],
+      "recommendations": [
+        "Sanitize 6 files with PII detected",
+        "Review 6 files with PHI keywords"
+      ]
+    },
+    {
+      "dataset_name": "dual_persona_training",
+      "total_files": 7,
+      "files_validated": 7,
+      "files_with_issues": 5,
+      "pii_detected": 0,
+      "phi_detected": 5,
+      "coherence_score": 0.9657142857142856,
+      "authenticity_score": 0.8857142857142858,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.9354285714285714,
+      "issues": [
+        "PHI keywords in curriculum_phase_1.jsonl: ['patient', 'hospital', 'doctor']",
+        "PHI keywords in training_data.jsonl: ['patient']",
+        "PHI keywords in curriculum_phase_2.jsonl: ['patient', 'treatment']",
+        "PHI keywords in curriculum_phase_3.jsonl: ['patient', 'treatment']",
+        "PHI keywords in validation_data.jsonl: ['patient', 'treatment', 'medication']"
+      ],
+      "recommendations": [
+        "Review 5 files with PHI keywords"
+      ]
+    },
+    {
+      "dataset_name": "edge_case_pipeline_standalone",
+      "total_files": 2,
+      "files_validated": 2,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.88,
+      "authenticity_score": 0.6,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.8240000000000001,
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "dataset_name": "edge_case_pipeline_standalone_unzipped",
+      "total_files": 1,
+      "files_validated": 1,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.76,
+      "authenticity_score": 0.2,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.6679999999999999,
+      "issues": [],
+      "recommendations": [
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "empathetic_dialogues",
+      "total_files": 3,
+      "files_validated": 3,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 1.0,
+      "authenticity_score": 1.0,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.98,
+      "issues": [],
+      "recommendations": []
+    },
+    {
+      "dataset_name": "generated",
+      "total_files": 6,
+      "files_validated": 6,
+      "files_with_issues": 5,
+      "pii_detected": 0,
+      "phi_detected": 5,
+      "coherence_score": 0.8333333333333334,
+      "authenticity_score": 0.8333333333333334,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.88,
+      "issues": [
+        "PHI keywords in prompts_20250507_221035.jsonl: ['treatment', 'clinical']",
+        "PHI keywords in prompts_20250508_032328.jsonl: ['medication', 'clinical']",
+        "PHI keywords in prompts_20250507_125201.jsonl: ['medication', 'clinical']",
+        "PHI keywords in prompts_20250508_030612.jsonl: ['clinical']",
+        "PHI keywords in prompts_20250508_033009.jsonl: ['clinical']"
+      ],
+      "recommendations": [
+        "Review 5 files with PHI keywords"
+      ]
+    },
+    {
+      "dataset_name": "generated_dialogues",
+      "total_files": 2,
+      "files_validated": 2,
+      "files_with_issues": 1,
+      "pii_detected": 0,
+      "phi_detected": 1,
+      "coherence_score": 0.78,
+      "authenticity_score": 0.5,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.764,
+      "issues": [
+        "PHI keywords in edge_case_dialogues.jsonl: ['clinical']"
+      ],
+      "recommendations": [
+        "Review 1 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "human_activity_phrase_data",
+      "total_files": 2,
+      "files_validated": 2,
+      "files_with_issues": 1,
+      "pii_detected": 0,
+      "phi_detected": 1,
+      "coherence_score": 0.88,
+      "authenticity_score": 0.2,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.704,
+      "issues": [
+        "PHI keywords in gold_pairs.csv: ['hospital', 'doctor', 'surgery']"
+      ],
+      "recommendations": [
+        "Review 1 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "master_integration",
+      "total_files": 7,
+      "files_validated": 7,
+      "files_with_issues": 5,
+      "pii_detected": 0,
+      "phi_detected": 5,
+      "coherence_score": 0.9657142857142856,
+      "authenticity_score": 0.8857142857142858,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.9354285714285714,
+      "issues": [
+        "PHI keywords in difficult_client_test.jsonl: ['hospital', 'clinical']",
+        "PHI keywords in therapy_expert_val.jsonl: ['treatment', 'doctor', 'medication', 'provider']",
+        "PHI keywords in difficult_client_val.jsonl: ['doctor', 'clinical']",
+        "PHI keywords in therapy_expert_train.jsonl: ['patient']",
+        "PHI keywords in difficult_client_train.jsonl: ['clinical']"
+      ],
+      "recommendations": [
+        "Review 5 files with PHI keywords"
+      ]
+    },
+    {
+      "dataset_name": "mental-health-conversational-data",
+      "total_files": 4,
+      "files_validated": 4,
+      "files_with_issues": 1,
+      "pii_detected": 1,
+      "phi_detected": 1,
+      "coherence_score": 1.0,
+      "authenticity_score": 0.44999999999999996,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.815,
+      "issues": [
+        "PII detected in intents.json: ['phone']",
+        "PHI keywords in intents.json: ['healthcare']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Review 1 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "pipeline_configs",
+      "total_files": 10,
+      "files_validated": 10,
+      "files_with_issues": 0,
+      "pii_detected": 0,
+      "phi_detected": 0,
+      "coherence_score": 0.976,
+      "authenticity_score": 0.26,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.7508,
+      "issues": [],
+      "recommendations": [
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "targetedSentiment.2017",
+      "total_files": 1,
+      "files_validated": 1,
+      "files_with_issues": 1,
+      "pii_detected": 1,
+      "phi_detected": 0,
+      "coherence_score": 1.0,
+      "authenticity_score": 0.4,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.8,
+      "issues": [
+        "PII detected in README_v1.0.txt: ['email', 'phone']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Enhance emotional authenticity in conversations"
+      ]
+    },
+    {
+      "dataset_name": "yodalib.crosslingual.humor",
+      "total_files": 9,
+      "files_validated": 9,
+      "files_with_issues": 2,
+      "pii_detected": 1,
+      "phi_detected": 4,
+      "coherence_score": 0.8933333333333332,
+      "authenticity_score": 0.24444444444444446,
+      "schema_compliance": 0.95,
+      "overall_quality_score": 0.7213333333333333,
+      "issues": [
+        "PHI keywords in test_FT_India_US.json: ['treatment']",
+        "PII detected in README.txt: ['email']",
+        "PHI keywords in test_FT_US_India.json: ['treatment']",
+        "PHI keywords in test_FT_India_India.json: ['treatment']",
+        "PHI keywords in test_FT_US_US.json: ['treatment']"
+      ],
+      "recommendations": [
+        "Sanitize 1 files with PII detected",
+        "Review 4 files with PHI keywords",
+        "Enhance emotional authenticity in conversations"
+      ]
+    }
+  ],
+  "summary": {
+    "total_files_validated": 135,
+    "total_files_with_issues": 48,
+    "total_pii_detected": 27,
+    "total_phi_detected": 38,
+    "average_coherence": 0.8240648983249202,
+    "average_authenticity": 0.44125152625152625
+  }
+}

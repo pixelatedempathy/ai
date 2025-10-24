@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-10-19T13:56:20.655250",
+  "phase": "9_final_validation",
+  "dataset": "ai/lightning/processed_data/merged_dataset.jsonl",
+  "total_records": 608458,
+  "safety_passed": 608458,
+  "safety_failed": 0,
+  "safety_pass_ratio": 1.0,
+  "average_safety_score": 0.6885111051177846,
+  "safety_distribution": {
+    "pass": 608458
+  },
+  "source_distribution": {
+    "ghost": 426265,
+    "existing": 182193
+  },
+  "crisis_records_detected": 7660,
+  "crisis_detection_ratio": 0.012589200898007752,
+  "crisis_types": {
+    "self_harm": 587,
+    "abuse": 1826,
+    "substance_abuse": 293,
+    "suicidal_ideation": 395,
+    "severe_depression": 989,
+    "severe_anxiety": 4987
+  },
+  "quality_threshold_met": true,
+  "safety_gates_passed": true
+}

@@ -1,0 +1,278 @@
+# Multi-stage production Dockerfile for Wayfarer Model Deployment
+# Optimized for GPU inference with multiple checkpoint support
+
+# ============================================================================
+# Stage 1: Base Dependencies
+# ============================================================================
+FROM nvidia/cuda:11.8-devel-ubuntu22.04 as base
+
+# System dependencies and Python setup
+RUN apt-get update && apt-get install -y \
+    python3.11 \
+    python3.11-pip \
+    python3.11-dev \
+    git \
+    curl \
+    wget \
+    htop \
+    nvtop \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create symlinks for python
+RUN ln -s /usr/bin/python3.11 /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip
+
+# Set up working directory
+WORKDIR /app
+
+# ============================================================================
+# Stage 2: Python Dependencies
+# ============================================================================
+FROM base as dependencies
+
+# Copy requirements first for better caching
+COPY pyproject.toml uv.lock ./
+
+# Install uv for faster dependency management
+RUN pip install uv
+
+# Install Python dependencies
+RUN uv pip install --system \
+    torch>=2.0.0 \
+    transformers>=4.35.0 \
+    accelerate>=0.24.0 \
+    bitsandbytes>=0.47.0 \
+    peft>=0.17.1 \
+    fastapi>=0.104.0 \
+    uvicorn>=0.24.0 \
+    pydantic>=2.4.0 \
+    numpy>=1.24.0 \
+    psutil>=5.9.0 \
+    gputil>=1.4.0
+
+# ============================================================================
+# Stage 3: Model Preparation
+# ============================================================================
+FROM dependencies as model-prep
+
+# Copy model files and checkpoints
+COPY wayfarer-balanced/ ./models/wayfarer-balanced/
+COPY *.py ./
+COPY *.json ./
+
+# Create model cache directory
+RUN mkdir -p /app/model_cache
+
+# Pre-load and cache the base model to reduce startup time
+RUN python -c "
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
+print('Pre-loading Wayfarer-2-12B base model...')
+tokenizer = AutoTokenizer.from_pretrained('LatitudeGames/Wayfarer-2-12B', cache_dir='/app/model_cache')
+print('Tokenizer cached successfully')
+print('Base model preparation complete')
+"
+
+# ============================================================================
+# Stage 4: Production Runtime
+# ============================================================================
+FROM model-prep as production
+
+# Create non-root user for security
+RUN useradd -m -u 1000 wayfarer && \
+    chown -R wayfarer:wayfarer /app
+USER wayfarer
+
+# Environment variables for production
+ENV PYTHONPATH=/app
+ENV TOKENIZERS_PARALLELISM=false
+ENV CUDA_VISIBLE_DEVICES=0
+ENV MODEL_CACHE_DIR=/app/model_cache
+ENV MAX_WORKERS=1
+ENV HOST=0.0.0.0
+ENV PORT=8000
+
+# Health check configuration
+ENV HEALTH_CHECK_TIMEOUT=30
+ENV MODEL_LOAD_TIMEOUT=300
+
+# Default model checkpoint (can be overridden)
+ENV DEFAULT_CHECKPOINT=checkpoint-300
+ENV MODEL_PATH=/app/models/wayfarer-balanced/$DEFAULT_CHECKPOINT
+
+# Expose API port
+EXPOSE 8000
+
+# Health check endpoint
+HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+# Create startup script
+COPY --chown=wayfarer:wayfarer <<EOF /app/start_production.py
+#!/usr/bin/env python3
+"""
+Production startup script for Wayfarer model API
+Handles graceful startup, health checks, and error recovery
+"""
+
+import os
+import sys
+import time
+import signal
+import psutil
+import logging
+from pathlib import Path
+import uvicorn
+from api_server import app
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger('wayfarer-production')
+
+class WayfarerProductionServer:
+    def __init__(self):
+        self.server = None
+        self.shutdown_requested = False
+        
+        # Register signal handlers
+        signal.signal(signal.SIGTERM, self.signal_handler)
+        signal.signal(signal.SIGINT, self.signal_handler)
+        
+    def signal_handler(self, signum, frame):
+        logger.info(f"Received signal {signum}, initiating graceful shutdown")
+        self.shutdown_requested = True
+        
+    def check_gpu_availability(self):
+        """Check if GPU is available and accessible"""
+        try:
+            import torch
+            if torch.cuda.is_available():
+                gpu_count = torch.cuda.device_count()
+                gpu_memory = torch.cuda.get_device_properties(0).total_memory
+                logger.info(f"GPU available: {gpu_count} devices, {gpu_memory / 1e9:.1f}GB memory")
+                return True
+            else:
+                logger.warning("CUDA not available, falling back to CPU")
+                return False
+        except Exception as e:
+            logger.error(f"GPU check failed: {e}")
+            return False
+            
+    def check_model_files(self):
+        """Verify model checkpoint files exist"""
+        model_path = os.environ.get('MODEL_PATH')
+        if not model_path:
+            logger.error("MODEL_PATH environment variable not set")
+            return False
+            
+        checkpoint_path = Path(model_path)
+        if not checkpoint_path.exists():
+            logger.error(f"Model checkpoint not found: {checkpoint_path}")
+            return False
+            
+        # Check for required files
+        required_files = ['adapter_config.json', 'adapter_model.safetensors']
+        for file in required_files:
+            if not (checkpoint_path / file).exists():
+                logger.error(f"Required model file missing: {file}")
+                return False
+                
+        logger.info(f"Model checkpoint verified: {checkpoint_path}")
+        return True
+        
+    def monitor_resources(self):
+        """Log system resource usage"""
+        try:
+            cpu_percent = psutil.cpu_percent()
+            memory = psutil.virtual_memory()
+            
+            logger.info(f"System resources - CPU: {cpu_percent}%, Memory: {memory.percent}%")
+            
+            # GPU monitoring if available
+            try:
+                import GPUtil
+                gpus = GPUtil.getGPUs()
+                for gpu in gpus:
+                    logger.info(f"GPU {gpu.id}: {gpu.memoryUtil*100:.1f}% memory, {gpu.load*100:.1f}% utilization")
+            except:
+                pass
+                
+        except Exception as e:
+            logger.error(f"Resource monitoring failed: {e}")
+            
+    def start_server(self):
+        """Start the FastAPI server with production configuration"""
+        host = os.environ.get('HOST', '0.0.0.0')
+        port = int(os.environ.get('PORT', 8000))
+        workers = int(os.environ.get('MAX_WORKERS', 1))
+        
+        logger.info(f"Starting Wayfarer API server on {host}:{port}")
+        
+        # Start server
+        try:
+            uvicorn.run(
+                app,
+                host=host,
+                port=port,
+                workers=workers,
+                log_level="info",
+                access_log=True,
+                loop="uvloop",
+                timeout_keep_alive=30,
+                timeout_notify=30,
+                limit_max_requests=1000,
+                limit_concurrency=10
+            )
+        except Exception as e:
+            logger.error(f"Server startup failed: {e}")
+            sys.exit(1)
+            
+    def run(self):
+        """Main execution flow"""
+        logger.info("🚀 Wayfarer Production Server Starting")
+        
+        # Pre-flight checks
+        logger.info("Running pre-flight checks...")
+        
+        if not self.check_gpu_availability():
+            logger.warning("GPU not available - performance will be degraded")
+            
+        if not self.check_model_files():
+            logger.error("Model validation failed")
+            sys.exit(1)
+            
+        # Log system info
+        self.monitor_resources()
+        
+        # Start server
+        logger.info("All checks passed, starting API server...")
+        self.start_server()
+
+if __name__ == "__main__":
+    server = WayfarerProductionServer()
+    server.run()
+EOF
+
+# Make startup script executable
+RUN chmod +x /app/start_production.py
+
+# Default command
+CMD ["python", "/app/start_production.py"]
+
+# ============================================================================
+# Production Build Arguments and Labels
+# ============================================================================
+ARG BUILD_DATE
+ARG VERSION=1.0.0
+ARG VCS_REF
+
+LABEL maintainer="Pixelated Empathy <dev@pixelatedempathy.com>"
+LABEL version=$VERSION
+LABEL build-date=$BUILD_DATE
+LABEL vcs-ref=$VCS_REF
+LABEL description="Production Wayfarer-2-12B Model API Server"
+LABEL vendor="Pixelated Empathy"

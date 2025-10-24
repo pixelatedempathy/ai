@@ -1,0 +1,281 @@
+[
+  {
+    "text": "The same is true with resentments. If we let them take over, they will begin to overpower love. So I can have a hurt, be hurt by somebody else and be angry.",
+    "style": "therapeutic",
+    "confidence": 0.5208333333333333,
+    "quality_score": 0.46958333333333324,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.5208333333333333,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 32,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "emotion_cluster": [
+          "angry"
+        ]
+      }
+    }
+  },
+  {
+    "text": "Well, let's just sabotage my life and fail and mess up. That will hurt them. That will break their heart. So I will hurt them by sabotaging me. And sadly, a lot of people do that.",
+    "style": "therapeutic",
+    "confidence": 0.46296296296296297,
+    "quality_score": 0.42907407407407405,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.46296296296296297,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 36,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "emotion_cluster": [
+          "sad"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  },
+  {
+    "text": "Oh, do not get your hopes up. And so they sabotage just so they do not have their hopes dashed. Then fear of getting hurt. This relationship is growing, but if it keeps growing, they are going to hurt me at some day.",
+    "style": "therapeutic",
+    "confidence": 0.38759689922480617,
+    "quality_score": 0.37631782945736425,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.38759689922480617,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.38759689922480617
+      },
+      "word_count": 43,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  },
+  {
+    "text": "Now, I am going to talk to this person, and I am going to lash out. I am going to get angry. I am going to disrespect the other person. I am going to do all I can to hurt them worse than they are hurting me.",
+    "style": "therapeutic",
+    "confidence": 0.3546099290780142,
+    "quality_score": 0.3532269503546099,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.3546099290780142,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 47,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "emotion_cluster": [
+          "angry"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  },
+  {
+    "text": "So let me very, very quickly give you a summary of some of the modalities that are helpful. So I talked about cognitive behavioural therapy. Dialectical behavioural therapy.",
+    "style": "therapeutic",
+    "confidence": 0.7142857142857143,
+    "quality_score": 0.5,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.7142857142857143,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 28,
+      "clusters": {
+        "healing_cluster": [
+          "therapy"
+        ]
+      }
+    }
+  },
+  {
+    "text": "And that's only going to hurt society. So false loyalty is to hurtful people who do more and more damage. But wow, that indoctrination process of false loyalty is so deep that people are afraid to break it.",
+    "style": "therapeutic",
+    "confidence": 0.43859649122807015,
+    "quality_score": 0.41201754385964906,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.43859649122807015,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.43859649122807015
+      },
+      "word_count": 38,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  },
+  {
+    "text": "And so a child can feel neglected. With that, if you grew up with a sibling who was sick, mom and dad give all of their attention to that sick child and you feel neglected.",
+    "style": "therapeutic",
+    "confidence": 0.4761904761904762,
+    "quality_score": 0.3333333333333333,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.4761904761904762,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 35,
+      "clusters": {
+        "trauma_cluster": [
+          "neglect"
+        ]
+      }
+    }
+  },
+  {
+    "text": "Let me say this. For you to stay together, you hurt the kids. For you to split, you hurt the kids. There's no win-lose option. They are both bad options.",
+    "style": "therapeutic",
+    "confidence": 0.5555555555555556,
+    "quality_score": 0.3888888888888889,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.5555555555555556,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 30,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ]
+      }
+    }
+  },
+  {
+    "text": "It begins to take them and pull them in directions that actually hurt them and hurt others. And result in maladaptations that are very harmful in the long run.",
+    "style": "therapeutic",
+    "confidence": 0.5747126436781609,
+    "quality_score": 0.4022988505747126,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.5747126436781609,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 29,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ]
+      }
+    }
+  },
+  {
+    "text": "Then they hit a real negative stretch. Growth becomes very fragile. It's really easy to regress to old behaviors. But if it pushes you to realize this is temporary, this is forcing me to face fears and issues I never realized I had, it will lead to even greater growth.",
+    "style": "therapeutic",
+    "confidence": 0.4,
+    "quality_score": 0.4,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.4,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 50,
+      "clusters": {
+        "healing_cluster": [
+          "growth"
+        ]
+      }
+    }
+  },
+  {
+    "text": "And if they continue doing that, it's going to continue to hurt you, but it's going to hurt the relationship. And so anger kicks in to say, hey, that's a violation of love.",
+    "style": "therapeutic",
+    "confidence": 0.505050505050505,
+    "quality_score": 0.45853535353535346,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.505050505050505,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 33,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  },
+  {
+    "text": "And if they continue doing that, it's going to continue to hurt you, but it's going to hurt the relationship. And so anger kicks in to say, hey, that's a violation of love.",
+    "style": "therapeutic",
+    "confidence": 0.505050505050505,
+    "quality_score": 0.45853535353535346,
+    "indicators": [],
+    "metadata": {
+      "style_scores": {
+        "therapeutic": 0.505050505050505,
+        "educational": 0.0,
+        "empathetic": 0.0,
+        "practical": 0.0
+      },
+      "word_count": 33,
+      "clusters": {
+        "trauma_cluster": [
+          "hurt"
+        ],
+        "action_cluster": [
+          "do"
+        ]
+      }
+    }
+  }
+]

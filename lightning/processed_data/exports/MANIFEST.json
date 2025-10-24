@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-10-19T14:03:03.968080",
+  "dataset_name": "Pixelated Empathy - Ghost Dataset Pipeline",
+  "version": "1.0",
+  "description": "Comprehensive mental health and crisis training dataset",
+  "files": {
+    "merged_dataset.jsonl": {
+      "path": "ai/lightning/processed_data/merged_dataset.jsonl",
+      "format": "JSONL",
+      "records": 608458,
+      "size_gb": 2.5,
+      "description": "Final merged and deduplicated dataset"
+    },
+    "data_dictionary.json": {
+      "path": "ai/lightning/processed_data/exports/data_dictionary.json",
+      "format": "JSON",
+      "description": "Field definitions and types"
+    },
+    "dataset_sample.csv": {
+      "path": "ai/lightning/processed_data/exports/dataset_sample.csv",
+      "format": "CSV",
+      "records": 10000,
+      "description": "Sample of 10,000 records for preview"
+    },
+    "comprehensive_final_report.json": {
+      "path": "ai/lightning/processed_data/exports/comprehensive_final_report.json",
+      "format": "JSON",
+      "description": "Complete project report with all phase metrics"
+    }
+  },
+  "quality_metrics": {
+    "validity": "100%",
+    "pii_detected": "0%",
+    "duplicates": "0%",
+    "safety_pass_rate": "100%",
+    "average_quality_score": 0.69
+  },
+  "crisis_content": {
+    "total_crisis_records": 7660,
+    "crisis_ratio": "1.26%",
+    "types": {
+      "severe_anxiety": 4987,
+      "abuse": 1826,
+      "severe_depression": 989,
+      "self_harm": 587,
+      "suicidal_ideation": 395,
+      "substance_abuse": 293
+    }
+  },
+  "source_attribution": {
+    "ghost_datasets": 426265,
+    "existing_datasets": 182193,
+    "total": 608458
+  }
+}
