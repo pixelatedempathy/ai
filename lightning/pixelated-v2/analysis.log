@@ -1,0 +1,837 @@
+2025-10-08 00:13:20,516 - pixelated.enhanced_analysis - INFO - Processing transcripts from: /root/pixelated/.notes/transcripts
+2025-10-08 00:13:20,525 - pixelated.enhanced_analysis - INFO - Found 806 transcript files
+2025-10-08 00:13:20,525 - pixelated.enhanced_analysis - INFO - Processing 1/806: When You Do This To A Narcissist They Will Eventually Become Your Slave Until Death ｜Jordan Peterson.txt
+2025-10-08 00:13:20,604 - pixelated.enhanced_analysis - INFO - Processing 2/806: cleaned_When You Do This To A Narcissist They Will Eventually Become Your Slave Until Death ｜Jordan Peterson.txt
+2025-10-08 00:13:20,635 - pixelated.enhanced_analysis - INFO - Processing 3/806: We Need to Talk About Abusive Men： An Interview with Chuck Derry, Gender Violence Institute.txt
+2025-10-08 00:13:20,704 - pixelated.enhanced_analysis - INFO - Processing 4/806: cleaned_We Need to Talk About Abusive Men： An Interview with Chuck Derry, Gender Violence Institute.txt
+2025-10-08 00:13:20,721 - pixelated.enhanced_analysis - INFO - Processing 5/806: Hearing the Voice of God.txt
+2025-10-08 00:13:20,751 - pixelated.enhanced_analysis - INFO - Processing 6/806: cleaned_Hearing the Voice of God.txt
+2025-10-08 00:13:20,830 - pixelated.enhanced_analysis - INFO - Processing 7/806: Self-Compassion： An Antidote to Shame.txt
+2025-10-08 00:13:20,907 - pixelated.enhanced_analysis - INFO - Processing 8/806: cleaned_Self-Compassion： An Antidote to Shame.txt
+2025-10-08 00:13:20,937 - pixelated.enhanced_analysis - INFO - Processing 9/806: Can the Golden Child Turn Into the Scapegoat？.txt
+2025-10-08 00:13:20,946 - pixelated.enhanced_analysis - INFO - Processing 10/806: cleaned_Can the Golden Child Turn Into the Scapegoat？.txt
+2025-10-08 00:13:21,004 - pixelated.enhanced_analysis - INFO - Processing 11/806: Healing From a Narcissistic Parent.txt
+2025-10-08 00:13:21,029 - pixelated.enhanced_analysis - INFO - Processing 12/806: Goodness and Power -  How to Rebuild a Lost Sense of Self.txt
+2025-10-08 00:13:21,109 - pixelated.enhanced_analysis - INFO - Processing 13/806: 5 Emotional Development Delays： What You Need to Know.txt
+2025-10-08 00:13:21,146 - pixelated.enhanced_analysis - INFO - Processing 14/806: 11 Oddly Specific Childhood Trauma Issues.txt
+2025-10-08 00:13:21,241 - pixelated.enhanced_analysis - INFO - Processing 15/806: 6 Common Pitfalls In Healing Childhood Trauma.txt
+2025-10-08 00:13:21,321 - pixelated.enhanced_analysis - INFO - Processing 16/806: Rebuilding Emotional Security After Childhood Trauma.txt
+2025-10-08 00:13:21,432 - pixelated.enhanced_analysis - INFO - Processing 17/806: Is this your real personality？ 5 Childhood Trauma Personalities.txt
+2025-10-08 00:13:21,535 - pixelated.enhanced_analysis - INFO - Processing 18/806: When You Can_t Remember Childhood Trauma.txt
+2025-10-08 00:13:21,606 - pixelated.enhanced_analysis - INFO - Processing 19/806: 9 Random Examples of Shame from PTSD & CPTSD.txt
+2025-10-08 00:13:21,646 - pixelated.enhanced_analysis - INFO - Processing 20/806: Toxic Fathers & The Daughters They Leave Behind.txt
+2025-10-08 00:13:21,744 - pixelated.enhanced_analysis - INFO - Processing 21/806: 6 Unknown Childhood Trauma Triggers.txt
+2025-10-08 00:13:21,818 - pixelated.enhanced_analysis - INFO - Processing 22/806: cleaned_Goodness and Power -  How to Rebuild a Lost Sense of Self.txt
+2025-10-08 00:13:21,909 - pixelated.enhanced_analysis - INFO - Processing 23/806: cleaned_5 Emotional Development Delays： What You Need to Know.txt
+2025-10-08 00:13:21,944 - pixelated.enhanced_analysis - INFO - Processing 24/806: cleaned_When You Can_t Remember Childhood Trauma.txt
+2025-10-08 00:13:22,006 - pixelated.enhanced_analysis - INFO - Processing 25/806: cleaned_Toxic Fathers & The Daughters They Leave Behind.txt
+2025-10-08 00:13:22,047 - pixelated.enhanced_analysis - INFO - Processing 26/806: cleaned_6 Unknown Childhood Trauma Triggers.txt
+2025-10-08 00:13:22,121 - pixelated.enhanced_analysis - INFO - Processing 27/806: cleaned_Rebuilding Emotional Security After Childhood Trauma.txt
+2025-10-08 00:13:22,218 - pixelated.enhanced_analysis - INFO - Processing 28/806: cleaned_9 Random Examples of Shame from PTSD & CPTSD.txt
+2025-10-08 00:13:22,243 - pixelated.enhanced_analysis - INFO - Processing 29/806: cleaned_11 Oddly Specific Childhood Trauma Issues.txt
+2025-10-08 00:13:22,330 - pixelated.enhanced_analysis - INFO - Processing 30/806: cleaned_Healing From a Narcissistic Parent.txt
+2025-10-08 00:13:22,414 - pixelated.enhanced_analysis - INFO - Processing 31/806: cleaned_Is this your real personality？ 5 Childhood Trauma Personalities.txt
+2025-10-08 00:13:22,503 - pixelated.enhanced_analysis - INFO - Processing 32/806: cleaned_6 Common Pitfalls In Healing Childhood Trauma.txt
+2025-10-08 00:13:22,525 - pixelated.enhanced_analysis - INFO - Processing 33/806: What is Betrayal Blindness？ With Dr. Jennifer Freyd ｜ Season 2_ Ep 18.txt
+2025-10-08 00:13:22,621 - pixelated.enhanced_analysis - INFO - Processing 34/806: cleaned_What is Betrayal Blindness？ With Dr. Jennifer Freyd ｜ Season 2_ Ep 18.txt
+2025-10-08 00:13:22,712 - pixelated.enhanced_analysis - INFO - Processing 35/806: The Truth About BPD Attention Seeking Behaviors Explained ｜ Dr. Daniel Fox.txt
+2025-10-08 00:13:22,719 - pixelated.enhanced_analysis - INFO - Processing 36/806: 10 signs of emotionally and physically abusive relationships.txt
+2025-10-08 00:13:22,724 - pixelated.enhanced_analysis - INFO - Processing 37/806: cleaned_10 signs of emotionally and physically abusive relationships.txt
+2025-10-08 00:13:22,730 - pixelated.enhanced_analysis - INFO - Processing 38/806: cleaned_The Truth About BPD Attention Seeking Behaviors Explained ｜ Dr. Daniel Fox.txt
+2025-10-08 00:13:22,736 - pixelated.enhanced_analysis - INFO - Processing 39/806: How to Deal With Betrayal and Take Your Power Back ｜ The Mel Robbins Podcast.txt
+2025-10-08 00:13:22,806 - pixelated.enhanced_analysis - INFO - Processing 40/806: The Best Way to Deal With Narcissists Without Arguing ｜ The Mel Robbins Podcast.txt
+2025-10-08 00:13:22,833 - pixelated.enhanced_analysis - INFO - Processing 41/806: #1 Neurosurgeon： How to Manifest Anything You Want & Unlock the Unlimited Power of Your Mind.txt
+2025-10-08 00:13:22,929 - pixelated.enhanced_analysis - INFO - Processing 42/806: cleaned_#1 Neurosurgeon： How to Manifest Anything You Want & Unlock the Unlimited Power of Your Mind.txt
+2025-10-08 00:13:23,020 - pixelated.enhanced_analysis - INFO - Processing 43/806: cleaned_The Best Way to Deal With Narcissists Without Arguing ｜ The Mel Robbins Podcast.txt
+2025-10-08 00:13:23,047 - pixelated.enhanced_analysis - INFO - Processing 44/806: cleaned_How to Deal With Betrayal and Take Your Power Back ｜ The Mel Robbins Podcast.txt
+2025-10-08 00:13:23,118 - pixelated.enhanced_analysis - INFO - Processing 45/806: 10 Signs of Vindictive Narcissism.txt
+2025-10-08 00:13:23,127 - pixelated.enhanced_analysis - INFO - Processing 46/806: cleaned_10 Signs of Vindictive Narcissism.txt
+2025-10-08 00:13:23,137 - pixelated.enhanced_analysis - INFO - Processing 47/806: Betrayed by Blood： Why Your Family Rejects You - The Shocking Truth Revealed ｜ Brene Brown #npdabuse.txt
+2025-10-08 00:13:23,202 - pixelated.enhanced_analysis - INFO - Processing 48/806: cleaned_Betrayed by Blood： Why Your Family Rejects You - The Shocking Truth Revealed ｜ Brene Brown #npdabuse.txt
+2025-10-08 00:13:23,216 - pixelated.enhanced_analysis - INFO - Processing 49/806: 7 Money Trauma Signs You’re Probably Ignoring with Lewis Howes.txt
+2025-10-08 00:13:23,320 - pixelated.enhanced_analysis - INFO - Processing 50/806: cleaned_7 Money Trauma Signs You’re Probably Ignoring with Lewis Howes.txt
+2025-10-08 00:13:23,429 - pixelated.enhanced_analysis - INFO - Processed 50 files, extracted 4795 segments so far
+2025-10-08 00:13:23,429 - pixelated.enhanced_analysis - INFO - Processing 51/806: When the Body Says No -- Caring for ourselves while caring for others. Dr. Gabor Maté.txt
+2025-10-08 00:13:23,515 - pixelated.enhanced_analysis - INFO - Processing 52/806: cleaned_When the Body Says No -- Caring for ourselves while caring for others. Dr. Gabor Maté.txt
+2025-10-08 00:13:23,601 - pixelated.enhanced_analysis - INFO - Processing 53/806: Dirty Secrets： The Hidden Truth of Family Mobbing and Scapegoat Abuse #scapegoat #toxicfamily.txt
+2025-10-08 00:13:23,613 - pixelated.enhanced_analysis - INFO - Processing 54/806: 16 FAMILY SCAPEGOAT SIGNS： Are You In the _Family Scapegoat_ Role？ #scapegoat #toxicfamily.txt
+2025-10-08 00:13:23,625 - pixelated.enhanced_analysis - INFO - Processing 55/806: cleaned_Dirty Secrets： The Hidden Truth of Family Mobbing and Scapegoat Abuse #scapegoat #toxicfamily.txt
+2025-10-08 00:13:23,637 - pixelated.enhanced_analysis - INFO - Processing 56/806: cleaned_16 FAMILY SCAPEGOAT SIGNS： Are You In the _Family Scapegoat_ Role？ #scapegoat #toxicfamily.txt
+2025-10-08 00:13:23,701 - pixelated.enhanced_analysis - INFO - Processing 57/806: 7 Signs You_re Emotionally Abusive To Others.txt
+2025-10-08 00:13:23,705 - pixelated.enhanced_analysis - INFO - Processing 58/806: cleaned_7 Signs You_re Emotionally Abusive To Others.txt
+2025-10-08 00:13:23,710 - pixelated.enhanced_analysis - INFO - Processing 59/806: Victimized by Your Own Kin？ Family Mobbing the Scapegoat.txt
+2025-10-08 00:13:23,720 - pixelated.enhanced_analysis - INFO - Processing 60/806: cleaned_Victimized by Your Own Kin？ Family Mobbing the Scapegoat.txt
+2025-10-08 00:13:23,732 - pixelated.enhanced_analysis - INFO - Processing 61/806: 9 Signs of Covert Narcissism (That Don’t Look Narcissistic).txt
+2025-10-08 00:13:23,742 - pixelated.enhanced_analysis - INFO - Processing 62/806: cleaned_9 Signs of Covert Narcissism (That Don’t Look Narcissistic).txt
+2025-10-08 00:13:23,802 - pixelated.enhanced_analysis - INFO - Processing 63/806: 7 Silent Moves Empaths Do That Drive Narcissists Absolutely Crazy ｜｜ INSPIRED BY MEL ROBBINS ｜｜.txt
+2025-10-08 00:13:23,818 - pixelated.enhanced_analysis - INFO - Processing 64/806: 7 Things a Narcissist Secretly Wants from You When There_s No Contact ｜｜ INSPIRED BY MEL ROBBINS ｜｜.txt
+2025-10-08 00:13:23,836 - pixelated.enhanced_analysis - INFO - Processing 65/806: cleaned_7 Things a Narcissist Secretly Wants from You When There_s No Contact ｜｜ INSPIRED BY MEL ROBBINS ｜｜.txt
+2025-10-08 00:13:23,907 - pixelated.enhanced_analysis - INFO - Processing 66/806: cleaned_7 Silent Moves Empaths Do That Drive Narcissists Absolutely Crazy ｜｜ INSPIRED BY MEL ROBBINS ｜｜.txt
+2025-10-08 00:13:23,940 - pixelated.enhanced_analysis - INFO - Processing 67/806: Secret Agent： Never Be Yourself At Work! Authenticity Is Quietly Sabotaging You! Evy Poumpouras.txt
+2025-10-08 00:13:24,201 - pixelated.enhanced_analysis - INFO - Processing 68/806: cleaned_Secret Agent： Never Be Yourself At Work! Authenticity Is Quietly Sabotaging You! Evy Poumpouras.txt
+2025-10-08 00:13:24,413 - pixelated.enhanced_analysis - INFO - Processing 69/806: Five CRUCIAL PHASES OF HEALING Complex PTSD.txt
+2025-10-08 00:13:24,422 - pixelated.enhanced_analysis - INFO - Processing 70/806: If You See These Early Signs… RUN.txt
+2025-10-08 00:13:24,432 - pixelated.enhanced_analysis - INFO - Processing 71/806: Try These Emergency Measures to Re-Regulate Anywhere.txt
+2025-10-08 00:13:24,442 - pixelated.enhanced_analysis - INFO - Processing 72/806: How to Heal Your Wounded Soul After Trauma (4-Video Compilation).txt
+2025-10-08 00:13:24,526 - pixelated.enhanced_analysis - INFO - Processing 73/806: Heal Dysregulation To Bring Calm To Your Emotions and Your Nervous System.txt
+2025-10-08 00:13:24,537 - pixelated.enhanced_analysis - INFO - Processing 74/806: I Had No Friends… But Here’s What Finally Changed.txt
+2025-10-08 00:13:24,603 - pixelated.enhanced_analysis - INFO - Processing 75/806: Here are Signs No One Listened To You in Childhood.txt
+2025-10-08 00:13:24,617 - pixelated.enhanced_analysis - INFO - Processing 76/806: cleaned_Heal Dysregulation To Bring Calm To Your Emotions and Your Nervous System.txt
+2025-10-08 00:13:24,627 - pixelated.enhanced_analysis - INFO - Processing 77/806: cleaned_If You See These Early Signs… RUN.txt
+2025-10-08 00:13:24,637 - pixelated.enhanced_analysis - INFO - Processing 78/806: cleaned_Try These Emergency Measures to Re-Regulate Anywhere.txt
+2025-10-08 00:13:24,647 - pixelated.enhanced_analysis - INFO - Processing 79/806: cleaned_Here are Signs No One Listened To You in Childhood.txt
+2025-10-08 00:13:24,709 - pixelated.enhanced_analysis - INFO - Processing 80/806: cleaned_I Had No Friends… But Here’s What Finally Changed.txt
+2025-10-08 00:13:24,724 - pixelated.enhanced_analysis - INFO - Processing 81/806: cleaned_Five CRUCIAL PHASES OF HEALING Complex PTSD.txt
+2025-10-08 00:13:24,733 - pixelated.enhanced_analysis - INFO - Processing 82/806: cleaned_How to Heal Your Wounded Soul After Trauma (4-Video Compilation).txt
+2025-10-08 00:13:24,827 - pixelated.enhanced_analysis - INFO - Processing 83/806: What Betrayal Trauma Does to the Brain and Body： Tools to Heal.txt
+2025-10-08 00:13:24,851 - pixelated.enhanced_analysis - INFO - Processing 84/806: cleaned_What Betrayal Trauma Does to the Brain and Body： Tools to Heal.txt
+2025-10-08 00:13:24,923 - pixelated.enhanced_analysis - INFO - Processing 85/806: Why Do People Seek Attention and Approval？.txt
+2025-10-08 00:13:24,932 - pixelated.enhanced_analysis - INFO - Processing 86/806: Trauma Bonding ｜ Understanding Trauma - Part 31 ｜ #complextrauma.txt
+2025-10-08 00:13:25,018 - pixelated.enhanced_analysis - INFO - Processing 87/806: How Being Betrayed Changes You.txt
+2025-10-08 00:13:25,032 - pixelated.enhanced_analysis - INFO - Processing 88/806: Why Narcissists Don’t Change Without Consequences.txt
+2025-10-08 00:13:25,040 - pixelated.enhanced_analysis - INFO - Processing 89/806: Shame and Complex Trauma - Part 2⧸7 - Unhealthy Solutions - Repeat.txt
+2025-10-08 00:13:25,134 - pixelated.enhanced_analysis - INFO - Processing 90/806: Shame and Complex Trauma - Part 4⧸6 - Shame Test.txt
+2025-10-08 00:13:25,209 - pixelated.enhanced_analysis - INFO - Processing 91/806: Relationships and Complex Trauma - Part 11⧸11 - When to End One.txt
+2025-10-08 00:13:25,241 - pixelated.enhanced_analysis - INFO - Processing 92/806: Shame and Complex Trauma - Part 6⧸6 - Healing.txt
+2025-10-08 00:13:25,324 - pixelated.enhanced_analysis - INFO - Processing 93/806: When a Narcissist is Triggered, Others Pay the Price.txt
+2025-10-08 00:13:25,329 - pixelated.enhanced_analysis - INFO - Processing 94/806: Trust and Commitment： The Foundations of Healing from Complex Trauma.txt
+2025-10-08 00:13:25,341 - pixelated.enhanced_analysis - INFO - Processing 95/806: 26 Signs of Emotional Depletion.txt
+2025-10-08 00:13:25,403 - pixelated.enhanced_analysis - INFO - Processing 96/806: How the Pattern of Narcissism is Misunderstood.txt
+2025-10-08 00:13:25,413 - pixelated.enhanced_analysis - INFO - Processing 97/806: Being Your Own Dark Cloud： How Complex Trauma Can Cause You to Fall Into a Negative Mindset.txt
+2025-10-08 00:13:25,432 - pixelated.enhanced_analysis - INFO - Processing 98/806: How to Spot a Narcissist - 18 Characteristics of Narcissism ｜ Complex Trauma Recovery.txt
+2025-10-08 00:13:25,443 - pixelated.enhanced_analysis - INFO - Processing 99/806: Anger and Complex Trauma - Part 1⧸11 - Intro.txt
+2025-10-08 00:13:25,544 - pixelated.enhanced_analysis - INFO - Processing 100/806: Complex Trauma Explained： Why Fear Controls Our Responses.txt
+2025-10-08 00:13:25,618 - pixelated.enhanced_analysis - INFO - Processed 100 files, extracted 8937 segments so far
+2025-10-08 00:13:25,618 - pixelated.enhanced_analysis - INFO - Processing 101/806: Shame and Complex Trauma - Part 1⧸6 - What is Shame？.txt
+2025-10-08 00:13:25,713 - pixelated.enhanced_analysis - INFO - Processing 102/806: Being an Unwanted Child Comes with a Lifetime of Trauma.txt
+2025-10-08 00:13:25,729 - pixelated.enhanced_analysis - INFO - Processing 103/806: How Your Trauma Explains Your Coping Mechanisms - Part 1.txt
+2025-10-08 00:13:25,819 - pixelated.enhanced_analysis - INFO - Processing 104/806: Codependency and Complex Trauma - Part 7⧸10 - Attachment Issues.txt
+2025-10-08 00:13:25,914 - pixelated.enhanced_analysis - INFO - Processing 105/806: How to Start Healing from Emotional Dysregulation.txt
+2025-10-08 00:13:25,921 - pixelated.enhanced_analysis - INFO - Processing 106/806: Listening to Shame.txt
+2025-10-08 00:13:26,001 - pixelated.enhanced_analysis - INFO - Processing 107/806: Shedding the Weight of Negativity is Essential for Freedom from Complex Trauma.txt
+2025-10-08 00:13:26,016 - pixelated.enhanced_analysis - INFO - Processing 108/806: The Characteristics of Complex Trauma - Part 20 - Emotional Dysregulation.txt
+2025-10-08 00:13:26,107 - pixelated.enhanced_analysis - INFO - Processing 109/806: Planting Seeds of Doubt： Signs You_re Being Manipulated to Question Yourself.txt
+2025-10-08 00:13:26,123 - pixelated.enhanced_analysis - INFO - Processing 110/806: Being the Family Scapegoat or Problem Child： Honesty About Dysfunction.txt
+2025-10-08 00:13:26,132 - pixelated.enhanced_analysis - INFO - Processing 111/806: How to Stop Procrastinating & Heal Feelings of Paralysis.txt
+2025-10-08 00:13:26,145 - pixelated.enhanced_analysis - INFO - Processing 112/806: Why Boundaries are More Than Just Saying No ❌.txt
+2025-10-08 00:13:26,147 - pixelated.enhanced_analysis - INFO - Processing 113/806: Why Shame Affects 100_ of People with Complex Trauma.txt
+2025-10-08 00:13:26,206 - pixelated.enhanced_analysis - INFO - Processing 114/806: How to Set Boundaries and Stop People Pleasing - Boundaries and Complex Trauma - Part 2⧸12.txt
+2025-10-08 00:13:26,244 - pixelated.enhanced_analysis - INFO - Processing 115/806: Drawn to Criminal Activity - Complex Trauma Prisons.txt
+2025-10-08 00:13:26,343 - pixelated.enhanced_analysis - INFO - Processing 116/806: How Trauma Keeps You Disconnected Without Realizing It.txt
+2025-10-08 00:13:26,414 - pixelated.enhanced_analysis - INFO - Processing 117/806: Shame and Complex Trauma - Part 5⧸6.txt
+2025-10-08 00:13:26,510 - pixelated.enhanced_analysis - INFO - Processing 118/806: Relationships and Complex Trauma - Part 2⧸11 - Family Roles - Part 1⧸2.txt
+2025-10-08 00:13:26,534 - pixelated.enhanced_analysis - INFO - Processing 119/806: How Complex Trauma Leads to a Hypersensitivity to Disrespect and Criticism.txt
+2025-10-08 00:13:26,542 - pixelated.enhanced_analysis - INFO - Processing 120/806: Are You Seeking Approval or Attention？ - Complex Trauma Prisons.txt
+2025-10-08 00:13:26,614 - pixelated.enhanced_analysis - INFO - Processing 121/806: How Narcissistic Relationships Create Complex Trauma.txt
+2025-10-08 00:13:26,623 - pixelated.enhanced_analysis - INFO - Processing 122/806: How to Handle a Narcissist (Q&A with Tim, Part 8).txt
+2025-10-08 00:13:26,645 - pixelated.enhanced_analysis - INFO - Processing 123/806: When Narcissists Discard and Devalue： The Late Stages of Codependent Narcissistic Relationships.txt
+2025-10-08 00:13:26,701 - pixelated.enhanced_analysis - INFO - Processing 124/806: Anger and Complex Trauma - Part 9⧸11 - Characteristics of Abusers.txt
+2025-10-08 00:13:26,730 - pixelated.enhanced_analysis - INFO - Processing 125/806: Depression & The Fear of Hope： Complex Trauma_s Double Bind.txt
+2025-10-08 00:13:26,739 - pixelated.enhanced_analysis - INFO - Processing 126/806: Your Gut, Your Boundaries, Your Motivation—How Trauma Rewires It All.txt
+2025-10-08 00:13:26,803 - pixelated.enhanced_analysis - INFO - Processing 127/806: The Trauma Loop： Why You Keep Ending Up in the Same Pain.txt
+2025-10-08 00:13:26,816 - pixelated.enhanced_analysis - INFO - Processing 128/806: Why You Can_t Let Go of the Past.txt
+2025-10-08 00:13:26,827 - pixelated.enhanced_analysis - INFO - Processing 129/806: Here_s Why You Feel Emotionally Depleted.txt
+2025-10-08 00:13:26,841 - pixelated.enhanced_analysis - INFO - Processing 130/806: The Characteristics of Complex Trauma - Part 23 - Afraid To Be A Burden.txt
+2025-10-08 00:13:26,906 - pixelated.enhanced_analysis - INFO - Processing 131/806: Dating and Intimate Relationship Lies - Re-Parenting - Part 116.txt
+2025-10-08 00:13:26,930 - pixelated.enhanced_analysis - INFO - Processing 132/806: The Basics of Anger Issues and Complex Trauma.txt
+2025-10-08 00:13:26,935 - pixelated.enhanced_analysis - INFO - Processing 133/806: The Basics of Complex Trauma： Understanding the Hidden Impact of Unmet Needs.txt
+2025-10-08 00:13:27,004 - pixelated.enhanced_analysis - INFO - Processing 134/806: Maladaptive Daydreaming： Avoiding Pain by Fantasizing.txt
+2025-10-08 00:13:27,010 - pixelated.enhanced_analysis - INFO - Processing 135/806: Why You Are Afraid to Be a Burden.txt
+2025-10-08 00:13:27,016 - pixelated.enhanced_analysis - INFO - Processing 136/806: How Complex Trauma Affects Emotional Resilience and Leads to Long-Term Consequences.txt
+2025-10-08 00:13:27,030 - pixelated.enhanced_analysis - INFO - Processing 137/806: Why You_re Afraid of Love, Success, and Change： Trauma’s Quiet Rules.txt
+2025-10-08 00:13:27,039 - pixelated.enhanced_analysis - INFO - Processing 138/806: How Complex Trauma Messes With Relationships ｜ The Characteristics of Complex Trauma - Part 10.txt
+2025-10-08 00:13:27,113 - pixelated.enhanced_analysis - INFO - Processing 139/806: Brain Fog and Complex Trauma.txt
+2025-10-08 00:13:27,123 - pixelated.enhanced_analysis - INFO - Processing 140/806: What Complex Trauma Survivors Need to Know About Their Anger.txt
+2025-10-08 00:13:27,132 - pixelated.enhanced_analysis - INFO - Processing 141/806: Sexuality as Love - Complex Trauma Prisons.txt
+2025-10-08 00:13:27,209 - pixelated.enhanced_analysis - INFO - Processing 142/806: Shame and Complex Trauma - Part 3⧸6.txt
+2025-10-08 00:13:27,234 - pixelated.enhanced_analysis - INFO - Processing 143/806: Realistic Recovery - Part 1⧸13 - Seven Levels of Change.txt
+2025-10-08 00:13:27,308 - pixelated.enhanced_analysis - INFO - Processing 144/806: Healing ｜ Understanding Trauma - Part 10 ｜ #complextrauma.txt
+2025-10-08 00:13:27,343 - pixelated.enhanced_analysis - INFO - Processing 145/806: Everyone Has a Sex Life： 4 Ways Trauma Affects Sexuality and Intimacy.txt
+2025-10-08 00:13:27,347 - pixelated.enhanced_analysis - INFO - Processing 146/806: Being a Chameleon： Complex Trauma_s Effect on Your Sense of Self.txt
+2025-10-08 00:13:27,404 - pixelated.enhanced_analysis - INFO - Processing 147/806: The Difference Between Guilt and Shame - Why It Matters for Complex Trauma Healing and Recovery.txt
+2025-10-08 00:13:27,424 - pixelated.enhanced_analysis - INFO - Processing 148/806: Set Boundaries and Stop People Pleasing： The Subjugation Life Trap - Complex Trauma Prisons.txt
+2025-10-08 00:13:27,449 - pixelated.enhanced_analysis - INFO - Processing 149/806: Depletion and Self-Care ｜ Re-Parenting - Part 89 ｜ #complextrauma.txt
+2025-10-08 00:13:27,521 - pixelated.enhanced_analysis - INFO - Processing 150/806: Why Do People Become Abusive？.txt
+2025-10-08 00:13:27,526 - pixelated.enhanced_analysis - INFO - Processed 150 files, extracted 12395 segments so far
+2025-10-08 00:13:27,526 - pixelated.enhanced_analysis - INFO - Processing 151/806: How Does Complex Trauma Cause People to Confuse Validation With Love？ ｜ With @lisamtickel.txt
+2025-10-08 00:13:27,534 - pixelated.enhanced_analysis - INFO - Processing 152/806: How Do People Become so Angry？ - Complex Trauma.txt
+2025-10-08 00:13:27,539 - pixelated.enhanced_analysis - INFO - Processing 153/806: ＂Am I Ever Going to Heal from My Shame？＂ ｜ Healing Shame as Part of Complex Trauma Recovery.txt
+2025-10-08 00:13:27,615 - pixelated.enhanced_analysis - INFO - Processing 154/806: ＂If You Leave Me, Can I Come Too？＂ - Codependency and Complex Trauma - Part 1⧸10.txt
+2025-10-08 00:13:27,645 - pixelated.enhanced_analysis - INFO - Processing 155/806: Anger and Complex Trauma - Part 11⧸11 - Gaslighting.txt
+2025-10-08 00:13:27,725 - pixelated.enhanced_analysis - INFO - Processing 156/806: Sex ｜ Re-Parenting - Part 25 ｜ #complextrauma.txt
+2025-10-08 00:13:27,803 - pixelated.enhanced_analysis - INFO - Processing 157/806: The Key to Letting Go - Healing Complex Trauma.txt
+2025-10-08 00:13:27,812 - pixelated.enhanced_analysis - INFO - Processing 158/806: Your Money Trauma Starts at Childhood.txt
+2025-10-08 00:13:27,837 - pixelated.enhanced_analysis - INFO - Processing 159/806: _Big T_ vs _Little t_ Trauma ｜ Understanding Trauma - Part 28 ｜ #complextrauma.txt
+2025-10-08 00:13:27,845 - pixelated.enhanced_analysis - INFO - Processing 160/806: What You NEED to Know After Ending a Relationship with a Narcissist.txt
+2025-10-08 00:13:27,907 - pixelated.enhanced_analysis - INFO - Processing 161/806: Surviving vs Thriving： Moving Beyond Survival Mode After Complex Trauma.txt
+2025-10-08 00:13:27,923 - pixelated.enhanced_analysis - INFO - Processing 162/806: What Complex Trauma Does to Love, Attachment, and Loyalty.txt
+2025-10-08 00:13:27,932 - pixelated.enhanced_analysis - INFO - Processing 163/806: These 12 Needs Are Non-Negotiable for a Healthy & Whole Life ｜ #complextrauma #whatstuck.txt
+2025-10-08 00:13:28,009 - pixelated.enhanced_analysis - INFO - Processing 164/806: Recovery and Letting Go ｜ Re-Parenting - Part 93 ｜ #complextrauma.txt
+2025-10-08 00:13:28,105 - pixelated.enhanced_analysis - INFO - Processing 165/806: Why Complex Trauma Survivors Struggle with Money.txt
+2025-10-08 00:13:28,115 - pixelated.enhanced_analysis - INFO - Processing 166/806: Trapped in a Cycle of Burnout： the Grown-up Hero Child.txt
+2025-10-08 00:13:28,125 - pixelated.enhanced_analysis - INFO - Processing 167/806: Signs and Relationship Patterns of Dating a Narcissist - Codependency and Complex Trauma - Part 3⧸10.txt
+2025-10-08 00:13:28,220 - pixelated.enhanced_analysis - INFO - Processing 168/806: What Complex Trauma Really Does to Your Emotions ｜ The Characteristics of Complex Trauma - Part 7.txt
+2025-10-08 00:13:28,246 - pixelated.enhanced_analysis - INFO - Processing 169/806: Codependency and Complex Trauma - Part 2⧸10 - Narcissist or Co-Narcissist？.txt
+2025-10-08 00:13:28,323 - pixelated.enhanced_analysis - INFO - Processing 170/806: The Fear-Trauma Connection Nobody Talks About.txt
+2025-10-08 00:13:28,332 - pixelated.enhanced_analysis - INFO - Processing 171/806: Shame and Complex Trauma - Part 2⧸6 - Unhealthy Solutions.txt
+2025-10-08 00:13:28,408 - pixelated.enhanced_analysis - INFO - Processing 172/806: The 16 Reasons You Are Sabotaging the Good Things.txt
+2025-10-08 00:13:28,418 - pixelated.enhanced_analysis - INFO - Processing 173/806: Why Procrastination Is Tied to Complex Trauma and How to Heal It.txt
+2025-10-08 00:13:28,445 - pixelated.enhanced_analysis - INFO - Processing 174/806: Adult Children of Wounded Parents： Reclaiming Your Worth & Identity ｜ Mommy & Daddy Issues, Part 2.txt
+2025-10-08 00:13:28,516 - pixelated.enhanced_analysis - INFO - Processing 175/806: Betrayal Trauma ｜ Understanding Trauma - Part 13 ｜ #complextrauma.txt
+2025-10-08 00:13:28,546 - pixelated.enhanced_analysis - INFO - Processing 176/806: cleaned_The Basics of Anger Issues and Complex Trauma.txt
+2025-10-08 00:13:28,552 - pixelated.enhanced_analysis - INFO - Processing 177/806: cleaned_The Trauma Loop： Why You Keep Ending Up in the Same Pain.txt
+2025-10-08 00:13:28,613 - pixelated.enhanced_analysis - INFO - Processing 178/806: cleaned_Why You Can_t Let Go of the Past.txt
+2025-10-08 00:13:28,624 - pixelated.enhanced_analysis - INFO - Processing 179/806: cleaned_How Your Trauma Explains Your Coping Mechanisms - Part 1.txt
+2025-10-08 00:13:28,648 - pixelated.enhanced_analysis - INFO - Processing 180/806: cleaned_The Characteristics of Complex Trauma - Part 23 - Afraid To Be A Burden.txt
+2025-10-08 00:13:28,715 - pixelated.enhanced_analysis - INFO - Processing 181/806: cleaned_The Characteristics of Complex Trauma - Part 20 - Emotional Dysregulation.txt
+2025-10-08 00:13:28,741 - pixelated.enhanced_analysis - INFO - Processing 182/806: cleaned_Depression & The Fear of Hope： Complex Trauma_s Double Bind.txt
+2025-10-08 00:13:28,802 - pixelated.enhanced_analysis - INFO - Processing 183/806: cleaned_Betrayal Trauma ｜ Understanding Trauma - Part 13 ｜ #complextrauma.txt
+2025-10-08 00:13:28,828 - pixelated.enhanced_analysis - INFO - Processing 184/806: cleaned_26 Signs of Emotional Depletion.txt
+2025-10-08 00:13:28,840 - pixelated.enhanced_analysis - INFO - Processing 185/806: cleaned_Trust and Commitment： The Foundations of Healing from Complex Trauma.txt
+2025-10-08 00:13:28,852 - pixelated.enhanced_analysis - INFO - Processing 186/806: cleaned_Depletion and Self-Care ｜ Re-Parenting - Part 89 ｜ #complextrauma.txt
+2025-10-08 00:13:28,922 - pixelated.enhanced_analysis - INFO - Processing 187/806: cleaned_How to Set Boundaries and Stop People Pleasing - Boundaries and Complex Trauma - Part 2⧸12.txt
+2025-10-08 00:13:28,945 - pixelated.enhanced_analysis - INFO - Processing 188/806: cleaned_Your Gut, Your Boundaries, Your Motivation—How Trauma Rewires It All.txt
+2025-10-08 00:13:29,008 - pixelated.enhanced_analysis - INFO - Processing 189/806: cleaned_Brain Fog and Complex Trauma.txt
+2025-10-08 00:13:29,020 - pixelated.enhanced_analysis - INFO - Processing 190/806: cleaned_Healing ｜ Understanding Trauma - Part 10 ｜ #complextrauma.txt
+2025-10-08 00:13:29,102 - pixelated.enhanced_analysis - INFO - Processing 191/806: cleaned_Shedding the Weight of Negativity is Essential for Freedom from Complex Trauma.txt
+2025-10-08 00:13:29,111 - pixelated.enhanced_analysis - INFO - Processing 192/806: cleaned_Drawn to Criminal Activity - Complex Trauma Prisons.txt
+2025-10-08 00:13:29,141 - pixelated.enhanced_analysis - INFO - Processing 193/806: cleaned_Shame and Complex Trauma - Part 4⧸6 - Shame Test.txt
+2025-10-08 00:13:29,220 - pixelated.enhanced_analysis - INFO - Processing 194/806: cleaned_How Complex Trauma Messes With Relationships ｜ The Characteristics of Complex Trauma - Part 10.txt
+2025-10-08 00:13:29,247 - pixelated.enhanced_analysis - INFO - Processing 195/806: cleaned_Are You Seeking Approval or Attention？ - Complex Trauma Prisons.txt
+2025-10-08 00:13:29,319 - pixelated.enhanced_analysis - INFO - Processing 196/806: cleaned_The Basics of Complex Trauma： Understanding the Hidden Impact of Unmet Needs.txt
+2025-10-08 00:13:29,336 - pixelated.enhanced_analysis - INFO - Processing 197/806: cleaned_Why You_re Afraid of Love, Success, and Change： Trauma’s Quiet Rules.txt
+2025-10-08 00:13:29,346 - pixelated.enhanced_analysis - INFO - Processing 198/806: cleaned_＂Am I Ever Going to Heal from My Shame？＂ ｜ Healing Shame as Part of Complex Trauma Recovery.txt
+2025-10-08 00:13:29,421 - pixelated.enhanced_analysis - INFO - Processing 199/806: cleaned_How Being Betrayed Changes You.txt
+2025-10-08 00:13:29,430 - pixelated.enhanced_analysis - INFO - Processing 200/806: cleaned_The Key to Letting Go - Healing Complex Trauma.txt
+2025-10-08 00:13:29,440 - pixelated.enhanced_analysis - INFO - Processed 200 files, extracted 16349 segments so far
+2025-10-08 00:13:29,440 - pixelated.enhanced_analysis - INFO - Processing 201/806: cleaned_Why Shame Affects 100_ of People with Complex Trauma.txt
+2025-10-08 00:13:29,447 - pixelated.enhanced_analysis - INFO - Processing 202/806: cleaned_Relationships and Complex Trauma - Part 2⧸11 - Family Roles - Part 1⧸2.txt
+2025-10-08 00:13:29,520 - pixelated.enhanced_analysis - INFO - Processing 203/806: cleaned_Shame and Complex Trauma - Part 1⧸6 - What is Shame？.txt
+2025-10-08 00:13:29,552 - pixelated.enhanced_analysis - INFO - Processing 204/806: cleaned_What Complex Trauma Survivors Need to Know About Their Anger.txt
+2025-10-08 00:13:29,609 - pixelated.enhanced_analysis - INFO - Processing 205/806: cleaned_Why Boundaries are More Than Just Saying No ❌.txt
+2025-10-08 00:13:29,610 - pixelated.enhanced_analysis - INFO - Processing 206/806: cleaned_Planting Seeds of Doubt： Signs You_re Being Manipulated to Question Yourself.txt
+2025-10-08 00:13:29,619 - pixelated.enhanced_analysis - INFO - Processing 207/806: cleaned_Adult Children of Wounded Parents： Reclaiming Your Worth & Identity ｜ Mommy & Daddy Issues, Part 2.txt
+2025-10-08 00:13:29,637 - pixelated.enhanced_analysis - INFO - Processing 208/806: cleaned_Why Procrastination Is Tied to Complex Trauma and How to Heal It.txt
+2025-10-08 00:13:29,716 - pixelated.enhanced_analysis - INFO - Processing 209/806: cleaned_How the Pattern of Narcissism is Misunderstood.txt
+2025-10-08 00:13:29,721 - pixelated.enhanced_analysis - INFO - Processing 210/806: cleaned_Here_s Why You Feel Emotionally Depleted.txt
+2025-10-08 00:13:29,735 - pixelated.enhanced_analysis - INFO - Processing 211/806: cleaned_Anger and Complex Trauma - Part 11⧸11 - Gaslighting.txt
+2025-10-08 00:13:29,815 - pixelated.enhanced_analysis - INFO - Processing 212/806: cleaned_Signs and Relationship Patterns of Dating a Narcissist - Codependency and Complex Trauma - Part 3⧸10.txt
+2025-10-08 00:13:29,846 - pixelated.enhanced_analysis - INFO - Processing 213/806: cleaned_Being the Family Scapegoat or Problem Child： Honesty About Dysfunction.txt
+2025-10-08 00:13:29,904 - pixelated.enhanced_analysis - INFO - Processing 214/806: cleaned_Realistic Recovery - Part 1⧸13 - Seven Levels of Change.txt
+2025-10-08 00:13:29,931 - pixelated.enhanced_analysis - INFO - Processing 215/806: cleaned_The Fear-Trauma Connection Nobody Talks About.txt
+2025-10-08 00:13:29,941 - pixelated.enhanced_analysis - INFO - Processing 216/806: cleaned_Anger and Complex Trauma - Part 1⧸11 - Intro.txt
+2025-10-08 00:13:30,022 - pixelated.enhanced_analysis - INFO - Processing 217/806: cleaned_The Difference Between Guilt and Shame - Why It Matters for Complex Trauma Healing and Recovery.txt
+2025-10-08 00:13:30,041 - pixelated.enhanced_analysis - INFO - Processing 218/806: cleaned_What Complex Trauma Does to Love, Attachment, and Loyalty.txt
+2025-10-08 00:13:30,047 - pixelated.enhanced_analysis - INFO - Processing 219/806: cleaned_Why Do People Seek Attention and Approval？.txt
+2025-10-08 00:13:30,104 - pixelated.enhanced_analysis - INFO - Processing 220/806: cleaned_What Complex Trauma Really Does to Your Emotions ｜ The Characteristics of Complex Trauma - Part 7.txt
+2025-10-08 00:13:30,130 - pixelated.enhanced_analysis - INFO - Processing 221/806: cleaned_What You NEED to Know After Ending a Relationship with a Narcissist.txt
+2025-10-08 00:13:30,138 - pixelated.enhanced_analysis - INFO - Processing 222/806: cleaned_How to Handle a Narcissist (Q&A with Tim, Part 8).txt
+2025-10-08 00:13:30,211 - pixelated.enhanced_analysis - INFO - Processing 223/806: cleaned_Dating and Intimate Relationship Lies - Re-Parenting - Part 116.txt
+2025-10-08 00:13:30,234 - pixelated.enhanced_analysis - INFO - Processing 224/806: cleaned_How Trauma Keeps You Disconnected Without Realizing It.txt
+2025-10-08 00:13:30,250 - pixelated.enhanced_analysis - INFO - Processing 225/806: cleaned_Shame and Complex Trauma - Part 5⧸6.txt
+2025-10-08 00:13:30,328 - pixelated.enhanced_analysis - INFO - Processing 226/806: cleaned_Trauma Bonding ｜ Understanding Trauma - Part 31 ｜ #complextrauma.txt
+2025-10-08 00:13:30,410 - pixelated.enhanced_analysis - INFO - Processing 227/806: cleaned_Recovery and Letting Go ｜ Re-Parenting - Part 93 ｜ #complextrauma.txt
+2025-10-08 00:13:30,507 - pixelated.enhanced_analysis - INFO - Processing 228/806: cleaned_The 16 Reasons You Are Sabotaging the Good Things.txt
+2025-10-08 00:13:30,519 - pixelated.enhanced_analysis - INFO - Processing 229/806: cleaned_When a Narcissist is Triggered, Others Pay the Price.txt
+2025-10-08 00:13:30,524 - pixelated.enhanced_analysis - INFO - Processing 230/806: cleaned_Being an Unwanted Child Comes with a Lifetime of Trauma.txt
+2025-10-08 00:13:30,535 - pixelated.enhanced_analysis - INFO - Processing 231/806: cleaned_Sexuality as Love - Complex Trauma Prisons.txt
+2025-10-08 00:13:30,611 - pixelated.enhanced_analysis - INFO - Processing 232/806: cleaned_Trapped in a Cycle of Burnout： the Grown-up Hero Child.txt
+2025-10-08 00:13:30,618 - pixelated.enhanced_analysis - INFO - Processing 233/806: cleaned_Codependency and Complex Trauma - Part 7⧸10 - Attachment Issues.txt
+2025-10-08 00:13:30,728 - pixelated.enhanced_analysis - INFO - Processing 234/806: cleaned_Maladaptive Daydreaming： Avoiding Pain by Fantasizing.txt
+2025-10-08 00:13:30,736 - pixelated.enhanced_analysis - INFO - Processing 235/806: cleaned_Why Narcissists Don’t Change Without Consequences.txt
+2025-10-08 00:13:30,743 - pixelated.enhanced_analysis - INFO - Processing 236/806: cleaned_Shame and Complex Trauma - Part 2⧸7 - Unhealthy Solutions - Repeat.txt
+2025-10-08 00:13:30,824 - pixelated.enhanced_analysis - INFO - Processing 237/806: cleaned_Surviving vs Thriving： Moving Beyond Survival Mode After Complex Trauma.txt
+2025-10-08 00:13:30,834 - pixelated.enhanced_analysis - INFO - Processing 238/806: cleaned_Why Do People Become Abusive？.txt
+2025-10-08 00:13:30,839 - pixelated.enhanced_analysis - INFO - Processing 239/806: cleaned_＂If You Leave Me, Can I Come Too？＂ - Codependency and Complex Trauma - Part 1⧸10.txt
+2025-10-08 00:13:30,940 - pixelated.enhanced_analysis - INFO - Processing 240/806: cleaned_Listening to Shame.txt
+2025-10-08 00:13:31,017 - pixelated.enhanced_analysis - INFO - Processing 241/806: cleaned_How Do People Become so Angry？ - Complex Trauma.txt
+2025-10-08 00:13:31,026 - pixelated.enhanced_analysis - INFO - Processing 242/806: cleaned_Why Complex Trauma Survivors Struggle with Money.txt
+2025-10-08 00:13:31,036 - pixelated.enhanced_analysis - INFO - Processing 243/806: cleaned_Set Boundaries and Stop People Pleasing： The Subjugation Life Trap - Complex Trauma Prisons.txt
+2025-10-08 00:13:31,132 - pixelated.enhanced_analysis - INFO - Processing 244/806: cleaned_How to Spot a Narcissist - 18 Characteristics of Narcissism ｜ Complex Trauma Recovery.txt
+2025-10-08 00:13:31,143 - pixelated.enhanced_analysis - INFO - Processing 245/806: cleaned_Complex Trauma Explained： Why Fear Controls Our Responses.txt
+2025-10-08 00:13:31,213 - pixelated.enhanced_analysis - INFO - Processing 246/806: cleaned__Big T_ vs _Little t_ Trauma ｜ Understanding Trauma - Part 28 ｜ #complextrauma.txt
+2025-10-08 00:13:31,226 - pixelated.enhanced_analysis - INFO - Processing 247/806: cleaned_How Complex Trauma Affects Emotional Resilience and Leads to Long-Term Consequences.txt
+2025-10-08 00:13:31,252 - pixelated.enhanced_analysis - INFO - Processing 248/806: cleaned_Being a Chameleon： Complex Trauma_s Effect on Your Sense of Self.txt
+2025-10-08 00:13:31,308 - pixelated.enhanced_analysis - INFO - Processing 249/806: cleaned_Relationships and Complex Trauma - Part 11⧸11 - When to End One.txt
+2025-10-08 00:13:31,337 - pixelated.enhanced_analysis - INFO - Processing 250/806: cleaned_Your Money Trauma Starts at Childhood.txt
+2025-10-08 00:13:31,412 - pixelated.enhanced_analysis - INFO - Processed 250 files, extracted 19943 segments so far
+2025-10-08 00:13:31,412 - pixelated.enhanced_analysis - INFO - Processing 251/806: cleaned_How Complex Trauma Leads to a Hypersensitivity to Disrespect and Criticism.txt
+2025-10-08 00:13:31,420 - pixelated.enhanced_analysis - INFO - Processing 252/806: cleaned_How to Stop Procrastinating & Heal Feelings of Paralysis.txt
+2025-10-08 00:13:31,429 - pixelated.enhanced_analysis - INFO - Processing 253/806: cleaned_Being Your Own Dark Cloud： How Complex Trauma Can Cause You to Fall Into a Negative Mindset.txt
+2025-10-08 00:13:31,441 - pixelated.enhanced_analysis - INFO - Processing 254/806: cleaned_These 12 Needs Are Non-Negotiable for a Healthy & Whole Life ｜ #complextrauma #whatstuck.txt
+2025-10-08 00:13:31,507 - pixelated.enhanced_analysis - INFO - Processing 255/806: cleaned_How Does Complex Trauma Cause People to Confuse Validation With Love？ ｜ With @lisamtickel.txt
+2025-10-08 00:13:31,515 - pixelated.enhanced_analysis - INFO - Processing 256/806: cleaned_Codependency and Complex Trauma - Part 2⧸10 - Narcissist or Co-Narcissist？.txt
+2025-10-08 00:13:31,542 - pixelated.enhanced_analysis - INFO - Processing 257/806: cleaned_Sex ｜ Re-Parenting - Part 25 ｜ #complextrauma.txt
+2025-10-08 00:13:31,621 - pixelated.enhanced_analysis - INFO - Processing 258/806: cleaned_Shame and Complex Trauma - Part 2⧸6 - Unhealthy Solutions.txt
+2025-10-08 00:13:31,647 - pixelated.enhanced_analysis - INFO - Processing 259/806: cleaned_Anger and Complex Trauma - Part 9⧸11 - Characteristics of Abusers.txt
+2025-10-08 00:13:31,723 - pixelated.enhanced_analysis - INFO - Processing 260/806: cleaned_How Narcissistic Relationships Create Complex Trauma.txt
+2025-10-08 00:13:31,732 - pixelated.enhanced_analysis - INFO - Processing 261/806: cleaned_Shame and Complex Trauma - Part 3⧸6.txt
+2025-10-08 00:13:31,811 - pixelated.enhanced_analysis - INFO - Processing 262/806: cleaned_When Narcissists Discard and Devalue： The Late Stages of Codependent Narcissistic Relationships.txt
+2025-10-08 00:13:31,819 - pixelated.enhanced_analysis - INFO - Processing 263/806: cleaned_Shame and Complex Trauma - Part 6⧸6 - Healing.txt
+2025-10-08 00:13:31,850 - pixelated.enhanced_analysis - INFO - Processing 264/806: cleaned_How to Start Healing from Emotional Dysregulation.txt
+2025-10-08 00:13:31,903 - pixelated.enhanced_analysis - INFO - Processing 265/806: cleaned_Everyone Has a Sex Life： 4 Ways Trauma Affects Sexuality and Intimacy.txt
+2025-10-08 00:13:31,907 - pixelated.enhanced_analysis - INFO - Processing 266/806: cleaned_Why You Are Afraid to Be a Burden.txt
+2025-10-08 00:13:31,916 - pixelated.enhanced_analysis - INFO - Processing 267/806: What Happens When a narcissist Cannot Destroy You？ ｜ MEL ROBBINS ｜ #motivation.txt
+2025-10-08 00:13:31,935 - pixelated.enhanced_analysis - INFO - Processing 268/806: cleaned_What Happens When a narcissist Cannot Destroy You？ ｜ MEL ROBBINS ｜ #motivation.txt
+2025-10-08 00:13:32,006 - pixelated.enhanced_analysis - INFO - Processing 269/806: The Narcissist Expert： How To Spot Them, Survive Them & Why They_re Everywhere - Dr. Ramani.txt
+2025-10-08 00:13:32,107 - pixelated.enhanced_analysis - INFO - Processing 270/806: cleaned_The Narcissist Expert： How To Spot Them, Survive Them & Why They_re Everywhere - Dr. Ramani.txt
+2025-10-08 00:13:32,204 - pixelated.enhanced_analysis - INFO - Processing 271/806: Betrayal Trauma ｜ The Signs.txt
+2025-10-08 00:13:32,213 - pixelated.enhanced_analysis - INFO - Processing 272/806: cleaned_Betrayal Trauma ｜ The Signs.txt
+2025-10-08 00:13:32,221 - pixelated.enhanced_analysis - INFO - Processing 273/806: 7 New APA Guidelines for Treatment of Complex Trauma & CPTSD.txt
+2025-10-08 00:13:32,234 - pixelated.enhanced_analysis - INFO - Processing 274/806: cleaned_7 New APA Guidelines for Treatment of Complex Trauma & CPTSD.txt
+2025-10-08 00:13:32,247 - pixelated.enhanced_analysis - INFO - Processing 275/806: You Can’t Heal in Survival Mode — Why Safety Is the First Step - Bessel van der Kolk Motivation.txt
+2025-10-08 00:13:32,326 - pixelated.enhanced_analysis - INFO - Processing 276/806: cleaned_You Can’t Heal in Survival Mode — Why Safety Is the First Step - Bessel van der Kolk Motivation.txt
+2025-10-08 00:13:32,403 - pixelated.enhanced_analysis - INFO - Processing 277/806: Trauma Expert Tim Fletcher ｜ This Past Weekend w⧸ Theo Von #495.txt
+2025-10-08 00:13:32,529 - pixelated.enhanced_analysis - INFO - Processing 278/806: cleaned_Trauma Expert Tim Fletcher ｜ This Past Weekend w⧸ Theo Von #495.txt
+2025-10-08 00:13:32,722 - pixelated.enhanced_analysis - INFO - Processing 279/806: How a Narcissist Reacts When No Contact Is Maintained for a Long Time ｜ Mel Robbins Motivation.txt
+2025-10-08 00:13:32,739 - pixelated.enhanced_analysis - INFO - Processing 280/806: cleaned_How a Narcissist Reacts When No Contact Is Maintained for a Long Time ｜ Mel Robbins Motivation.txt
+2025-10-08 00:13:32,808 - pixelated.enhanced_analysis - INFO - Processing 281/806: The Art of Living a Courageous Life - Matthew McConaughey (4K).txt
+2025-10-08 00:13:32,931 - pixelated.enhanced_analysis - INFO - Processing 282/806: cleaned_The Art of Living a Courageous Life - Matthew McConaughey (4K).txt
+2025-10-08 00:13:33,047 - pixelated.enhanced_analysis - INFO - Processing 283/806: Torsten Sträter über Fitness im Alter und seine schrägsten Angewohnheiten ｜ Kölner Treff ｜ WDR.txt
+2025-10-08 00:13:33,114 - pixelated.enhanced_analysis - INFO - Processing 284/806: Hirschhausen und ADHS： So kann die Diagnose Leben verändern ｜ Doku ｜ WDR.txt
+2025-10-08 00:13:33,138 - pixelated.enhanced_analysis - INFO - Processing 285/806: cleaned_Hirschhausen und ADHS： So kann die Diagnose Leben verändern ｜ Doku ｜ WDR.txt
+2025-10-08 00:13:33,211 - pixelated.enhanced_analysis - INFO - Processing 286/806: cleaned_Torsten Sträter über Fitness im Alter und seine schrägsten Angewohnheiten ｜ Kölner Treff ｜ WDR.txt
+2025-10-08 00:13:33,227 - pixelated.enhanced_analysis - INFO - Processing 287/806: Goatscape.txt
+2025-10-08 00:13:33,227 - pixelated.enhanced_analysis - INFO - Processing 288/806: cleaned_Goatscape.txt
+2025-10-08 00:13:33,227 - pixelated.enhanced_analysis - INFO - Processing 289/806: Breaking Free： 4 Things Narcissists Do When Powerless.txt
+2025-10-08 00:13:33,309 - pixelated.enhanced_analysis - INFO - Processing 290/806: What happens to the scapegoat in adulthood？.txt
+2025-10-08 00:13:33,316 - pixelated.enhanced_analysis - INFO - Processing 291/806: The types of CONSEQUENCES narcissists respond to.txt
+2025-10-08 00:13:33,324 - pixelated.enhanced_analysis - INFO - Processing 292/806: What is ＂codependency＂？ (Glossary of Narcissistic Relationships).txt
+2025-10-08 00:13:33,335 - pixelated.enhanced_analysis - INFO - Processing 293/806: When the golden child grows up.txt
+2025-10-08 00:13:33,344 - pixelated.enhanced_analysis - INFO - Processing 294/806: What to expect when you go NO CONTACT with your narcissistic parent.txt
+2025-10-08 00:13:33,412 - pixelated.enhanced_analysis - INFO - Processing 295/806: When narcissists lose their scapegoat.txt
+2025-10-08 00:13:33,418 - pixelated.enhanced_analysis - INFO - Processing 296/806: Dr. Ramani Reveals How Narcissists Know You Know.txt
+2025-10-08 00:13:33,425 - pixelated.enhanced_analysis - INFO - Processing 297/806: cleaned_What is ＂codependency＂？ (Glossary of Narcissistic Relationships).txt
+2025-10-08 00:13:33,437 - pixelated.enhanced_analysis - INFO - Processing 298/806: cleaned_What to expect when you go NO CONTACT with your narcissistic parent.txt
+2025-10-08 00:13:33,509 - pixelated.enhanced_analysis - INFO - Processing 299/806: cleaned_When narcissists lose their scapegoat.txt
+2025-10-08 00:13:33,515 - pixelated.enhanced_analysis - INFO - Processing 300/806: cleaned_The types of CONSEQUENCES narcissists respond to.txt
+2025-10-08 00:13:33,523 - pixelated.enhanced_analysis - INFO - Processed 300 files, extracted 23933 segments so far
+2025-10-08 00:13:33,523 - pixelated.enhanced_analysis - INFO - Processing 301/806: cleaned_Dr. Ramani Reveals How Narcissists Know You Know.txt
+2025-10-08 00:13:33,530 - pixelated.enhanced_analysis - INFO - Processing 302/806: cleaned_When the golden child grows up.txt
+2025-10-08 00:13:33,540 - pixelated.enhanced_analysis - INFO - Processing 303/806: cleaned_Breaking Free： 4 Things Narcissists Do When Powerless.txt
+2025-10-08 00:13:33,618 - pixelated.enhanced_analysis - INFO - Processing 304/806: cleaned_What happens to the scapegoat in adulthood？.txt
+2025-10-08 00:13:33,626 - pixelated.enhanced_analysis - INFO - Processing 305/806: Inside the Minds of Domestic Abusers & How to Support Women ｜ Lundy Bancroft.txt
+2025-10-08 00:13:33,732 - pixelated.enhanced_analysis - INFO - Processing 306/806: cleaned_Inside the Minds of Domestic Abusers & How to Support Women ｜ Lundy Bancroft.txt
+2025-10-08 00:13:33,836 - pixelated.enhanced_analysis - INFO - Processing 307/806: How is Trauma REALLY Released？.txt
+2025-10-08 00:13:33,935 - pixelated.enhanced_analysis - INFO - Processing 308/806: cleaned_How is Trauma REALLY Released？.txt
+2025-10-08 00:13:34,047 - pixelated.enhanced_analysis - INFO - Processing 309/806: The Personality of Victims of Covert Narcissistic Abuse #narcissistic #narcissism #emotionalabuse.txt
+2025-10-08 00:13:34,114 - pixelated.enhanced_analysis - INFO - Processing 310/806: cleaned_The Personality of Victims of Covert Narcissistic Abuse #narcissistic #narcissism #emotionalabuse.txt
+2025-10-08 00:13:34,133 - pixelated.enhanced_analysis - INFO - Processing 311/806: Insecure Attachment Linked to CoDependency and Addiction.txt
+2025-10-08 00:13:34,217 - pixelated.enhanced_analysis - INFO - Processing 312/806: Understanding the Need for Validation and Control with Dr. Dawn-Elise Snipes.txt
+2025-10-08 00:13:34,233 - pixelated.enhanced_analysis - INFO - Processing 313/806: 20 Signs of CoDependency and Tips to Address Them.txt
+2025-10-08 00:13:34,242 - pixelated.enhanced_analysis - INFO - Processing 314/806: 15 Signs You are Hitting Bottom in Codependency.txt
+2025-10-08 00:13:34,250 - pixelated.enhanced_analysis - INFO - Processing 315/806: cleaned_20 Signs of CoDependency and Tips to Address Them.txt
+2025-10-08 00:13:34,311 - pixelated.enhanced_analysis - INFO - Processing 316/806: cleaned_Understanding the Need for Validation and Control with Dr. Dawn-Elise Snipes.txt
+2025-10-08 00:13:34,329 - pixelated.enhanced_analysis - INFO - Processing 317/806: cleaned_Insecure Attachment Linked to CoDependency and Addiction.txt
+2025-10-08 00:13:34,422 - pixelated.enhanced_analysis - INFO - Processing 318/806: cleaned_15 Signs You are Hitting Bottom in Codependency.txt
+2025-10-08 00:13:34,434 - pixelated.enhanced_analysis - INFO - Processing 319/806: Shutdown Eve ｜ Hegseth To America’s Enemies： FAFO ｜ Trump To Military Brass： Fight The Enemy Within.txt
+2025-10-08 00:13:34,446 - pixelated.enhanced_analysis - INFO - Processing 320/806: Jimmy Kimmel Shares The Minute-By-Minute Details Of Finding Out ABC Was Taking Him Off The Air.txt
+2025-10-08 00:13:34,505 - pixelated.enhanced_analysis - INFO - Processing 321/806: cleaned_Jimmy Kimmel Shares The Minute-By-Minute Details Of Finding Out ABC Was Taking Him Off The Air.txt
+2025-10-08 00:13:34,513 - pixelated.enhanced_analysis - INFO - Processing 322/806: cleaned_Shutdown Eve ｜ Hegseth To America’s Enemies： FAFO ｜ Trump To Military Brass： Fight The Enemy Within.txt
+2025-10-08 00:13:34,525 - pixelated.enhanced_analysis - INFO - Processing 323/806: When It Feels Like Anxiety But It_s Actually ANGER - with Dr. Sarah Michaud.txt
+2025-10-08 00:13:34,613 - pixelated.enhanced_analysis - INFO - Processing 324/806: cleaned_When It Feels Like Anxiety But It_s Actually ANGER - with Dr. Sarah Michaud.txt
+2025-10-08 00:13:34,643 - pixelated.enhanced_analysis - INFO - Processing 325/806: Give Me 15 Minutes... I_ll Save You 25+ Years Of Feeling Lonely, Depressed & Lost ｜ Dr. Gabor Maté.txt
+2025-10-08 00:13:34,704 - pixelated.enhanced_analysis - INFO - Processing 326/806: cleaned_Give Me 15 Minutes... I_ll Save You 25+ Years Of Feeling Lonely, Depressed & Lost ｜ Dr. Gabor Maté.txt
+2025-10-08 00:13:34,715 - pixelated.enhanced_analysis - INFO - Processing 327/806: Signs of Emotional Dysregulation ｜ ADHD & More.txt
+2025-10-08 00:13:34,721 - pixelated.enhanced_analysis - INFO - Processing 328/806: cleaned_Signs of Emotional Dysregulation ｜ ADHD & More.txt
+2025-10-08 00:13:34,727 - pixelated.enhanced_analysis - INFO - Processing 329/806: GASLIGHTING ｜ Award-winning short film.txt
+2025-10-08 00:13:34,733 - pixelated.enhanced_analysis - INFO - Processing 330/806: cleaned_GASLIGHTING ｜ Award-winning short film.txt
+2025-10-08 00:13:34,738 - pixelated.enhanced_analysis - INFO - Processing 331/806: When Narcissistic Parents Finally Lose Their Scapegoat.txt
+2025-10-08 00:13:34,822 - pixelated.enhanced_analysis - INFO - Processing 332/806: cleaned_When Narcissistic Parents Finally Lose Their Scapegoat.txt
+2025-10-08 00:13:34,903 - pixelated.enhanced_analysis - INFO - Processing 333/806: Sexual Assault & the Brain in Six Minutes - Jim Hopper, Ph.D..txt
+2025-10-08 00:13:34,907 - pixelated.enhanced_analysis - INFO - Processing 334/806: cleaned_Sexual Assault & the Brain in Six Minutes - Jim Hopper, Ph.D..txt
+2025-10-08 00:13:34,911 - pixelated.enhanced_analysis - INFO - Processing 335/806: CODEPENDENCY EXPLAINED： What Codependency Feels Like with Codependency Expert Lisa A. Romano.txt
+2025-10-08 00:13:34,942 - pixelated.enhanced_analysis - INFO - Processing 336/806: cleaned_CODEPENDENCY EXPLAINED： What Codependency Feels Like with Codependency Expert Lisa A. Romano.txt
+2025-10-08 00:13:35,025 - pixelated.enhanced_analysis - INFO - Processing 337/806: Armée suisse ： faut-il s’inquiéter pour notre sécurité ？ ｜ RTS.txt
+2025-10-08 00:13:35,051 - pixelated.enhanced_analysis - INFO - Processing 338/806: cleaned_Armée suisse ： faut-il s’inquiéter pour notre sécurité ？ ｜ RTS.txt
+2025-10-08 00:13:35,125 - pixelated.enhanced_analysis - INFO - Processing 339/806: The Narcissist Decoder： How Smart Women Get Trapped in Emotional Abuse.txt
+2025-10-08 00:13:35,223 - pixelated.enhanced_analysis - INFO - Processing 340/806: cleaned_The Narcissist Decoder： How Smart Women Get Trapped in Emotional Abuse.txt
+2025-10-08 00:13:35,314 - pixelated.enhanced_analysis - INFO - Processing 341/806: Disorganized Attachment： How to Embrace Your Needs ｜ Dr. Rick, Being Well.txt
+2025-10-08 00:13:35,407 - pixelated.enhanced_analysis - INFO - Processing 342/806: cleaned_Disorganized Attachment： How to Embrace Your Needs ｜ Dr. Rick, Being Well.txt
+2025-10-08 00:13:35,506 - pixelated.enhanced_analysis - INFO - Processing 343/806: How to Overcome Toxic Shame with Peter A. Levine, PhD.txt
+2025-10-08 00:13:35,514 - pixelated.enhanced_analysis - INFO - Processing 344/806: cleaned_How to Overcome Toxic Shame with Peter A. Levine, PhD.txt
+2025-10-08 00:13:35,521 - pixelated.enhanced_analysis - INFO - Processing 345/806: CPTSD： Breaking The Toxic Shame⧸Procrastination Cycle With Self-Compassion.txt
+2025-10-08 00:13:35,546 - pixelated.enhanced_analysis - INFO - Processing 346/806: 10 ＂Survival Lies＂ You May Tell If You Have CPTSD.txt
+2025-10-08 00:13:35,624 - pixelated.enhanced_analysis - INFO - Processing 347/806: C-PTSD Survivors： 10 Important Messages You May Have Missed In Childhood.txt
+2025-10-08 00:13:35,643 - pixelated.enhanced_analysis - INFO - Processing 348/806: Complex PTSD： 10 Realistic Signs Of Healing.txt
+2025-10-08 00:13:35,711 - pixelated.enhanced_analysis - INFO - Processing 349/806: cleaned_10 ＂Survival Lies＂ You May Tell If You Have CPTSD.txt
+2025-10-08 00:13:35,744 - pixelated.enhanced_analysis - INFO - Processing 350/806: cleaned_Complex PTSD： 10 Realistic Signs Of Healing.txt
+2025-10-08 00:13:35,809 - pixelated.enhanced_analysis - INFO - Processed 350 files, extracted 27936 segments so far
+2025-10-08 00:13:35,809 - pixelated.enhanced_analysis - INFO - Processing 351/806: cleaned_C-PTSD Survivors： 10 Important Messages You May Have Missed In Childhood.txt
+2025-10-08 00:13:35,830 - pixelated.enhanced_analysis - INFO - Processing 352/806: cleaned_CPTSD： Breaking The Toxic Shame⧸Procrastination Cycle With Self-Compassion.txt
+2025-10-08 00:13:35,909 - pixelated.enhanced_analysis - INFO - Processing 353/806: 7 Clear Signs of Narcissists Worsening As They Age.txt
+2025-10-08 00:13:35,929 - pixelated.enhanced_analysis - INFO - Processing 354/806: cleaned_7 Clear Signs of Narcissists Worsening As They Age.txt
+2025-10-08 00:13:35,949 - pixelated.enhanced_analysis - INFO - Processing 355/806: THESE ARE THE EARLY SIGNS YOU ARE DATING A NARCISSIST：  AM I DATING A NARCISSIST？.txt
+2025-10-08 00:13:36,002 - pixelated.enhanced_analysis - INFO - Processing 356/806: cleaned_THESE ARE THE EARLY SIGNS YOU ARE DATING A NARCISSIST：  AM I DATING A NARCISSIST？.txt
+2025-10-08 00:13:36,007 - pixelated.enhanced_analysis - INFO - Processing 357/806: Viktor Frankl： Self-Actualization is not the goal.txt
+2025-10-08 00:13:36,013 - pixelated.enhanced_analysis - INFO - Processing 358/806: cleaned_Viktor Frankl： Self-Actualization is not the goal.txt
+2025-10-08 00:13:36,019 - pixelated.enhanced_analysis - INFO - Processing 359/806: Narcissistic Parents： Why You Always Felt Like a BURDEN to Them.txt
+2025-10-08 00:13:36,024 - pixelated.enhanced_analysis - INFO - Processing 360/806: Narcissistic Parents： Weird Mannerisms Their Abused Adult Children Have.txt
+2025-10-08 00:13:36,032 - pixelated.enhanced_analysis - INFO - Processing 361/806: When Narcissistic Parents Lose Their Scapegoat.txt
+2025-10-08 00:13:36,041 - pixelated.enhanced_analysis - INFO - Processing 362/806: Narcissistic Family： Why Nobody Believes the Scapegoat.txt
+2025-10-08 00:13:36,100 - pixelated.enhanced_analysis - INFO - Processing 363/806: cleaned_Narcissistic Parents： Why You Always Felt Like a BURDEN to Them.txt
+2025-10-08 00:13:36,109 - pixelated.enhanced_analysis - INFO - Processing 364/806: cleaned_Narcissistic Parents： Weird Mannerisms Their Abused Adult Children Have.txt
+2025-10-08 00:13:36,118 - pixelated.enhanced_analysis - INFO - Processing 365/806: cleaned_Narcissistic Family： Why Nobody Believes the Scapegoat.txt
+2025-10-08 00:13:36,124 - pixelated.enhanced_analysis - INFO - Processing 366/806: cleaned_When Narcissistic Parents Lose Their Scapegoat.txt
+2025-10-08 00:13:36,134 - pixelated.enhanced_analysis - INFO - Processing 367/806: The Connection Between Complex Trauma, Codependency, & Narcissism.txt
+2025-10-08 00:13:36,243 - pixelated.enhanced_analysis - INFO - Processing 368/806: cleaned_The Connection Between Complex Trauma, Codependency, & Narcissism.txt
+2025-10-08 00:13:36,404 - pixelated.enhanced_analysis - INFO - Processing 369/806: Dr Gabor Maté ｜ Authenticity Can Heal Trauma (Part 2).txt
+2025-10-08 00:13:36,416 - pixelated.enhanced_analysis - INFO - Processing 370/806: cleaned_Dr Gabor Maté ｜ Authenticity Can Heal Trauma (Part 2).txt
+2025-10-08 00:13:36,428 - pixelated.enhanced_analysis - INFO - Processing 371/806: 3 Things I Do When Existence Feels Like A Burden.txt
+2025-10-08 00:13:36,443 - pixelated.enhanced_analysis - INFO - Processing 372/806: cleaned_3 Things I Do When Existence Feels Like A Burden.txt
+2025-10-08 00:13:36,504 - pixelated.enhanced_analysis - INFO - Processing 373/806: If They Do This… They’re a Narcissist.txt
+2025-10-08 00:13:36,511 - pixelated.enhanced_analysis - INFO - Processing 374/806: cleaned_If They Do This… They’re a Narcissist.txt
+2025-10-08 00:13:36,517 - pixelated.enhanced_analysis - INFO - Processing 375/806: How To Speak Like The 1_ Elite.txt
+2025-10-08 00:13:36,529 - pixelated.enhanced_analysis - INFO - Processing 376/806: How To Command Respect Like The 1_ Elite.txt
+2025-10-08 00:13:36,539 - pixelated.enhanced_analysis - INFO - Processing 377/806: cleaned_How To Command Respect Like The 1_ Elite.txt
+2025-10-08 00:13:36,603 - pixelated.enhanced_analysis - INFO - Processing 378/806: cleaned_How To Speak Like The 1_ Elite.txt
+2025-10-08 00:13:36,614 - pixelated.enhanced_analysis - INFO - Processing 379/806: Detaching From Emotionally Immature People with Dr. Lindsay Gibson.txt
+2025-10-08 00:13:36,637 - pixelated.enhanced_analysis - INFO - Processing 380/806: cleaned_Detaching From Emotionally Immature People with Dr. Lindsay Gibson.txt
+2025-10-08 00:13:36,710 - pixelated.enhanced_analysis - INFO - Processing 381/806: Narcissists are Catching On - Do THIS Before They Trick You Again.txt
+2025-10-08 00:13:36,739 - pixelated.enhanced_analysis - INFO - Processing 382/806: cleaned_Narcissists are Catching On - Do THIS Before They Trick You Again.txt
+2025-10-08 00:13:36,818 - pixelated.enhanced_analysis - INFO - Processing 383/806: Who Are You？ ｜ Eckhart Tolle Reads A Course in Miracles.txt
+2025-10-08 00:13:36,824 - pixelated.enhanced_analysis - INFO - Processing 384/806: How to Calm the Voice Inside ｜ Eckhart Tolle Teachings.txt
+2025-10-08 00:13:36,830 - pixelated.enhanced_analysis - INFO - Processing 385/806: cleaned_Who Are You？ ｜ Eckhart Tolle Reads A Course in Miracles.txt
+2025-10-08 00:13:36,836 - pixelated.enhanced_analysis - INFO - Processing 386/806: cleaned_How to Calm the Voice Inside ｜ Eckhart Tolle Teachings.txt
+2025-10-08 00:13:36,836 - pixelated.enhanced_analysis - INFO - Processing 387/806: Caroline Myss - You do not sell your soul — no matter what..txt
+2025-10-08 00:13:36,904 - pixelated.enhanced_analysis - INFO - Processing 388/806: cleaned_Caroline Myss - You do not sell your soul — no matter what..txt
+2025-10-08 00:13:36,921 - pixelated.enhanced_analysis - INFO - Processing 389/806: If You HEAR THIS, That_s A Narcissist Trying To TRAP You! (Don_t Argue Or Fight) ｜ Dr. Ramani.txt
+2025-10-08 00:13:36,931 - pixelated.enhanced_analysis - INFO - Processing 390/806: cleaned_If You HEAR THIS, That_s A Narcissist Trying To TRAP You! (Don_t Argue Or Fight) ｜ Dr. Ramani.txt
+2025-10-08 00:13:36,941 - pixelated.enhanced_analysis - INFO - Processing 391/806: ADHD and emotional dysregulation ｜ MissUnderstood.txt
+2025-10-08 00:13:36,951 - pixelated.enhanced_analysis - INFO - Processing 392/806: cleaned_ADHD and emotional dysregulation ｜ MissUnderstood.txt
+2025-10-08 00:13:37,010 - pixelated.enhanced_analysis - INFO - Processing 393/806: the_16_reasons_you_are_sabotaging_the_good_things.txt
+2025-10-08 00:13:37,018 - pixelated.enhanced_analysis - INFO - Processing 394/806: signs_and_relationship_patterns_of_dating_a_narcissist-codependency_and_complex_trauma-part_3⧸10_religious.txt
+2025-10-08 00:13:37,035 - pixelated.enhanced_analysis - INFO - Processing 395/806: how_complex_trauma_affects_emotional_resilience_and_leads_to_long-term_consequences.txt
+2025-10-08 00:13:37,102 - pixelated.enhanced_analysis - INFO - Processing 396/806: trapped_in_a_cycle_of_burnout：_the_grown-up_hero_child.txt
+2025-10-08 00:13:37,108 - pixelated.enhanced_analysis - INFO - Processing 397/806: why_boundaries_are_more_than_just_saying_no_❌.txt
+2025-10-08 00:13:37,109 - pixelated.enhanced_analysis - INFO - Processing 398/806: sex_｜_re-parenting-part_25_｜_#complextrauma.txt
+2025-10-08 00:13:37,136 - pixelated.enhanced_analysis - INFO - Processing 399/806: relationships_and_complex_trauma-part_11⧸11-when_to_end_one_religious.txt
+2025-10-08 00:13:37,150 - pixelated.enhanced_analysis - INFO - Processing 400/806: shame_and_complex_trauma-part_4⧸6-shame_test_religious.txt
+2025-10-08 00:13:37,212 - pixelated.enhanced_analysis - INFO - Processed 400 files, extracted 30639 segments so far
+2025-10-08 00:13:37,212 - pixelated.enhanced_analysis - INFO - Processing 401/806: how_to_set_boundaries_and_stop_people_pleasing-boundaries_and_complex_trauma-part_2⧸12_main.txt
+2025-10-08 00:13:37,229 - pixelated.enhanced_analysis - INFO - Processing 402/806: your_money_trauma_starts_at_childhood_religious.txt
+2025-10-08 00:13:37,244 - pixelated.enhanced_analysis - INFO - Processing 403/806: shedding_the_weight_of_negativity_is_essential_for_freedom_from_complex_trauma.txt
+2025-10-08 00:13:37,306 - pixelated.enhanced_analysis - INFO - Processing 404/806: how_complex_trauma_leads_to_a_hypersensitivity_to_disrespect_and_criticism.txt
+2025-10-08 00:13:37,314 - pixelated.enhanced_analysis - INFO - Processing 405/806: shame_and_complex_trauma-part_6⧸6-healing_main.txt
+2025-10-08 00:13:37,331 - pixelated.enhanced_analysis - INFO - Processing 406/806: why_you_can_t_let_go_of_the_past.txt
+2025-10-08 00:13:37,343 - pixelated.enhanced_analysis - INFO - Processing 407/806: recovery_and_letting_go_｜_re-parenting-part_93_｜_#complextrauma.txt
+2025-10-08 00:13:37,420 - pixelated.enhanced_analysis - INFO - Processing 408/806: what_complex_trauma_survivors_need_to_know_about_their_anger.txt
+2025-10-08 00:13:37,429 - pixelated.enhanced_analysis - INFO - Processing 409/806: shame_and_complex_trauma-part_1⧸6-what_is_shame？_religious.txt
+2025-10-08 00:13:37,444 - pixelated.enhanced_analysis - INFO - Processing 410/806: the_basics_of_complex_trauma：_understanding_the_hidden_impact_of_unmet_needs.txt
+2025-10-08 00:13:37,520 - pixelated.enhanced_analysis - INFO - Processing 411/806: how_to_handle_a_narcissist_(q&a_with_tim,_part_8).txt
+2025-10-08 00:13:37,604 - pixelated.enhanced_analysis - INFO - Processing 412/806: the_characteristics_of_complex_trauma-part_23-afraid_to_be_a_burden.txt
+2025-10-08 00:13:37,634 - pixelated.enhanced_analysis - INFO - Processing 413/806: depletion_and_self-care_｜_re-parenting-part_89_｜_#complextrauma.txt
+2025-10-08 00:13:37,704 - pixelated.enhanced_analysis - INFO - Processing 414/806: codependency_and_complex_trauma-part_7⧸10-attachment_issues_religious.txt
+2025-10-08 00:13:37,715 - pixelated.enhanced_analysis - INFO - Processing 415/806: surviving_vs_thriving：_moving_beyond_survival_mode_after_complex_trauma.txt
+2025-10-08 00:13:37,725 - pixelated.enhanced_analysis - INFO - Processing 416/806: how_does_complex_trauma_cause_people_to_confuse_validation_with_love？_｜_with_@lisamtickel.txt
+2025-10-08 00:13:37,734 - pixelated.enhanced_analysis - INFO - Processing 417/806: how_do_people_become_so_angry？-complex_trauma.txt
+2025-10-08 00:13:37,739 - pixelated.enhanced_analysis - INFO - Processing 418/806: how_to_spot_a_narcissist-18_characteristics_of_narcissism_｜_complex_trauma_recovery.txt
+2025-10-08 00:13:37,745 - pixelated.enhanced_analysis - INFO - Processing 419/806: how_to_start_healing_from_emotional_dysregulation.txt
+2025-10-08 00:13:37,801 - pixelated.enhanced_analysis - INFO - Processing 420/806: why_you_re_afraid_of_love,_success,_and_change：_trauma’s_quiet_rules.txt
+2025-10-08 00:13:37,811 - pixelated.enhanced_analysis - INFO - Processing 421/806: here_s_why_you_feel_emotionally_depleted.txt
+2025-10-08 00:13:37,824 - pixelated.enhanced_analysis - INFO - Processing 422/806: relationships_and_complex_trauma-part_11⧸11-when_to_end_one_main.txt
+2025-10-08 00:13:37,840 - pixelated.enhanced_analysis - INFO - Processing 423/806: shame_and_complex_trauma-part_1⧸6-what_is_shame？_main.txt
+2025-10-08 00:13:37,905 - pixelated.enhanced_analysis - INFO - Processing 424/806: how_narcissistic_relationships_create_complex_trauma.txt
+2025-10-08 00:13:37,920 - pixelated.enhanced_analysis - INFO - Processing 425/806: how_trauma_keeps_you_disconnected_without_realizing_it.txt
+2025-10-08 00:13:37,946 - pixelated.enhanced_analysis - INFO - Processing 426/806: being_a_chameleon：_complex_trauma_s_effect_on_your_sense_of_self.txt
+2025-10-08 00:13:38,002 - pixelated.enhanced_analysis - INFO - Processing 427/806: set_boundaries_and_stop_people_pleasing：_the_subjugation_life_trap-complex_trauma_prisons.txt
+2025-10-08 00:13:38,029 - pixelated.enhanced_analysis - INFO - Processing 428/806: how_complex_trauma_messes_with_relationships_｜_the_characteristics_of_complex_trauma-part_10.txt
+2025-10-08 00:13:38,207 - pixelated.enhanced_analysis - INFO - Processing 429/806: the_basics_of_anger_issues_and_complex_trauma.txt
+2025-10-08 00:13:38,212 - pixelated.enhanced_analysis - INFO - Processing 430/806: codependency_and_complex_trauma-part_7⧸10-attachment_issues_main.txt
+2025-10-08 00:13:38,228 - pixelated.enhanced_analysis - INFO - Processing 431/806: why_narcissists_don’t_change_without_consequences.txt
+2025-10-08 00:13:38,234 - pixelated.enhanced_analysis - INFO - Processing 432/806: ＂if_you_leave_me,_can_i_come_too？＂-codependency_and_complex_trauma-part_1⧸10_main.txt
+2025-10-08 00:13:38,317 - pixelated.enhanced_analysis - INFO - Processing 433/806: dating_and_intimate_relationship_lies-re-parenting-part_116.txt
+2025-10-08 00:13:38,338 - pixelated.enhanced_analysis - INFO - Processing 434/806: anger_and_complex_trauma-part_1⧸11-intro_main.txt
+2025-10-08 00:13:38,352 - pixelated.enhanced_analysis - INFO - Processing 435/806: realistic_recovery-part_1⧸13-seven_levels_of_change_religious.txt
+2025-10-08 00:13:38,365 - pixelated.enhanced_analysis - INFO - Processing 436/806: why_do_people_become_abusive？.txt
+2025-10-08 00:13:38,402 - pixelated.enhanced_analysis - INFO - Processing 437/806: why_shame_affects_100__of_people_with_complex_trauma.txt
+2025-10-08 00:13:38,409 - pixelated.enhanced_analysis - INFO - Processing 438/806: depression_&_the_fear_of_hope：_complex_trauma_s_double_bind.txt
+2025-10-08 00:13:38,418 - pixelated.enhanced_analysis - INFO - Processing 439/806: why_complex_trauma_survivors_struggle_with_money.txt
+2025-10-08 00:13:38,425 - pixelated.enhanced_analysis - INFO - Processing 440/806: shame_and_complex_trauma-part_6⧸6-healing_religious.txt
+2025-10-08 00:13:38,441 - pixelated.enhanced_analysis - INFO - Processing 441/806: the_key_to_letting_go-healing_complex_trauma.txt
+2025-10-08 00:13:38,503 - pixelated.enhanced_analysis - INFO - Processing 442/806: the_characteristics_of_complex_trauma-part_20-emotional_dysregulation_main.txt
+2025-10-08 00:13:38,519 - pixelated.enhanced_analysis - INFO - Processing 443/806: how_being_betrayed_changes_you.txt
+2025-10-08 00:13:38,527 - pixelated.enhanced_analysis - INFO - Processing 444/806: trust_and_commitment：_the_foundations_of_healing_from_complex_trauma.txt
+2025-10-08 00:13:38,540 - pixelated.enhanced_analysis - INFO - Processing 445/806: codependency_and_complex_trauma-part_2⧸10-narcissist_or_co-narcissist？_main.txt
+2025-10-08 00:13:38,602 - pixelated.enhanced_analysis - INFO - Processing 446/806: shame_and_complex_trauma-part_4⧸6-shame_test_main.txt
+2025-10-08 00:13:38,616 - pixelated.enhanced_analysis - INFO - Processing 447/806: why_do_people_seek_attention_and_approval？.txt
+2025-10-08 00:13:38,625 - pixelated.enhanced_analysis - INFO - Processing 448/806: what_you_need_to_know_after_ending_a_relationship_with_a_narcissist.txt
+2025-10-08 00:13:38,633 - pixelated.enhanced_analysis - INFO - Processing 449/806: drawn_to_criminal_activity-complex_trauma_prisons.txt
+2025-10-08 00:13:38,714 - pixelated.enhanced_analysis - INFO - Processing 450/806: anger_and_complex_trauma-part_1⧸11-intro_religious.txt
+2025-10-08 00:13:38,734 - pixelated.enhanced_analysis - INFO - Processed 450 files, extracted 33390 segments so far
+2025-10-08 00:13:38,734 - pixelated.enhanced_analysis - INFO - Processing 451/806: these_12_needs_are_non-negotiable_for_a_healthy_&_whole_life_｜_#complextrauma_#whatstuck.txt
+2025-10-08 00:13:38,801 - pixelated.enhanced_analysis - INFO - Processing 452/806: the_fear-trauma_connection_nobody_talks_about.txt
+2025-10-08 00:13:38,810 - pixelated.enhanced_analysis - INFO - Processing 453/806: the_trauma_loop：_why_you_keep_ending_up_in_the_same_pain.txt
+2025-10-08 00:13:38,822 - pixelated.enhanced_analysis - INFO - Processing 454/806: healing_｜_understanding_trauma-part_10_｜_#complextrauma.txt
+2025-10-08 00:13:38,905 - pixelated.enhanced_analysis - INFO - Processing 455/806: anger_and_complex_trauma-part_11⧸11-gaslighting_main.txt
+2025-10-08 00:13:38,921 - pixelated.enhanced_analysis - INFO - Processing 456/806: what_complex_trauma_does_to_love,_attachment,_and_loyalty.txt
+2025-10-08 00:13:38,927 - pixelated.enhanced_analysis - INFO - Processing 457/806: how_the_pattern_of_narcissism_is_misunderstood.txt
+2025-10-08 00:13:38,933 - pixelated.enhanced_analysis - INFO - Processing 458/806: when_narcissists_discard_and_devalue：_the_late_stages_of_codependent_narcissistic_relationships.txt
+2025-10-08 00:13:38,942 - pixelated.enhanced_analysis - INFO - Processing 459/806: anger_and_complex_trauma-part_9⧸11-characteristics_of_abusers_main.txt
+2025-10-08 00:13:39,006 - pixelated.enhanced_analysis - INFO - Processing 460/806: codependency_and_complex_trauma-part_2⧸10-narcissist_or_co-narcissist？_religious.txt
+2025-10-08 00:13:39,018 - pixelated.enhanced_analysis - INFO - Processing 461/806: planting_seeds_of_doubt：_signs_you_re_being_manipulated_to_question_yourself.txt
+2025-10-08 00:13:39,027 - pixelated.enhanced_analysis - INFO - Processing 462/806: how_your_trauma_explains_your_coping_mechanisms-part_1.txt
+2025-10-08 00:13:39,050 - pixelated.enhanced_analysis - INFO - Processing 463/806: adult_children_of_wounded_parents：_reclaiming_your_worth_&_identity_｜_mommy_&_daddy_issues,_part_2.txt
+2025-10-08 00:13:39,116 - pixelated.enhanced_analysis - INFO - Processing 464/806: _big_t__vs__little_t__trauma_｜_understanding_trauma-part_28_｜_#complextrauma.txt
+2025-10-08 00:13:39,124 - pixelated.enhanced_analysis - INFO - Processing 465/806: shame_and_complex_trauma-part_2⧸6-unhealthy_solutions_religious.txt
+2025-10-08 00:13:39,135 - pixelated.enhanced_analysis - INFO - Processing 466/806: when_a_narcissist_is_triggered,_others_pay_the_price.txt
+2025-10-08 00:13:39,141 - pixelated.enhanced_analysis - INFO - Processing 467/806: ＂if_you_leave_me,_can_i_come_too？＂-codependency_and_complex_trauma-part_1⧸10_religious.txt
+2025-10-08 00:13:39,208 - pixelated.enhanced_analysis - INFO - Processing 468/806: shame_and_complex_trauma-part_2⧸7-unhealthy_solutions-repeat_religious.txt
+2025-10-08 00:13:39,222 - pixelated.enhanced_analysis - INFO - Processing 469/806: being_your_own_dark_cloud：_how_complex_trauma_can_cause_you_to_fall_into_a_negative_mindset.txt
+2025-10-08 00:13:39,234 - pixelated.enhanced_analysis - INFO - Processing 470/806: what_complex_trauma_really_does_to_your_emotions_｜_the_characteristics_of_complex_trauma-part_7.txt
+2025-10-08 00:13:39,309 - pixelated.enhanced_analysis - INFO - Processing 471/806: ＂am_i_ever_going_to_heal_from_my_shame？＂_｜_healing_shame_as_part_of_complex_trauma_recovery.txt
+2025-10-08 00:13:39,331 - pixelated.enhanced_analysis - INFO - Processing 472/806: relationships_and_complex_trauma-part_2⧸11-family_roles-part_1⧸2_main.txt
+2025-10-08 00:13:39,345 - pixelated.enhanced_analysis - INFO - Processing 473/806: being_an_unwanted_child_comes_with_a_lifetime_of_trauma.txt
+2025-10-08 00:13:39,406 - pixelated.enhanced_analysis - INFO - Processing 474/806: complex_trauma_explained：_why_fear_controls_our_responses.txt
+2025-10-08 00:13:39,419 - pixelated.enhanced_analysis - INFO - Processing 475/806: shame_and_complex_trauma-part_2⧸6-unhealthy_solutions_main.txt
+2025-10-08 00:13:39,433 - pixelated.enhanced_analysis - INFO - Processing 476/806: how_to_set_boundaries_and_stop_people_pleasing-boundaries_and_complex_trauma-part_2⧸12_religious.txt
+2025-10-08 00:13:39,444 - pixelated.enhanced_analysis - INFO - Processing 477/806: brain_fog_and_complex_trauma.txt
+2025-10-08 00:13:39,505 - pixelated.enhanced_analysis - INFO - Processing 478/806: why_you_are_afraid_to_be_a_burden.txt
+2025-10-08 00:13:39,512 - pixelated.enhanced_analysis - INFO - Processing 479/806: your_money_trauma_starts_at_childhood_main.txt
+2025-10-08 00:13:39,525 - pixelated.enhanced_analysis - INFO - Processing 480/806: shame_and_complex_trauma-part_3⧸6_main.txt
+2025-10-08 00:13:39,538 - pixelated.enhanced_analysis - INFO - Processing 481/806: listening_to_shame.txt
+2025-10-08 00:13:39,607 - pixelated.enhanced_analysis - INFO - Processing 482/806: betrayal_trauma_｜_understanding_trauma-part_13_｜_#complextrauma_religious.txt
+2025-10-08 00:13:39,618 - pixelated.enhanced_analysis - INFO - Processing 483/806: shame_and_complex_trauma-part_5⧸6_main.txt
+2025-10-08 00:13:39,632 - pixelated.enhanced_analysis - INFO - Processing 484/806: everyone_has_a_sex_life：_4_ways_trauma_affects_sexuality_and_intimacy.txt
+2025-10-08 00:13:39,636 - pixelated.enhanced_analysis - INFO - Processing 485/806: signs_and_relationship_patterns_of_dating_a_narcissist-codependency_and_complex_trauma-part_3⧸10_main.txt
+2025-10-08 00:13:39,648 - pixelated.enhanced_analysis - INFO - Processing 486/806: maladaptive_daydreaming：_avoiding_pain_by_fantasizing.txt
+2025-10-08 00:13:39,703 - pixelated.enhanced_analysis - INFO - Processing 487/806: sexuality_as_love-complex_trauma_prisons.txt
+2025-10-08 00:13:39,731 - pixelated.enhanced_analysis - INFO - Processing 488/806: betrayal_trauma_｜_understanding_trauma-part_13_｜_#complextrauma_main.txt
+2025-10-08 00:13:39,747 - pixelated.enhanced_analysis - INFO - Processing 489/806: the_difference_between_guilt_and_shame-why_it_matters_for_complex_trauma_healing_and_recovery.txt
+2025-10-08 00:13:39,815 - pixelated.enhanced_analysis - INFO - Processing 490/806: the_characteristics_of_complex_trauma-part_20-emotional_dysregulation_religious.txt
+2025-10-08 00:13:39,826 - pixelated.enhanced_analysis - INFO - Processing 491/806: how_to_stop_procrastinating_&_heal_feelings_of_paralysis.txt
+2025-10-08 00:13:39,833 - pixelated.enhanced_analysis - INFO - Processing 492/806: anger_and_complex_trauma-part_9⧸11-characteristics_of_abusers_religious.txt
+2025-10-08 00:13:39,847 - pixelated.enhanced_analysis - INFO - Processing 493/806: shame_and_complex_trauma-part_2⧸7-unhealthy_solutions-repeat_main.txt
+2025-10-08 00:13:39,914 - pixelated.enhanced_analysis - INFO - Processing 494/806: are_you_seeking_approval_or_attention？-complex_trauma_prisons.txt
+2025-10-08 00:13:39,937 - pixelated.enhanced_analysis - INFO - Processing 495/806: why_procrastination_is_tied_to_complex_trauma_and_how_to_heal_it.txt
+2025-10-08 00:13:40,010 - pixelated.enhanced_analysis - INFO - Processing 496/806: trauma_bonding_｜_understanding_trauma-part_31_｜_#complextrauma.txt
+2025-10-08 00:13:40,038 - pixelated.enhanced_analysis - INFO - Processing 497/806: your_gut,_your_boundaries,_your_motivation—how_trauma_rewires_it_all.txt
+2025-10-08 00:13:40,048 - pixelated.enhanced_analysis - INFO - Processing 498/806: relationships_and_complex_trauma-part_2⧸11-family_roles-part_1⧸2_religious.txt
+2025-10-08 00:13:40,112 - pixelated.enhanced_analysis - INFO - Processing 499/806: shame_and_complex_trauma-part_5⧸6_religious.txt
+2025-10-08 00:13:40,129 - pixelated.enhanced_analysis - INFO - Processing 500/806: 26_signs_of_emotional_depletion.txt
+2025-10-08 00:13:40,140 - pixelated.enhanced_analysis - INFO - Processed 500 files, extracted 36599 segments so far
+2025-10-08 00:13:40,140 - pixelated.enhanced_analysis - INFO - Processing 501/806: realistic_recovery-part_1⧸13-seven_levels_of_change_main.txt
+2025-10-08 00:13:40,201 - pixelated.enhanced_analysis - INFO - Processing 502/806: being_the_family_scapegoat_or_problem_child：_honesty_about_dysfunction.txt
+2025-10-08 00:13:40,207 - pixelated.enhanced_analysis - INFO - Processing 503/806: anger_and_complex_trauma-part_11⧸11-gaslighting_religious.txt
+2025-10-08 00:13:40,221 - pixelated.enhanced_analysis - INFO - Processing 504/806: shame_and_complex_trauma-part_3⧸6_religious.txt
+2025-10-08 00:13:40,233 - pixelated.enhanced_analysis - INFO - Processing 505/806: cleaned_drawn_to_criminal_activity-complex_trauma_prisons.txt
+2025-10-08 00:13:40,324 - pixelated.enhanced_analysis - INFO - Processing 506/806: cleaned_why_complex_trauma_survivors_struggle_with_money.txt
+2025-10-08 00:13:40,335 - pixelated.enhanced_analysis - INFO - Processing 507/806: cleaned_how_complex_trauma_affects_emotional_resilience_and_leads_to_long-term_consequences.txt
+2025-10-08 00:13:40,408 - pixelated.enhanced_analysis - INFO - Processing 508/806: cleaned_signs_and_relationship_patterns_of_dating_a_narcissist-codependency_and_complex_trauma-part_3⧸10_religious.txt
+2025-10-08 00:13:40,436 - pixelated.enhanced_analysis - INFO - Processing 509/806: cleaned_why_you_re_afraid_of_love,_success,_and_change：_trauma’s_quiet_rules.txt
+2025-10-08 00:13:40,504 - pixelated.enhanced_analysis - INFO - Processing 510/806: cleaned_shame_and_complex_trauma-part_2⧸6-unhealthy_solutions_religious.txt
+2025-10-08 00:13:40,517 - pixelated.enhanced_analysis - INFO - Processing 511/806: cleaned_shame_and_complex_trauma-part_5⧸6_religious.txt
+2025-10-08 00:13:40,533 - pixelated.enhanced_analysis - INFO - Processing 512/806: cleaned_shame_and_complex_trauma-part_1⧸6-what_is_shame？_religious.txt
+2025-10-08 00:13:40,603 - pixelated.enhanced_analysis - INFO - Processing 513/806: cleaned_trust_and_commitment：_the_foundations_of_healing_from_complex_trauma.txt
+2025-10-08 00:13:40,616 - pixelated.enhanced_analysis - INFO - Processing 514/806: cleaned_relationships_and_complex_trauma-part_11⧸11-when_to_end_one_religious.txt
+2025-10-08 00:13:40,629 - pixelated.enhanced_analysis - INFO - Processing 515/806: cleaned_sexuality_as_love-complex_trauma_prisons.txt
+2025-10-08 00:13:40,702 - pixelated.enhanced_analysis - INFO - Processing 516/806: cleaned_being_the_family_scapegoat_or_problem_child：_honesty_about_dysfunction.txt
+2025-10-08 00:13:40,707 - pixelated.enhanced_analysis - INFO - Processing 517/806: cleaned_why_do_people_become_abusive？.txt
+2025-10-08 00:13:40,713 - pixelated.enhanced_analysis - INFO - Processing 518/806: cleaned_why_narcissists_don’t_change_without_consequences.txt
+2025-10-08 00:13:40,719 - pixelated.enhanced_analysis - INFO - Processing 519/806: cleaned_your_gut,_your_boundaries,_your_motivation—how_trauma_rewires_it_all.txt
+2025-10-08 00:13:40,729 - pixelated.enhanced_analysis - INFO - Processing 520/806: cleaned_＂if_you_leave_me,_can_i_come_too？＂-codependency_and_complex_trauma-part_1⧸10_religious.txt
+2025-10-08 00:13:40,744 - pixelated.enhanced_analysis - INFO - Processing 521/806: cleaned_listening_to_shame.txt
+2025-10-08 00:13:40,814 - pixelated.enhanced_analysis - INFO - Processing 522/806: cleaned_how_does_complex_trauma_cause_people_to_confuse_validation_with_love？_｜_with_@lisamtickel.txt
+2025-10-08 00:13:40,823 - pixelated.enhanced_analysis - INFO - Processing 523/806: cleaned_why_shame_affects_100__of_people_with_complex_trauma.txt
+2025-10-08 00:13:40,829 - pixelated.enhanced_analysis - INFO - Processing 524/806: cleaned_the_16_reasons_you_are_sabotaging_the_good_things.txt
+2025-10-08 00:13:40,838 - pixelated.enhanced_analysis - INFO - Processing 525/806: cleaned_shame_and_complex_trauma-part_4⧸6-shame_test_main.txt
+2025-10-08 00:13:40,851 - pixelated.enhanced_analysis - INFO - Processing 526/806: cleaned_how_being_betrayed_changes_you.txt
+2025-10-08 00:13:40,908 - pixelated.enhanced_analysis - INFO - Processing 527/806: cleaned_how_to_set_boundaries_and_stop_people_pleasing-boundaries_and_complex_trauma-part_2⧸12_religious.txt
+2025-10-08 00:13:40,919 - pixelated.enhanced_analysis - INFO - Processing 528/806: cleaned_anger_and_complex_trauma-part_11⧸11-gaslighting_main.txt
+2025-10-08 00:13:40,939 - pixelated.enhanced_analysis - INFO - Processing 529/806: cleaned__big_t__vs__little_t__trauma_｜_understanding_trauma-part_28_｜_#complextrauma.txt
+2025-10-08 00:13:40,947 - pixelated.enhanced_analysis - INFO - Processing 530/806: cleaned_adult_children_of_wounded_parents：_reclaiming_your_worth_&_identity_｜_mommy_&_daddy_issues,_part_2.txt
+2025-10-08 00:13:41,019 - pixelated.enhanced_analysis - INFO - Processing 531/806: cleaned_how_narcissistic_relationships_create_complex_trauma.txt
+2025-10-08 00:13:41,028 - pixelated.enhanced_analysis - INFO - Processing 532/806: cleaned_codependency_and_complex_trauma-part_7⧸10-attachment_issues_religious.txt
+2025-10-08 00:13:41,039 - pixelated.enhanced_analysis - INFO - Processing 533/806: cleaned_the_key_to_letting_go-healing_complex_trauma.txt
+2025-10-08 00:13:41,103 - pixelated.enhanced_analysis - INFO - Processing 534/806: cleaned_why_you_can_t_let_go_of_the_past.txt
+2025-10-08 00:13:41,122 - pixelated.enhanced_analysis - INFO - Processing 535/806: cleaned_maladaptive_daydreaming：_avoiding_pain_by_fantasizing.txt
+2025-10-08 00:13:41,133 - pixelated.enhanced_analysis - INFO - Processing 536/806: cleaned_trapped_in_a_cycle_of_burnout：_the_grown-up_hero_child.txt
+2025-10-08 00:13:41,143 - pixelated.enhanced_analysis - INFO - Processing 537/806: cleaned_anger_and_complex_trauma-part_1⧸11-intro_religious.txt
+2025-10-08 00:13:41,214 - pixelated.enhanced_analysis - INFO - Processing 538/806: cleaned_recovery_and_letting_go_｜_re-parenting-part_93_｜_#complextrauma.txt
+2025-10-08 00:13:41,241 - pixelated.enhanced_analysis - INFO - Processing 539/806: cleaned_how_complex_trauma_leads_to_a_hypersensitivity_to_disrespect_and_criticism.txt
+2025-10-08 00:13:41,303 - pixelated.enhanced_analysis - INFO - Processing 540/806: cleaned_＂if_you_leave_me,_can_i_come_too？＂-codependency_and_complex_trauma-part_1⧸10_main.txt
+2025-10-08 00:13:41,322 - pixelated.enhanced_analysis - INFO - Processing 541/806: cleaned_codependency_and_complex_trauma-part_7⧸10-attachment_issues_main.txt
+2025-10-08 00:13:41,339 - pixelated.enhanced_analysis - INFO - Processing 542/806: cleaned_shame_and_complex_trauma-part_2⧸6-unhealthy_solutions_main.txt
+2025-10-08 00:13:41,402 - pixelated.enhanced_analysis - INFO - Processing 543/806: cleaned_trauma_bonding_｜_understanding_trauma-part_31_｜_#complextrauma.txt
+2025-10-08 00:13:41,433 - pixelated.enhanced_analysis - INFO - Processing 544/806: cleaned_the_basics_of_complex_trauma：_understanding_the_hidden_impact_of_unmet_needs.txt
+2025-10-08 00:13:41,502 - pixelated.enhanced_analysis - INFO - Processing 545/806: cleaned_healing_｜_understanding_trauma-part_10_｜_#complextrauma.txt
+2025-10-08 00:13:41,536 - pixelated.enhanced_analysis - INFO - Processing 546/806: cleaned_why_boundaries_are_more_than_just_saying_no_❌.txt
+2025-10-08 00:13:41,537 - pixelated.enhanced_analysis - INFO - Processing 547/806: cleaned_sex_｜_re-parenting-part_25_｜_#complextrauma.txt
+2025-10-08 00:13:41,612 - pixelated.enhanced_analysis - INFO - Processing 548/806: cleaned_relationships_and_complex_trauma-part_2⧸11-family_roles-part_1⧸2_religious.txt
+2025-10-08 00:13:41,623 - pixelated.enhanced_analysis - INFO - Processing 549/806: cleaned_the_characteristics_of_complex_trauma-part_20-emotional_dysregulation_religious.txt
+2025-10-08 00:13:41,635 - pixelated.enhanced_analysis - INFO - Processing 550/806: cleaned_complex_trauma_explained：_why_fear_controls_our_responses.txt
+2025-10-08 00:13:41,647 - pixelated.enhanced_analysis - INFO - Processed 550 files, extracted 39475 segments so far
+2025-10-08 00:13:41,648 - pixelated.enhanced_analysis - INFO - Processing 551/806: cleaned_26_signs_of_emotional_depletion.txt
+2025-10-08 00:13:41,712 - pixelated.enhanced_analysis - INFO - Processing 552/806: cleaned_the_difference_between_guilt_and_shame-why_it_matters_for_complex_trauma_healing_and_recovery.txt
+2025-10-08 00:13:41,731 - pixelated.enhanced_analysis - INFO - Processing 553/806: cleaned_the_characteristics_of_complex_trauma-part_23-afraid_to_be_a_burden.txt
+2025-10-08 00:13:41,749 - pixelated.enhanced_analysis - INFO - Processing 554/806: cleaned_shedding_the_weight_of_negativity_is_essential_for_freedom_from_complex_trauma.txt
+2025-10-08 00:13:41,807 - pixelated.enhanced_analysis - INFO - Processing 555/806: cleaned_why_you_are_afraid_to_be_a_burden.txt
+2025-10-08 00:13:41,813 - pixelated.enhanced_analysis - INFO - Processing 556/806: cleaned_how_complex_trauma_messes_with_relationships_｜_the_characteristics_of_complex_trauma-part_10.txt
+2025-10-08 00:13:41,840 - pixelated.enhanced_analysis - INFO - Processing 557/806: cleaned_shame_and_complex_trauma-part_1⧸6-what_is_shame？_main.txt
+2025-10-08 00:13:41,905 - pixelated.enhanced_analysis - INFO - Processing 558/806: cleaned_being_your_own_dark_cloud：_how_complex_trauma_can_cause_you_to_fall_into_a_negative_mindset.txt
+2025-10-08 00:13:41,917 - pixelated.enhanced_analysis - INFO - Processing 559/806: cleaned_the_basics_of_anger_issues_and_complex_trauma.txt
+2025-10-08 00:13:41,923 - pixelated.enhanced_analysis - INFO - Processing 560/806: cleaned_how_your_trauma_explains_your_coping_mechanisms-part_1.txt
+2025-10-08 00:13:41,946 - pixelated.enhanced_analysis - INFO - Processing 561/806: cleaned_how_to_start_healing_from_emotional_dysregulation.txt
+2025-10-08 00:13:42,003 - pixelated.enhanced_analysis - INFO - Processing 562/806: cleaned_why_do_people_seek_attention_and_approval？.txt
+2025-10-08 00:13:42,013 - pixelated.enhanced_analysis - INFO - Processing 563/806: cleaned_these_12_needs_are_non-negotiable_for_a_healthy_&_whole_life_｜_#complextrauma_#whatstuck.txt
+2025-10-08 00:13:42,032 - pixelated.enhanced_analysis - INFO - Processing 564/806: cleaned_how_trauma_keeps_you_disconnected_without_realizing_it.txt
+2025-10-08 00:13:42,051 - pixelated.enhanced_analysis - INFO - Processing 565/806: cleaned_how_do_people_become_so_angry？-complex_trauma.txt
+2025-10-08 00:13:42,107 - pixelated.enhanced_analysis - INFO - Processing 566/806: cleaned_anger_and_complex_trauma-part_9⧸11-characteristics_of_abusers_main.txt
+2025-10-08 00:13:42,128 - pixelated.enhanced_analysis - INFO - Processing 567/806: cleaned_being_a_chameleon：_complex_trauma_s_effect_on_your_sense_of_self.txt
+2025-10-08 00:13:42,136 - pixelated.enhanced_analysis - INFO - Processing 568/806: cleaned_when_narcissists_discard_and_devalue：_the_late_stages_of_codependent_narcissistic_relationships.txt
+2025-10-08 00:13:42,202 - pixelated.enhanced_analysis - INFO - Processing 569/806: cleaned_your_money_trauma_starts_at_childhood_main.txt
+2025-10-08 00:13:42,217 - pixelated.enhanced_analysis - INFO - Processing 570/806: cleaned_relationships_and_complex_trauma-part_11⧸11-when_to_end_one_main.txt
+2025-10-08 00:13:42,233 - pixelated.enhanced_analysis - INFO - Processing 571/806: cleaned_the_fear-trauma_connection_nobody_talks_about.txt
+2025-10-08 00:13:42,244 - pixelated.enhanced_analysis - INFO - Processing 572/806: cleaned_what_complex_trauma_does_to_love,_attachment,_and_loyalty.txt
+2025-10-08 00:13:42,251 - pixelated.enhanced_analysis - INFO - Processing 573/806: cleaned_the_characteristics_of_complex_trauma-part_20-emotional_dysregulation_main.txt
+2025-10-08 00:13:42,315 - pixelated.enhanced_analysis - INFO - Processing 574/806: cleaned_the_trauma_loop：_why_you_keep_ending_up_in_the_same_pain.txt
+2025-10-08 00:13:42,328 - pixelated.enhanced_analysis - INFO - Processing 575/806: cleaned_betrayal_trauma_｜_understanding_trauma-part_13_｜_#complextrauma_main.txt
+2025-10-08 00:13:42,345 - pixelated.enhanced_analysis - INFO - Processing 576/806: cleaned_planting_seeds_of_doubt：_signs_you_re_being_manipulated_to_question_yourself.txt
+2025-10-08 00:13:42,408 - pixelated.enhanced_analysis - INFO - Processing 577/806: cleaned_anger_and_complex_trauma-part_1⧸11-intro_main.txt
+2025-10-08 00:13:42,423 - pixelated.enhanced_analysis - INFO - Processing 578/806: cleaned_brain_fog_and_complex_trauma.txt
+2025-10-08 00:13:42,435 - pixelated.enhanced_analysis - INFO - Processing 579/806: cleaned_depletion_and_self-care_｜_re-parenting-part_89_｜_#complextrauma.txt
+2025-10-08 00:13:42,508 - pixelated.enhanced_analysis - INFO - Processing 580/806: cleaned_anger_and_complex_trauma-part_9⧸11-characteristics_of_abusers_religious.txt
+2025-10-08 00:13:42,530 - pixelated.enhanced_analysis - INFO - Processing 581/806: cleaned_what_complex_trauma_survivors_need_to_know_about_their_anger.txt
+2025-10-08 00:13:42,542 - pixelated.enhanced_analysis - INFO - Processing 582/806: cleaned_codependency_and_complex_trauma-part_2⧸10-narcissist_or_co-narcissist？_religious.txt
+2025-10-08 00:13:42,611 - pixelated.enhanced_analysis - INFO - Processing 583/806: cleaned_anger_and_complex_trauma-part_11⧸11-gaslighting_religious.txt
+2025-10-08 00:13:42,636 - pixelated.enhanced_analysis - INFO - Processing 584/806: cleaned_dating_and_intimate_relationship_lies-re-parenting-part_116.txt
+2025-10-08 00:13:42,711 - pixelated.enhanced_analysis - INFO - Processing 585/806: cleaned_shame_and_complex_trauma-part_6⧸6-healing_religious.txt
+2025-10-08 00:13:42,727 - pixelated.enhanced_analysis - INFO - Processing 586/806: cleaned_here_s_why_you_feel_emotionally_depleted.txt
+2025-10-08 00:13:42,743 - pixelated.enhanced_analysis - INFO - Processing 587/806: cleaned_what_you_need_to_know_after_ending_a_relationship_with_a_narcissist.txt
+2025-10-08 00:13:42,750 - pixelated.enhanced_analysis - INFO - Processing 588/806: cleaned_shame_and_complex_trauma-part_2⧸7-unhealthy_solutions-repeat_religious.txt
+2025-10-08 00:13:42,812 - pixelated.enhanced_analysis - INFO - Processing 589/806: cleaned_shame_and_complex_trauma-part_3⧸6_religious.txt
+2025-10-08 00:13:42,825 - pixelated.enhanced_analysis - INFO - Processing 590/806: cleaned_everyone_has_a_sex_life：_4_ways_trauma_affects_sexuality_and_intimacy.txt
+2025-10-08 00:13:42,829 - pixelated.enhanced_analysis - INFO - Processing 591/806: cleaned_set_boundaries_and_stop_people_pleasing：_the_subjugation_life_trap-complex_trauma_prisons.txt
+2025-10-08 00:13:42,908 - pixelated.enhanced_analysis - INFO - Processing 592/806: cleaned_realistic_recovery-part_1⧸13-seven_levels_of_change_main.txt
+2025-10-08 00:13:42,923 - pixelated.enhanced_analysis - INFO - Processing 593/806: cleaned_how_to_handle_a_narcissist_(q&a_with_tim,_part_8).txt
+2025-10-08 00:13:42,944 - pixelated.enhanced_analysis - INFO - Processing 594/806: cleaned_how_to_spot_a_narcissist-18_characteristics_of_narcissism_｜_complex_trauma_recovery.txt
+2025-10-08 00:13:42,951 - pixelated.enhanced_analysis - INFO - Processing 595/806: cleaned_surviving_vs_thriving：_moving_beyond_survival_mode_after_complex_trauma.txt
+2025-10-08 00:13:43,015 - pixelated.enhanced_analysis - INFO - Processing 596/806: cleaned_being_an_unwanted_child_comes_with_a_lifetime_of_trauma.txt
+2025-10-08 00:13:43,028 - pixelated.enhanced_analysis - INFO - Processing 597/806: cleaned_what_complex_trauma_really_does_to_your_emotions_｜_the_characteristics_of_complex_trauma-part_7.txt
+2025-10-08 00:13:43,118 - pixelated.enhanced_analysis - INFO - Processing 598/806: cleaned_your_money_trauma_starts_at_childhood_religious.txt
+2025-10-08 00:13:43,138 - pixelated.enhanced_analysis - INFO - Processing 599/806: cleaned_how_the_pattern_of_narcissism_is_misunderstood.txt
+2025-10-08 00:13:43,148 - pixelated.enhanced_analysis - INFO - Processing 600/806: cleaned_shame_and_complex_trauma-part_4⧸6-shame_test_religious.txt
+2025-10-08 00:13:43,222 - pixelated.enhanced_analysis - INFO - Processed 600 files, extracted 42336 segments so far
+2025-10-08 00:13:43,223 - pixelated.enhanced_analysis - INFO - Processing 601/806: cleaned_when_a_narcissist_is_triggered,_others_pay_the_price.txt
+2025-10-08 00:13:43,230 - pixelated.enhanced_analysis - INFO - Processing 602/806: cleaned_codependency_and_complex_trauma-part_2⧸10-narcissist_or_co-narcissist？_main.txt
+2025-10-08 00:13:43,252 - pixelated.enhanced_analysis - INFO - Processing 603/806: cleaned_relationships_and_complex_trauma-part_2⧸11-family_roles-part_1⧸2_main.txt
+2025-10-08 00:13:43,320 - pixelated.enhanced_analysis - INFO - Processing 604/806: cleaned_how_to_set_boundaries_and_stop_people_pleasing-boundaries_and_complex_trauma-part_2⧸12_main.txt
+2025-10-08 00:13:43,331 - pixelated.enhanced_analysis - INFO - Processing 605/806: cleaned_shame_and_complex_trauma-part_3⧸6_main.txt
+2025-10-08 00:13:43,345 - pixelated.enhanced_analysis - INFO - Processing 606/806: cleaned_realistic_recovery-part_1⧸13-seven_levels_of_change_religious.txt
+2025-10-08 00:13:43,412 - pixelated.enhanced_analysis - INFO - Processing 607/806: cleaned_are_you_seeking_approval_or_attention？-complex_trauma_prisons.txt
+2025-10-08 00:13:43,444 - pixelated.enhanced_analysis - INFO - Processing 608/806: cleaned_why_procrastination_is_tied_to_complex_trauma_and_how_to_heal_it.txt
+2025-10-08 00:13:43,518 - pixelated.enhanced_analysis - INFO - Processing 609/806: cleaned_signs_and_relationship_patterns_of_dating_a_narcissist-codependency_and_complex_trauma-part_3⧸10_main.txt
+2025-10-08 00:13:43,532 - pixelated.enhanced_analysis - INFO - Processing 610/806: cleaned_how_to_stop_procrastinating_&_heal_feelings_of_paralysis.txt
+2025-10-08 00:13:43,541 - pixelated.enhanced_analysis - INFO - Processing 611/806: cleaned_shame_and_complex_trauma-part_2⧸7-unhealthy_solutions-repeat_main.txt
+2025-10-08 00:13:43,609 - pixelated.enhanced_analysis - INFO - Processing 612/806: cleaned_shame_and_complex_trauma-part_6⧸6-healing_main.txt
+2025-10-08 00:13:43,632 - pixelated.enhanced_analysis - INFO - Processing 613/806: cleaned_depression_&_the_fear_of_hope：_complex_trauma_s_double_bind.txt
+2025-10-08 00:13:43,646 - pixelated.enhanced_analysis - INFO - Processing 614/806: cleaned_＂am_i_ever_going_to_heal_from_my_shame？＂_｜_healing_shame_as_part_of_complex_trauma_recovery.txt
+2025-10-08 00:13:43,732 - pixelated.enhanced_analysis - INFO - Processing 615/806: cleaned_betrayal_trauma_｜_understanding_trauma-part_13_｜_#complextrauma_religious.txt
+2025-10-08 00:13:43,801 - pixelated.enhanced_analysis - INFO - Processing 616/806: cleaned_shame_and_complex_trauma-part_5⧸6_main.txt
+2025-10-08 00:13:43,816 - pixelated.enhanced_analysis - INFO - Processing 617/806: How to Let Go of the Past - 3 Steps for Regret.txt
+2025-10-08 00:13:43,827 - pixelated.enhanced_analysis - INFO - Processing 618/806: How to Stop Taking Things Personally.txt
+2025-10-08 00:13:43,840 - pixelated.enhanced_analysis - INFO - Processing 619/806: Probably the most Transformative Exercise for Processing Painful Emotions - Embodiment Meditation.txt
+2025-10-08 00:13:43,847 - pixelated.enhanced_analysis - INFO - Processing 620/806: How to Set Boundaries with Emotionally Immature People  - The CLEAR Method w⧸ Jess Miller.txt
+2025-10-08 00:13:43,930 - pixelated.enhanced_analysis - INFO - Processing 621/806: A nerdy deep dive into ADHD and Anxiety.txt
+2025-10-08 00:13:43,949 - pixelated.enhanced_analysis - INFO - Processing 622/806: ER Doctor Teaches How to Overcome Burnout from a Body-Based Perspective w Dr. Laura Hays, MD.txt
+2025-10-08 00:13:44,029 - pixelated.enhanced_analysis - INFO - Processing 623/806: cleaned_How to Set Boundaries with Emotionally Immature People  - The CLEAR Method w⧸ Jess Miller.txt
+2025-10-08 00:13:44,111 - pixelated.enhanced_analysis - INFO - Processing 624/806: cleaned_A nerdy deep dive into ADHD and Anxiety.txt
+2025-10-08 00:13:44,130 - pixelated.enhanced_analysis - INFO - Processing 625/806: cleaned_ER Doctor Teaches How to Overcome Burnout from a Body-Based Perspective w Dr. Laura Hays, MD.txt
+2025-10-08 00:13:44,209 - pixelated.enhanced_analysis - INFO - Processing 626/806: cleaned_How to Stop Taking Things Personally.txt
+2025-10-08 00:13:44,222 - pixelated.enhanced_analysis - INFO - Processing 627/806: cleaned_How to Let Go of the Past - 3 Steps for Regret.txt
+2025-10-08 00:13:44,233 - pixelated.enhanced_analysis - INFO - Processing 628/806: cleaned_Probably the most Transformative Exercise for Processing Painful Emotions - Embodiment Meditation.txt
+2025-10-08 00:13:44,240 - pixelated.enhanced_analysis - INFO - Processing 629/806: cleaned_characteristics_of_complex_trauma_-_part_22_-_create_what_they_hate.txt
+2025-10-08 00:13:44,309 - pixelated.enhanced_analysis - INFO - Processing 630/806: cleaned_the_main_driver_behind_anxiety_-_intro_to_the_characteristics_of_complex_trauma_-_part_5⧸11.txt
+2025-10-08 00:13:44,328 - pixelated.enhanced_analysis - INFO - Processing 631/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Instant Gratification - Intro to The Characteristics of Complex Trauma - Part 2⧸11.txt
+2025-10-08 00:13:44,338 - pixelated.enhanced_analysis - INFO - Processing 632/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 9 - Afraid To Hope.txt
+2025-10-08 00:13:44,410 - pixelated.enhanced_analysis - INFO - Processing 633/806: cleaned_characteristics_of_complex_trauma_-_part_31_-_unhealthy_toolbox.txt
+2025-10-08 00:13:44,432 - pixelated.enhanced_analysis - INFO - Processing 634/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 1 - Perfectionism.txt
+2025-10-08 00:13:44,501 - pixelated.enhanced_analysis - INFO - Processing 635/806: cleaned_characteristics_of_complex_trauma_-_part_8_-_need_distractions.txt
+2025-10-08 00:13:44,521 - pixelated.enhanced_analysis - INFO - Processing 636/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 5 - Authority Issues.txt
+2025-10-08 00:13:44,546 - pixelated.enhanced_analysis - INFO - Processing 637/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 7 - Addicted To Chaos.txt
+2025-10-08 00:13:44,619 - pixelated.enhanced_analysis - INFO - Processing 638/806: cleaned_characteristics_of_complex_trauma_-_part_16_-_change_in_priorities.txt
+2025-10-08 00:13:44,635 - pixelated.enhanced_analysis - INFO - Processing 639/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_9 Ways Shame Changes Your Relationships With Others ｜ The Characteristics of Complex Trauma - Part 5.txt
+2025-10-08 00:13:44,710 - pixelated.enhanced_analysis - INFO - Processing 640/806: cleaned_characteristics_of_complex_trauma_-_part_7_-_addicted_to_chaos.txt
+2025-10-08 00:13:44,846 - pixelated.enhanced_analysis - INFO - Processing 641/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 37 - Body Image & Issues.txt
+2025-10-08 00:13:44,913 - pixelated.enhanced_analysis - INFO - Processing 642/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 22 - Create What They Hate.txt
+2025-10-08 00:13:44,928 - pixelated.enhanced_analysis - INFO - Processing 643/806: cleaned_characteristics_of_complex_trauma_-_part_3_-_fear_of_abandonment.txt
+2025-10-08 00:13:45,006 - pixelated.enhanced_analysis - INFO - Processing 644/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_10 Physical Symptoms of Complex Trauma ｜ The Characteristics of Complex Trauma - Part 1.txt
+2025-10-08 00:13:45,030 - pixelated.enhanced_analysis - INFO - Processing 645/806: cleaned_to_the_characteristics_of_complex_trauma_-_part_10⧸11.txt
+2025-10-08 00:13:45,049 - pixelated.enhanced_analysis - INFO - Processing 646/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_7 Ways Complex Trauma Distorts Your Self-Identity ｜ The Characteristics of Complex Trauma - Part 3.txt
+2025-10-08 00:13:45,126 - pixelated.enhanced_analysis - INFO - Processing 647/806: cleaned_gaps_-_intro_to_the_characteristics_of_complex_trauma_-_part_3⧸11.txt
+2025-10-08 00:13:45,143 - pixelated.enhanced_analysis - INFO - Processing 648/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 28 - C-PTSD Test.txt
+2025-10-08 00:13:45,209 - pixelated.enhanced_analysis - INFO - Processing 649/806: cleaned_you_feel_the_need_to_wear_a_mask？_-_intro_to_the_characteristics_of_complex_trauma_-_part_4⧸11.txt
+2025-10-08 00:13:45,223 - pixelated.enhanced_analysis - INFO - Processing 650/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 19 - Instant Gratification.txt
+2025-10-08 00:13:45,302 - pixelated.enhanced_analysis - INFO - Processed 650 files, extracted 46231 segments so far
+2025-10-08 00:13:45,302 - pixelated.enhanced_analysis - INFO - Processing 651/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_How Does Childhood Trauma Affect Our Emotions？ ｜ The Characteristics of Complex Trauma - Part 6.txt
+2025-10-08 00:13:45,331 - pixelated.enhanced_analysis - INFO - Processing 652/806: cleaned_does_childhood_trauma_affect_our_emotions？_｜_the_characteristics_of_complex_trauma_-_part_6.txt
+2025-10-08 00:13:45,410 - pixelated.enhanced_analysis - INFO - Processing 653/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Memory Gaps - Intro to The Characteristics of Complex Trauma - Part 3⧸11.txt
+2025-10-08 00:13:45,426 - pixelated.enhanced_analysis - INFO - Processing 654/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 11 - Wear Masks.txt
+2025-10-08 00:13:45,502 - pixelated.enhanced_analysis - INFO - Processing 655/806: cleaned_characteristics_of_complex_trauma_-_part_4_-_manipulation.txt
+2025-10-08 00:13:45,528 - pixelated.enhanced_analysis - INFO - Processing 656/806: cleaned_characteristics_of_complex_trauma_-_part_32_-_sabotage.txt
+2025-10-08 00:13:45,551 - pixelated.enhanced_analysis - INFO - Processing 657/806: cleaned_characteristics_of_complex_trauma_-_part_28_-_c-ptsd_test.txt
+2025-10-08 00:13:45,627 - pixelated.enhanced_analysis - INFO - Processing 658/806: cleaned_characteristics_of_complex_trauma_-_part_24_-_fear_of_change.txt
+2025-10-08 00:13:45,726 - pixelated.enhanced_analysis - INFO - Processing 659/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 35 - Intrusive Thoughts.txt
+2025-10-08 00:13:45,744 - pixelated.enhanced_analysis - INFO - Processing 660/806: cleaned_characteristics_of_complex_trauma_-_part_35_-_intrusive_thoughts.txt
+2025-10-08 00:13:45,820 - pixelated.enhanced_analysis - INFO - Processing 661/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Fear： The Main Driver Behind Anxiety - Intro to The Characteristics of Complex Trauma - Part 5⧸11.txt
+2025-10-08 00:13:45,850 - pixelated.enhanced_analysis - INFO - Processing 662/806: cleaned_characteristics_of_complex_trauma_-_part_33_-_helpful_perspectives.txt
+2025-10-08 00:13:45,915 - pixelated.enhanced_analysis - INFO - Processing 663/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 38 - Burnout.txt
+2025-10-08 00:13:45,940 - pixelated.enhanced_analysis - INFO - Processing 664/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Intro to The Characteristics of Complex Trauma - Part 10⧸11.txt
+2025-10-08 00:13:46,016 - pixelated.enhanced_analysis - INFO - Processing 665/806: cleaned_characteristics_of_complex_trauma_-_part_15_-_negative_and_critical.txt
+2025-10-08 00:13:46,107 - pixelated.enhanced_analysis - INFO - Processing 666/806: cleaned_characteristics_of_complex_trauma_-_part_38_-_burnout.txt
+2025-10-08 00:13:46,147 - pixelated.enhanced_analysis - INFO - Processing 667/806: cleaned_characteristics_of_complex_trauma_-_part_2_-_escape_to_fantasy.txt
+2025-10-08 00:13:46,222 - pixelated.enhanced_analysis - INFO - Processing 668/806: cleaned_maladaptive_ways_trauma_teaches_us_to_cope_｜_the_characteristics_of_complex_trauma_-_part_9.txt
+2025-10-08 00:13:46,248 - pixelated.enhanced_analysis - INFO - Processing 669/806: cleaned_characteristics_of_complex_trauma_-_part_37_-_body_image_&_issues.txt
+2025-10-08 00:13:46,322 - pixelated.enhanced_analysis - INFO - Processing 670/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 33 - Helpful Perspectives.txt
+2025-10-08 00:13:46,400 - pixelated.enhanced_analysis - INFO - Processing 671/806: cleaned_characteristics_of_complex_trauma_-_part_18_-_abuse_authority.txt
+2025-10-08 00:13:46,434 - pixelated.enhanced_analysis - INFO - Processing 672/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 24 - Fear of Change.txt
+2025-10-08 00:13:46,524 - pixelated.enhanced_analysis - INFO - Processing 673/806: cleaned_characteristics_of_complex_trauma_-_part_17_-_many_insecurities.txt
+2025-10-08 00:13:46,550 - pixelated.enhanced_analysis - INFO - Processing 674/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 10 - Impulsive.txt
+2025-10-08 00:13:46,626 - pixelated.enhanced_analysis - INFO - Processing 675/806: cleaned_characteristics_of_complex_trauma_-_part_19_-_instant_gratification.txt
+2025-10-08 00:13:46,714 - pixelated.enhanced_analysis - INFO - Processing 676/806: cleaned_characteristics_of_complex_trauma_-_part_20_-_emotional_dysregulation.txt
+2025-10-08 00:13:46,805 - pixelated.enhanced_analysis - INFO - Processing 677/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_How Complex Trauma Messes With Relationships ｜ The Characteristics of Complex Trauma - Part 9.txt
+2025-10-08 00:13:46,832 - pixelated.enhanced_analysis - INFO - Processing 678/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 3 - Fear of Abandonment.txt
+2025-10-08 00:13:46,909 - pixelated.enhanced_analysis - INFO - Processing 679/806: cleaned_characteristics_of_complex_trauma_-_part_1_-_perfectionism.txt
+2025-10-08 00:13:46,930 - pixelated.enhanced_analysis - INFO - Processing 680/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 31 - Unhealthy Toolbox.txt
+2025-10-08 00:13:47,004 - pixelated.enhanced_analysis - INFO - Processing 681/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Do You Feel the Need to Wear a Mask？ - Intro to The Characteristics of Complex Trauma - Part 4⧸11.txt
+2025-10-08 00:13:47,018 - pixelated.enhanced_analysis - INFO - Processing 682/806: cleaned_to_the_characteristics_of_complex_trauma_-_part_1⧸11.txt
+2025-10-08 00:13:47,035 - pixelated.enhanced_analysis - INFO - Processing 683/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 13 - Trust Issues.txt
+2025-10-08 00:13:47,106 - pixelated.enhanced_analysis - INFO - Processing 684/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 32 - Sabotage.txt
+2025-10-08 00:13:47,127 - pixelated.enhanced_analysis - INFO - Processing 685/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Intro to The Characteristics of Complex Trauma - Part 1⧸11.txt
+2025-10-08 00:13:47,144 - pixelated.enhanced_analysis - INFO - Processing 686/806: cleaned_physical_symptoms_of_complex_trauma_｜_the_characteristics_of_complex_trauma_-_part_1.txt
+2025-10-08 00:13:47,220 - pixelated.enhanced_analysis - INFO - Processing 687/806: cleaned_characteristics_of_complex_trauma_-_part_36_-_sleep_issues.txt
+2025-10-08 00:13:47,240 - pixelated.enhanced_analysis - INFO - Processing 688/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 20 - Emotional Dysregulation.txt
+2025-10-08 00:13:47,322 - pixelated.enhanced_analysis - INFO - Processing 689/806: cleaned_ways_complex_trauma_distorts_your_self-identity_｜_the_characteristics_of_complex_trauma_-_part_3.txt
+2025-10-08 00:13:47,406 - pixelated.enhanced_analysis - INFO - Processing 690/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Fears ｜ The Characteristics of Complex Trauma - Part 8.txt
+2025-10-08 00:13:47,430 - pixelated.enhanced_analysis - INFO - Processing 691/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 16 - Change in Priorities.txt
+2025-10-08 00:13:47,504 - pixelated.enhanced_analysis - INFO - Processing 692/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 2 - Escape To Fantasy.txt
+2025-10-08 00:13:47,531 - pixelated.enhanced_analysis - INFO - Processing 693/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 4 - Manipulation.txt
+2025-10-08 00:13:47,608 - pixelated.enhanced_analysis - INFO - Processing 694/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 8 - Need Distractions.txt
+2025-10-08 00:13:47,627 - pixelated.enhanced_analysis - INFO - Processing 695/806: cleaned_｜_the_characteristics_of_complex_trauma_-_part_8.txt
+2025-10-08 00:13:47,642 - pixelated.enhanced_analysis - INFO - Processing 696/806: cleaned_complex_trauma_messes_with_relationships_｜_the_characteristics_of_complex_trauma_-_part_9.txt
+2025-10-08 00:13:47,718 - pixelated.enhanced_analysis - INFO - Processing 697/806: cleaned_characteristics_of_complex_trauma_-_part_13_-_trust_issues.txt
+2025-10-08 00:13:47,742 - pixelated.enhanced_analysis - INFO - Processing 698/806: cleaned_characteristics_of_complex_trauma_-_part_21_-_dissociation.txt
+2025-10-08 00:13:47,822 - pixelated.enhanced_analysis - INFO - Processing 699/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 15 - Negative and Critical.txt
+2025-10-08 00:13:47,848 - pixelated.enhanced_analysis - INFO - Processing 700/806: cleaned_gratification_-_intro_to_the_characteristics_of_complex_trauma_-_part_2⧸11.txt
+2025-10-08 00:13:47,906 - pixelated.enhanced_analysis - INFO - Processed 700 files, extracted 51304 segments so far
+2025-10-08 00:13:47,906 - pixelated.enhanced_analysis - INFO - Processing 701/806: cleaned_characteristics_of_complex_trauma_-_part_10_-_impulsive.txt
+2025-10-08 00:13:47,929 - pixelated.enhanced_analysis - INFO - Processing 702/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 36 - Sleep Issues.txt
+2025-10-08 00:13:47,948 - pixelated.enhanced_analysis - INFO - Processing 703/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 18 - Abuse Authority.txt
+2025-10-08 00:13:48,026 - pixelated.enhanced_analysis - INFO - Processing 704/806: cleaned_characteristics_of_complex_trauma_-_part_5_-_authority_issues.txt
+2025-10-08 00:13:48,052 - pixelated.enhanced_analysis - INFO - Processing 705/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_11 Maladaptive Ways Trauma Teaches Us to Cope ｜ The Characteristics of Complex Trauma - Part 9.txt
+2025-10-08 00:13:48,141 - pixelated.enhanced_analysis - INFO - Processing 706/806: cleaned_characteristics_of_complex_trauma_-_part_11_-_wear_masks.txt
+2025-10-08 00:13:48,219 - pixelated.enhanced_analysis - INFO - Processing 707/806: cleaned_characteristics_of_complex_trauma_-_part_29_-_c-ptsd_ace_test.txt
+2025-10-08 00:13:48,228 - pixelated.enhanced_analysis - INFO - Processing 708/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 21 - Dissociation.txt
+2025-10-08 00:13:48,301 - pixelated.enhanced_analysis - INFO - Processing 709/806: cleaned_ways_shame_changes_your_relationships_with_others_｜_the_characteristics_of_complex_trauma_-_part_5.txt
+2025-10-08 00:13:48,327 - pixelated.enhanced_analysis - INFO - Processing 710/806: cleaned_characteristics_of_complex_trauma_-_part_9_-_afraid_to_hope.txt
+2025-10-08 00:13:48,401 - pixelated.enhanced_analysis - INFO - Processing 711/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 17 - Many Insecurities.txt
+2025-10-08 00:13:48,428 - pixelated.enhanced_analysis - INFO - Processing 712/806: cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 29 - C-PTSD Ace Test.txt
+2025-10-08 00:13:48,437 - pixelated.enhanced_analysis - INFO - Processing 713/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_2_-_escape_to_fantasy.txt
+2025-10-08 00:13:48,514 - pixelated.enhanced_analysis - INFO - Processing 714/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_17_-_many_insecurities.txt
+2025-10-08 00:13:48,543 - pixelated.enhanced_analysis - INFO - Processing 715/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_9_-_afraid_to_hope.txt
+2025-10-08 00:13:48,618 - pixelated.enhanced_analysis - INFO - Processing 716/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_10 Physical Symptoms of Complex Trauma ｜ The Characteristics of Complex Trauma - Part 1.txt
+2025-10-08 00:13:48,641 - pixelated.enhanced_analysis - INFO - Processing 717/806: cleaned_cleaned_gaps_-_intro_to_the_characteristics_of_complex_trauma_-_part_3⧸11.txt
+2025-10-08 00:13:48,712 - pixelated.enhanced_analysis - INFO - Processing 718/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 28 - C-PTSD Test.txt
+2025-10-08 00:13:48,730 - pixelated.enhanced_analysis - INFO - Processing 719/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_How Complex Trauma Messes With Relationships ｜ The Characteristics of Complex Trauma - Part 9.txt
+2025-10-08 00:13:48,807 - pixelated.enhanced_analysis - INFO - Processing 720/806: cleaned_cleaned_to_the_characteristics_of_complex_trauma_-_part_1⧸11.txt
+2025-10-08 00:13:48,824 - pixelated.enhanced_analysis - INFO - Processing 721/806: cleaned_cleaned_to_the_characteristics_of_complex_trauma_-_part_10⧸11.txt
+2025-10-08 00:13:48,843 - pixelated.enhanced_analysis - INFO - Processing 722/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 32 - Sabotage.txt
+2025-10-08 00:13:48,913 - pixelated.enhanced_analysis - INFO - Processing 723/806: cleaned_cleaned_gratification_-_intro_to_the_characteristics_of_complex_trauma_-_part_2⧸11.txt
+2025-10-08 00:13:48,922 - pixelated.enhanced_analysis - INFO - Processing 724/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 35 - Intrusive Thoughts.txt
+2025-10-08 00:13:48,939 - pixelated.enhanced_analysis - INFO - Processing 725/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 11 - Wear Masks.txt
+2025-10-08 00:13:49,014 - pixelated.enhanced_analysis - INFO - Processing 726/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 24 - Fear of Change.txt
+2025-10-08 00:13:49,045 - pixelated.enhanced_analysis - INFO - Processing 727/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_1_-_perfectionism.txt
+2025-10-08 00:13:49,114 - pixelated.enhanced_analysis - INFO - Processing 728/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 1 - Perfectionism.txt
+2025-10-08 00:13:49,140 - pixelated.enhanced_analysis - INFO - Processing 729/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 36 - Sleep Issues.txt
+2025-10-08 00:13:49,225 - pixelated.enhanced_analysis - INFO - Processing 730/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Fear： The Main Driver Behind Anxiety - Intro to The Characteristics of Complex Trauma - Part 5⧸11.txt
+2025-10-08 00:13:49,302 - pixelated.enhanced_analysis - INFO - Processing 731/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 3 - Fear of Abandonment.txt
+2025-10-08 00:13:49,330 - pixelated.enhanced_analysis - INFO - Processing 732/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Intro to The Characteristics of Complex Trauma - Part 10⧸11.txt
+2025-10-08 00:13:49,409 - pixelated.enhanced_analysis - INFO - Processing 733/806: cleaned_cleaned_you_feel_the_need_to_wear_a_mask？_-_intro_to_the_characteristics_of_complex_trauma_-_part_4⧸11.txt
+2025-10-08 00:13:49,424 - pixelated.enhanced_analysis - INFO - Processing 734/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 8 - Need Distractions.txt
+2025-10-08 00:13:49,444 - pixelated.enhanced_analysis - INFO - Processing 735/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 38 - Burnout.txt
+2025-10-08 00:13:49,537 - pixelated.enhanced_analysis - INFO - Processing 736/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 19 - Instant Gratification.txt
+2025-10-08 00:13:49,630 - pixelated.enhanced_analysis - INFO - Processing 737/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_36_-_sleep_issues.txt
+2025-10-08 00:13:49,715 - pixelated.enhanced_analysis - INFO - Processing 738/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 9 - Afraid To Hope.txt
+2025-10-08 00:13:49,804 - pixelated.enhanced_analysis - INFO - Processing 739/806: cleaned_cleaned_physical_symptoms_of_complex_trauma_｜_the_characteristics_of_complex_trauma_-_part_1.txt
+2025-10-08 00:13:49,842 - pixelated.enhanced_analysis - INFO - Processing 740/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_5_-_authority_issues.txt
+2025-10-08 00:13:49,928 - pixelated.enhanced_analysis - INFO - Processing 741/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_31_-_unhealthy_toolbox.txt
+2025-10-08 00:13:49,949 - pixelated.enhanced_analysis - INFO - Processing 742/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 15 - Negative and Critical.txt
+2025-10-08 00:13:50,023 - pixelated.enhanced_analysis - INFO - Processing 743/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Fears ｜ The Characteristics of Complex Trauma - Part 8.txt
+2025-10-08 00:13:50,038 - pixelated.enhanced_analysis - INFO - Processing 744/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 17 - Many Insecurities.txt
+2025-10-08 00:13:50,119 - pixelated.enhanced_analysis - INFO - Processing 745/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 20 - Emotional Dysregulation.txt
+2025-10-08 00:13:50,147 - pixelated.enhanced_analysis - INFO - Processing 746/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_3_-_fear_of_abandonment.txt
+2025-10-08 00:13:50,221 - pixelated.enhanced_analysis - INFO - Processing 747/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_7_-_addicted_to_chaos.txt
+2025-10-08 00:13:50,241 - pixelated.enhanced_analysis - INFO - Processing 748/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_37_-_body_image_&_issues.txt
+2025-10-08 00:13:50,311 - pixelated.enhanced_analysis - INFO - Processing 749/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_9 Ways Shame Changes Your Relationships With Others ｜ The Characteristics of Complex Trauma - Part 5.txt
+2025-10-08 00:13:50,337 - pixelated.enhanced_analysis - INFO - Processing 750/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Memory Gaps - Intro to The Characteristics of Complex Trauma - Part 3⧸11.txt
+2025-10-08 00:13:50,402 - pixelated.enhanced_analysis - INFO - Processed 750 files, extracted 56241 segments so far
+2025-10-08 00:13:50,402 - pixelated.enhanced_analysis - INFO - Processing 751/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_11_-_wear_masks.txt
+2025-10-08 00:13:50,437 - pixelated.enhanced_analysis - INFO - Processing 752/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_32_-_sabotage.txt
+2025-10-08 00:13:50,523 - pixelated.enhanced_analysis - INFO - Processing 753/806: cleaned_cleaned_ways_shame_changes_your_relationships_with_others_｜_the_characteristics_of_complex_trauma_-_part_5.txt
+2025-10-08 00:13:50,614 - pixelated.enhanced_analysis - INFO - Processing 754/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 33 - Helpful Perspectives.txt
+2025-10-08 00:13:50,639 - pixelated.enhanced_analysis - INFO - Processing 755/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_28_-_c-ptsd_test.txt
+2025-10-08 00:13:50,710 - pixelated.enhanced_analysis - INFO - Processing 756/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 29 - C-PTSD Ace Test.txt
+2025-10-08 00:13:50,720 - pixelated.enhanced_analysis - INFO - Processing 757/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_10_-_impulsive.txt
+2025-10-08 00:13:50,742 - pixelated.enhanced_analysis - INFO - Processing 758/806: cleaned_cleaned_maladaptive_ways_trauma_teaches_us_to_cope_｜_the_characteristics_of_complex_trauma_-_part_9.txt
+2025-10-08 00:13:50,819 - pixelated.enhanced_analysis - INFO - Processing 759/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_24_-_fear_of_change.txt
+2025-10-08 00:13:50,849 - pixelated.enhanced_analysis - INFO - Processing 760/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 37 - Body Image & Issues.txt
+2025-10-08 00:13:50,915 - pixelated.enhanced_analysis - INFO - Processing 761/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 18 - Abuse Authority.txt
+2025-10-08 00:13:50,940 - pixelated.enhanced_analysis - INFO - Processing 762/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_8_-_need_distractions.txt
+2025-10-08 00:13:51,011 - pixelated.enhanced_analysis - INFO - Processing 763/806: cleaned_cleaned_｜_the_characteristics_of_complex_trauma_-_part_8.txt
+2025-10-08 00:13:51,026 - pixelated.enhanced_analysis - INFO - Processing 764/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_33_-_helpful_perspectives.txt
+2025-10-08 00:13:51,042 - pixelated.enhanced_analysis - INFO - Processing 765/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_38_-_burnout.txt
+2025-10-08 00:13:51,116 - pixelated.enhanced_analysis - INFO - Processing 766/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_35_-_intrusive_thoughts.txt
+2025-10-08 00:13:51,133 - pixelated.enhanced_analysis - INFO - Processing 767/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_11 Maladaptive Ways Trauma Teaches Us to Cope ｜ The Characteristics of Complex Trauma - Part 9.txt
+2025-10-08 00:13:51,210 - pixelated.enhanced_analysis - INFO - Processing 768/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Do You Feel the Need to Wear a Mask？ - Intro to The Characteristics of Complex Trauma - Part 4⧸11.txt
+2025-10-08 00:13:51,223 - pixelated.enhanced_analysis - INFO - Processing 769/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_22_-_create_what_they_hate.txt
+2025-10-08 00:13:51,238 - pixelated.enhanced_analysis - INFO - Processing 770/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_21_-_dissociation.txt
+2025-10-08 00:13:51,311 - pixelated.enhanced_analysis - INFO - Processing 771/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Instant Gratification - Intro to The Characteristics of Complex Trauma - Part 2⧸11.txt
+2025-10-08 00:13:51,320 - pixelated.enhanced_analysis - INFO - Processing 772/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 10 - Impulsive.txt
+2025-10-08 00:13:51,342 - pixelated.enhanced_analysis - INFO - Processing 773/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_13_-_trust_issues.txt
+2025-10-08 00:13:51,414 - pixelated.enhanced_analysis - INFO - Processing 774/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 2 - Escape To Fantasy.txt
+2025-10-08 00:13:51,441 - pixelated.enhanced_analysis - INFO - Processing 775/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_19_-_instant_gratification.txt
+2025-10-08 00:13:51,647 - pixelated.enhanced_analysis - INFO - Processing 776/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_7 Ways Complex Trauma Distorts Your Self-Identity ｜ The Characteristics of Complex Trauma - Part 3.txt
+2025-10-08 00:13:51,724 - pixelated.enhanced_analysis - INFO - Processing 777/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_Intro to The Characteristics of Complex Trauma - Part 1⧸11.txt
+2025-10-08 00:13:51,741 - pixelated.enhanced_analysis - INFO - Processing 778/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_16_-_change_in_priorities.txt
+2025-10-08 00:13:51,805 - pixelated.enhanced_analysis - INFO - Processing 779/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 13 - Trust Issues.txt
+2025-10-08 00:13:51,828 - pixelated.enhanced_analysis - INFO - Processing 780/806: cleaned_cleaned_does_childhood_trauma_affect_our_emotions？_｜_the_characteristics_of_complex_trauma_-_part_6.txt
+2025-10-08 00:13:51,905 - pixelated.enhanced_analysis - INFO - Processing 781/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 31 - Unhealthy Toolbox.txt
+2025-10-08 00:13:51,927 - pixelated.enhanced_analysis - INFO - Processing 782/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 5 - Authority Issues.txt
+2025-10-08 00:13:52,004 - pixelated.enhanced_analysis - INFO - Processing 783/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_29_-_c-ptsd_ace_test.txt
+2025-10-08 00:13:52,013 - pixelated.enhanced_analysis - INFO - Processing 784/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 4 - Manipulation.txt
+2025-10-08 00:13:52,041 - pixelated.enhanced_analysis - INFO - Processing 785/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 7 - Addicted To Chaos.txt
+2025-10-08 00:13:52,113 - pixelated.enhanced_analysis - INFO - Processing 786/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_4_-_manipulation.txt
+2025-10-08 00:13:52,139 - pixelated.enhanced_analysis - INFO - Processing 787/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 22 - Create What They Hate.txt
+2025-10-08 00:13:52,207 - pixelated.enhanced_analysis - INFO - Processing 788/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_15_-_negative_and_critical.txt
+2025-10-08 00:13:52,235 - pixelated.enhanced_analysis - INFO - Processing 789/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_How Does Childhood Trauma Affect Our Emotions？ ｜ The Characteristics of Complex Trauma - Part 6.txt
+2025-10-08 00:13:52,312 - pixelated.enhanced_analysis - INFO - Processing 790/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_18_-_abuse_authority.txt
+2025-10-08 00:13:52,337 - pixelated.enhanced_analysis - INFO - Processing 791/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 16 - Change in Priorities.txt
+2025-10-08 00:13:52,352 - pixelated.enhanced_analysis - INFO - Processing 792/806: cleaned_cleaned_complex_trauma_messes_with_relationships_｜_the_characteristics_of_complex_trauma_-_part_9.txt
+2025-10-08 00:13:52,427 - pixelated.enhanced_analysis - INFO - Processing 793/806: cleaned_cleaned_the_main_driver_behind_anxiety_-_intro_to_the_characteristics_of_complex_trauma_-_part_5⧸11.txt
+2025-10-08 00:13:52,445 - pixelated.enhanced_analysis - INFO - Processing 794/806: cleaned_cleaned_characteristics_of_complex_trauma_-_part_20_-_emotional_dysregulation.txt
+2025-10-08 00:13:52,526 - pixelated.enhanced_analysis - INFO - Processing 795/806: cleaned_cleaned_PLpvbEN3KkqoLN7UfGKJJxFJhvvys8Sfv4_NA_The Characteristics of Complex Trauma - Part 21 - Dissociation.txt
+2025-10-08 00:13:52,600 - pixelated.enhanced_analysis - INFO - Processing 796/806: cleaned_cleaned_ways_complex_trauma_distorts_your_self-identity_｜_the_characteristics_of_complex_trauma_-_part_3.txt
+2025-10-08 00:13:52,624 - pixelated.enhanced_analysis - INFO - Processing 797/806: How to Regulate Your Nervous System for Stress & Anxiety ｜ Peter Levine ｜ Ten Percent Happier.txt
+2025-10-08 00:13:52,712 - pixelated.enhanced_analysis - INFO - Processing 798/806: cleaned_How to Regulate Your Nervous System for Stress & Anxiety ｜ Peter Levine ｜ Ten Percent Happier.txt
+2025-10-08 00:13:52,748 - pixelated.enhanced_analysis - INFO - Processing 799/806: Elisabeth Fritzl： Ihr erster Satz in Freiheit verblüffte die Ermittler.txt
+2025-10-08 00:13:52,814 - pixelated.enhanced_analysis - INFO - Processing 800/806: cleaned_Elisabeth Fritzl： Ihr erster Satz in Freiheit verblüffte die Ermittler.txt
+2025-10-08 00:13:52,832 - pixelated.enhanced_analysis - INFO - Processed 800 files, extracted 60960 segments so far
+2025-10-08 00:13:52,833 - pixelated.enhanced_analysis - INFO - Processing 801/806: Family scapegoat, prized, needed and envied ｜ Diane Collins ｜ TEDxFederalHill.txt
+2025-10-08 00:13:52,840 - pixelated.enhanced_analysis - INFO - Processing 802/806: Healing vs. Retaliation： Surviving Trauma and Sexual Abuse ｜ Peter and Adenike Harris ｜ TEDxPasadena.txt
+2025-10-08 00:13:52,901 - pixelated.enhanced_analysis - INFO - Processing 803/806: cleaned_Healing vs. Retaliation： Surviving Trauma and Sexual Abuse ｜ Peter and Adenike Harris ｜ TEDxPasadena.txt
+2025-10-08 00:13:52,909 - pixelated.enhanced_analysis - INFO - Processing 804/806: cleaned_Family scapegoat, prized, needed and envied ｜ Diane Collins ｜ TEDxFederalHill.txt
+2025-10-08 00:13:52,918 - pixelated.enhanced_analysis - INFO - Processing 805/806: Your Body Keeps Score! - Unhealed Trauma Making You Feel Lost, Addicted, Stressed ｜ Dr. Bessel.txt
+2025-10-08 00:13:53,021 - pixelated.enhanced_analysis - INFO - Processing 806/806: cleaned_Your Body Keeps Score! - Unhealed Trauma Making You Feel Lost, Addicted, Stressed ｜ Dr. Bessel.txt
+2025-10-08 00:13:53,130 - pixelated.enhanced_analysis - INFO - Total segments extracted: 61548
+2025-10-08 00:13:53,130 - pixelated.enhanced_analysis - INFO - Exporting enhanced training data...
+2025-10-08 00:13:53,145 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - High quality: 56638, Medium: 4910
+2025-10-08 00:13:54,640 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 19348 high quality practical examples
+2025-10-08 00:13:54,946 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 3982 high quality empathetic examples
+2025-10-08 00:13:56,431 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 17936 high quality educational examples
+2025-10-08 00:13:57,821 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 15372 high quality therapeutic examples
+2025-10-08 00:13:58,048 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 4055 medium quality practical examples
+2025-10-08 00:13:58,118 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 647 medium quality empathetic examples
+2025-10-08 00:13:58,125 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 207 medium quality therapeutic examples
+2025-10-08 00:13:58,126 - pixelated.voice_extraction.enhanced_style_analyzer - INFO - Exported 1 medium quality educational examples
+2025-10-08 00:13:58,206 - pixelated.enhanced_analysis - INFO - Enhanced analysis complete!
+2025-10-08 00:13:58,206 - pixelated.enhanced_analysis - INFO - Summary: {'total_segments': 61548, 'high_quality': 56638, 'medium_quality': 4910, 'quality_distribution': {'therapeutic': {'high': 15372, 'medium': 207}, 'educational': {'high': 17936, 'medium': 1}, 'empathetic': {'high': 3982, 'medium': 647}, 'practical': {'high': 19348, 'medium': 4055}}}

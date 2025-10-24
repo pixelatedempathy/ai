@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-10-19T13:51:34.084825",
+  "phase": "6_rerun_merged_deduplication",
+  "input_dataset": "ai/lightning/processed_data/merged_dataset.jsonl",
+  "output_dataset": "ai/lightning/processed_data/merged_dataset_deduplicated.jsonl",
+  "total_records_input": 910724,
+  "total_records_output": 608458,
+  "duplicates_removed": 302266,
+  "low_quality_removed": 0,
+  "deduplication_ratio": 0.3318963813405598,
+  "retention_ratio": 0.6681036186594402,
+  "source_statistics": {
+    "ghost": {
+      "total": 728531,
+      "kept": 426265,
+      "duplicates": 302266
+    },
+    "existing": {
+      "total": 182193,
+      "kept": 182193,
+      "duplicates": 0
+    }
+  }
+}

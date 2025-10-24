@@ -1,0 +1,88 @@
+{
+  "title": "Unified Priority Dataset Quality Dashboard",
+  "generated": "2025-07-29T11:04:36.156395",
+  "summary": {
+    "total_conversations": 73124,
+    "balanced_conversations": 33124,
+    "average_quality": 0.9547872107651144,
+    "high_quality_percentage": 79.16279196980472
+  },
+  "dataset_contributions": {
+    "priority_1": {
+      "conversation_count": 3124,
+      "weight": 0.4,
+      "tier": 1,
+      "report_summary": {
+        "dataset_name": "priority_1_final",
+        "total_conversations": 3124,
+        "target_conversations": 50000,
+        "completion_percentage": 6.248,
+        "processing_timestamp": "2025-07-29T10:54:18.592506"
+      }
+    },
+    "priority_2": {
+      "conversation_count": 30000,
+      "weight": 0.35,
+      "tier": 1,
+      "report_summary": {
+        "dataset_name": "priority_2_final",
+        "total_conversations": 30000,
+        "target_conversations": 30000,
+        "completion_percentage": 100.0,
+        "processing_timestamp": "2025-07-29T10:59:12.586688"
+      }
+    },
+    "priority_3": {
+      "conversation_count": 40000,
+      "weight": 0.25,
+      "tier": 1,
+      "report_summary": {
+        "dataset_name": "priority_3_final",
+        "total_conversations": 40000,
+        "target_conversations": 40000,
+        "completion_percentage": 100.0,
+        "processing_timestamp": "2025-07-29T11:01:14.214812"
+      }
+    }
+  },
+  "quality_metrics": {
+    "total_conversations": 73124,
+    "quality_distribution": {
+      "high": 57887,
+      "medium": 15237,
+      "low": 0
+    },
+    "tier_distribution": {
+      "1": 73124
+    },
+    "source_distribution": {
+      "Amod/mental_health_counseling_conversations": 3124,
+      "moremilk/CoT_Reasoning_Clinical_Diagnosis_Mental_Health": 2935,
+      "moremilk/CoT_Reasoning_Mens_Mental_Health": 2922,
+      "moremilk/ToT_Reasoning_Problem_Solving_Dataset_V2": 24143,
+      "moremilk/CoT-Reasoning_Cultural_Nuances": 7105,
+      "moremilk/CoT_Neurodivergent_vs_Neurotypical_Interactions": 8765,
+      "moremilk/CoT_Heartbreak_and_Breakups": 9472,
+      "unknown": 14658
+    },
+    "priority_distribution": {
+      "1": 3124,
+      "2": 30000,
+      "3": 40000
+    },
+    "average_quality_score": 0.9547872107651144,
+    "conversation_length_stats": {
+      "min": 2,
+      "max": 2,
+      "average": 2.0
+    },
+    "quality_issues": []
+  },
+  "recommendations": [
+    "Priority 1 conversations provide highest quality foundation",
+    "Priority 2 adds clinical reasoning capabilities",
+    "Priority 3 contributes cultural nuance understanding",
+    "Balanced dataset maintains quality while ensuring diversity",
+    "Continue monitoring quality metrics for future iterations"
+  ]
+}

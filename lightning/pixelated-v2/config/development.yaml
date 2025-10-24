@@ -1,0 +1,31 @@
+database:
+  host: localhost
+  port: 5432
+  name: pixelated_dev
+  user: postgres
+  password: ${DB_PASSWORD}
+
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  debug: true
+
+training:
+  batch_size: 4
+  learning_rate: 2e-4
+  epochs: 3
+  max_length: 512
+
+voice_extraction:
+  min_segment_length: 200
+  confidence_threshold: 0.7
+  styles:
+    - therapeutic
+    - educational
+    - empathetic
+    - practical

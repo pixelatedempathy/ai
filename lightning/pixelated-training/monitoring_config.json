@@ -1,0 +1,32 @@
+{
+  "metrics_to_track": [
+    "train_loss",
+    "learning_rate",
+    "train_runtime",
+    "train_samples_per_second",
+    "epoch"
+  ],
+  "alerts": {
+    "loss_spike": {
+      "enabled": true,
+      "threshold": 2.0,
+      "action": "log_warning"
+    },
+    "memory_usage": {
+      "enabled": true,
+      "threshold": 0.95,
+      "action": "reduce_batch_size"
+    },
+    "training_stall": {
+      "enabled": true,
+      "no_improvement_steps": 1000,
+      "action": "early_stop"
+    }
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_file": "training.log",
+    "console_output": true,
+    "metrics_file": "training_metrics.json"
+  }
+}
