@@ -17,16 +17,21 @@ from pydantic import BaseModel, Field
 import uvicorn
 
 from inference_optimizer import OptimizedInferenceEngine, InferenceConfig, create_optimized_engine
+from therapeutic_progress_tracker import TherapeuticProgressTracker
+import logging
+
+logger = logging.getLogger(__name__)
 
 
-# Global inference engine
+# Global inference engine and progress tracker
 inference_engine: Optional[OptimizedInferenceEngine] = None
+progress_tracker: Optional[TherapeuticProgressTracker] = None
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Lifecycle manager for FastAPI app"""
-    global inference_engine
+    global inference_engine, progress_tracker
     
     # Startup
     print("🚀 Starting Therapeutic AI Inference Service...")
@@ -40,12 +45,18 @@ async def lifespan(app: FastAPI):
         compile_model=True
     )
     
+    # Initialize progress tracker
+    progress_tracker = TherapeuticProgressTracker(db_path="therapeutic_progress.db")
+    print("✅ Progress tracker initialized")
+    
     print("✅ Service ready!")
     
     yield
     
     # Shutdown
     print("🛑 Shutting down service...")
+    if progress_tracker:
+        progress_tracker.close()
 
 
 # Create FastAPI app
@@ -95,6 +106,19 @@ class InferenceRequest(BaseModel):
     temperature: Optional[float] = Field(
         default=None,
         description="Sampling temperature (0.0-2.0)"
+    )
+    # Progress tracking fields
+    client_id: Optional[str] = Field(
+        default=None,
+        description="Client ID for progress tracking"
+    )
+    session_id: Optional[str] = Field(
+        default=None,
+        description="Session ID for progress tracking"
+    )
+    track_progress: bool = Field(
+        default=True,
+        description="Whether to track this interaction for progress"
     )
 
 
@@ -151,9 +175,9 @@ async def root():
 
 
 @app.post("/api/v1/inference", response_model=InferenceResponse)
-async def inference(request: InferenceRequest):
+async def inference(request: InferenceRequest, background_tasks: BackgroundTasks):
     """
-    Generate therapeutic response
+    Generate therapeutic response with progress tracking
     
     Target latency: <2 seconds (p95)
     """
@@ -177,6 +201,17 @@ async def inference(request: InferenceRequest):
             use_cache=request.use_cache
         )
         
+        # Track progress if enabled and client_id provided
+        if request.track_progress and request.client_id and progress_tracker:
+            background_tasks.add_task(
+                _log_session_progress,
+                client_id=request.client_id,
+                session_id=request.session_id or f"session_{int(time.time())}",
+                user_input=request.user_input,
+                ai_response=response_text,
+                conversation_history=conversation_history
+            )
+        
         return InferenceResponse(
             response=response_text,
             latency=metadata['latency'],
@@ -187,6 +222,66 @@ async def inference(request: InferenceRequest):
     
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Inference failed: {str(e)}")
+
+
+async def _log_session_progress(
+    client_id: str,
+    session_id: str,
+    user_input: str,
+    ai_response: str,
+    conversation_history: Optional[List[Dict]] = None
+):
+    """Background task to log session progress"""
+    try:
+        if progress_tracker is None:
+            return
+        
+        # Create conversation summary
+        summary = f"User: {user_input[:100]}... | AI: {ai_response[:100]}..."
+        
+        # Analyze emotional state (simple heuristic for now)
+        emotional_state = _analyze_emotional_state(user_input)
+        
+        # Log the session
+        progress_tracker.log_session(
+            client_id=client_id,
+            session_id=session_id,
+            conversation_summary=summary,
+            emotional_state=emotional_state,
+            therapeutic_goals=[],  # Could be extracted from conversation
+            progress_notes=f"Session on {datetime.now().strftime('%Y-%m-%d')}",
+            therapist_observations="",
+            next_session_focus=""
+        )
+        
+    except Exception as e:
+        logger.error(f"Failed to log progress: {e}")
+
+
+def _analyze_emotional_state(text: str) -> str:
+    """Simple emotional state analysis"""
+    from therapeutic_progress_tracker import EmotionalState
+    
+    text_lower = text.lower()
+    
+    # Very negative indicators
+    if any(word in text_lower for word in ['suicidal', 'hopeless', 'worthless', 'hate myself']):
+        return EmotionalState.VERY_NEGATIVE.value
+    
+    # Negative indicators
+    if any(word in text_lower for word in ['anxious', 'depressed', 'sad', 'worried', 'stressed']):
+        return EmotionalState.NEGATIVE.value
+    
+    # Positive indicators
+    if any(word in text_lower for word in ['better', 'good', 'happy', 'hopeful', 'improving']):
+        return EmotionalState.POSITIVE.value
+    
+    # Very positive indicators
+    if any(word in text_lower for word in ['great', 'wonderful', 'amazing', 'fantastic', 'excellent']):
+        return EmotionalState.VERY_POSITIVE.value
+    
+    # Default to neutral
+    return EmotionalState.NEUTRAL.value
 
 
 @app.get("/health", response_model=HealthResponse)
