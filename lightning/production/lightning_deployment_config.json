@@ -1,0 +1,92 @@
+{
+  "lightning_app": {
+    "name": "therapeutic-ai-training",
+    "description": "H100 LoRA training for therapeutic conversation AI with intelligent multi-pattern dataset",
+    "compute": {
+      "type": "gpu-h100",
+      "count": 1,
+      "memory": "80GB"
+    }
+  },
+  "environment": {
+    "python_version": "3.11",
+    "requirements": [
+      "torch>=2.0.0",
+      "lightning>=2.1.0",
+      "transformers>=4.35.0",
+      "peft>=0.6.0",
+      "datasets>=2.14.0",
+      "accelerate>=0.24.0",
+      "bitsandbytes>=0.41.0"
+    ]
+  },
+  "training_config": {
+    "training_method": "lora",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "epochs": 3,
+    "warmup_steps": 100,
+    "save_steps": 500,
+    "eval_steps": 100,
+    "gradient_accumulation_steps": 4,
+    "fp16": true,
+    "dataloader_num_workers": 4
+  },
+  "model_config": {
+    "model_type": "therapeutic_ai_foundation",
+    "architecture": "moe_lora",
+    "experts": 4,
+    "context_length": 4096
+  },
+  "data_config": {
+    "train_file": "train.json",
+    "validation_file": "validation.json",
+    "expert_files": {
+      "therapeutic": "expert_therapeutic.json",
+      "educational": "expert_educational.json",
+      "empathetic": "expert_empathetic.json",
+      "practical": "expert_practical.json"
+    },
+    "total_conversations": 327952,
+    "train_conversations": 145756,
+    "validation_conversations": 36440,
+    "dataset_path": "/teamspace/studios/this_studio/data",
+    "validation_results": {
+      "dataset_ready": true,
+      "config_valid": true,
+      "files_present": [
+        "train.json",
+        "validation.json",
+        "expert_therapeutic.json",
+        "expert_educational.json",
+        "expert_empathetic.json",
+        "expert_practical.json",
+        "unified_lightning_config.json"
+      ],
+      "missing_files": [],
+      "total_conversations": 327952,
+      "expert_distribution": {
+        "therapeutic": 36439,
+        "educational": 36439,
+        "empathetic": 36439,
+        "practical": 36439
+      },
+      "quality_metrics": {}
+    }
+  },
+  "deployment": {
+    "auto_scale": false,
+    "max_runtime_hours": 24,
+    "checkpoint_interval": 100,
+    "early_stopping": {
+      "patience": 3,
+      "monitor": "val_loss",
+      "mode": "min"
+    }
+  },
+  "monitoring": {
+    "wandb_project": "therapeutic-ai-training",
+    "log_level": "INFO",
+    "save_top_k": 3
+  }
+}
