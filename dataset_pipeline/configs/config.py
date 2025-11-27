@@ -13,9 +13,14 @@ class DataLoaderConfig:
     huggingface_datasets: dict[str, str] = field(default_factory=lambda: {
         "mental_health_counseling": "Amod/mental_health_counseling_conversations",
         "psych8k": "EmoCareAI/Psych8k",
+        # Mental Health Investigation Resources (Phase 1)
+        "mental_health_snli": "iqrakiran/customized-mental-health-snli2",
+        "mental_health_preprocessed": "typosonlr/MentalHealthPreProcessed",
+        "depression_detection": "ShreyaR/DepressionDetection",
     })
     download_path: str = "ai/datasets/external"
     cache_dir: str = "ai/datasets/cache"
+    huggingface_cache_dir: str = "ai/datasets/huggingface_cache"
     max_retries: int = 3
 
 @dataclass
