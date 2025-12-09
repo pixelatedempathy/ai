@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24c830bb4005a61b2521d4f4d9e31013627b086f3e2b55cbfa80bff1ec3aad1d
-size 1842
+{
+  "total": 6,
+  "successful": 6,
+  "failed": 0,
+  "results": [
+    {
+      "dataset_id": "PJMixers/unalignment_toxic-dpo-v0.2-ShareGPT",
+      "result": {
+        "success": true,
+        "s3_path": "s3://pixel-data/datasets/huggingface/huggingface/PJMixers_unalignment_toxic-dpo-v0.2-ShareGPT.jsonl",
+        "dataset_name": "PJMixers/unalignment_toxic-dpo-v0.2-ShareGPT"
+      }
+    },
+    {
+      "dataset_id": "ShreyaR/DepressionDetection",
+      "result": {
+        "success": true,
+        "s3_path": "s3://pixel-data/datasets/huggingface/huggingface/ShreyaR_DepressionDetection.jsonl",
+        "dataset_name": "ShreyaR/DepressionDetection"
+      }
+    },
+    {
+      "dataset_id": "flammenai/character-roleplay-DPO",
+      "result": {
+        "success": true,
+        "s3_path": "s3://pixel-data/datasets/huggingface/huggingface/flammenai_character-roleplay-DPO.jsonl",
+        "dataset_name": "flammenai/character-roleplay-DPO"
+      }
+    },
+    {
+      "dataset_id": "iqrakiran/customized-mental-health-snli2",
+      "result": {
+        "success": true,
+        "s3_path": "s3://pixel-data/datasets/huggingface/huggingface/iqrakiran_customized-mental-health-snli2.jsonl",
+        "dataset_name": "iqrakiran/customized-mental-health-snli2"
+      }
+    },
+    {
+      "dataset_id": "mlx-community/Human-Like-DPO",
+      "result": {
+        "success": true,
+        "s3_path": "s3://pixel-data/datasets/huggingface/huggingface/mlx-community_Human-Like-DPO.jsonl",
+        "dataset_name": "mlx-community/Human-Like-DPO"
+      }
+    },
+    {
+      "dataset_id": "typosonlr/MentalHealthPreProcessed",
+      "result": {
+        "success": true,
+        "s3_path": "s3://pixel-data/datasets/huggingface/huggingface/typosonlr_MentalHealthPreProcessed.jsonl",
+        "dataset_name": "typosonlr/MentalHealthPreProcessed"
+      }
+    }
+  ]
+}
