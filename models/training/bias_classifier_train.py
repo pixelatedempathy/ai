@@ -49,7 +49,8 @@ class BiasDataset(Dataset):
         Initialize dataset.
 
         Args:
-            conversations: List of dicts with 'text', 'gender_bias', 'racial_bias', 'cultural_bias' keys
+            conversations: List of dicts with 'text', 'gender_bias',
+                'racial_bias', 'cultural_bias' keys
             tokenizer: HuggingFace tokenizer
             max_length: Maximum sequence length
         """
@@ -68,8 +69,7 @@ class BiasDataset(Dataset):
             "cultural_bias",
         }
         for i, conv in enumerate(self.conversations):
-            missing = required_fields - set(conv.keys())
-            if missing:
+            if missing := required_fields - set(conv.keys()):
                 raise ValueError(f"Conversation {i} missing fields: {missing}")
 
     def __len__(self) -> int:
@@ -160,10 +160,7 @@ class BiasDetectionTrainer:
         racial_loss = self.ce_loss(racial_pred, racial_true)
         cultural_loss = self.ce_loss(cultural_pred, cultural_true)
 
-        # Equal weights for all tasks
-        total_loss = gender_loss + racial_loss + cultural_loss
-
-        return total_loss
+        return gender_loss + racial_loss + cultural_loss
 
     def train_epoch(self) -> float:
         """Train for one epoch."""
@@ -288,13 +285,11 @@ class BiasDetectionTrainer:
                 logger.info("New best model! Saving checkpoint...")
                 self.save_checkpoint(metrics)
 
-        history = {
+        return {
             "train_losses": self.train_losses,
             "val_losses": self.val_losses,
             "best_val_loss": self.best_val_loss,
         }
-
-        return history
 
     def save_checkpoint(self, metrics: Dict, path: Optional[Path] = None):
         """Save model checkpoint."""
@@ -356,7 +351,7 @@ def generate_synthetic_biased_data(num_samples: int = 100) -> List[Dict]:
     }
 
     data = []
-    for i in range(num_samples):
+    for _ in range(num_samples):
         # Gender bias
         gender_bias = np.random.choice(["biased", "unbiased"])
         gender_text = np.random.choice(biased_utterances[f"gender_{gender_bias}"])
@@ -378,11 +373,11 @@ def generate_synthetic_biased_data(num_samples: int = 100) -> List[Dict]:
         # Cultural bias
         cultural_options = ["no_bias", "western_bias"]
         cultural_bias = np.random.choice(cultural_options)
-        if cultural_bias == "no_bias":
-            cultural_text = np.random.choice(biased_utterances["cultural_no_bias"])
-        else:
-            cultural_text = np.random.choice(biased_utterances["cultural_western_bias"])
-
+        cultural_text = (
+            np.random.choice(biased_utterances["cultural_no_bias"])
+            if cultural_bias == "no_bias"
+            else np.random.choice(biased_utterances["cultural_western_bias"])
+        )
         # Combine texts
         text = f"{gender_text} {racial_text} {cultural_text}"
 
