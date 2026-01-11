@@ -1,13 +1,13 @@
-from zipfile import ZipFile, ZIP_DEFLATED
-from shutil import rmtree
 import json
 import os
-from tqdm import tqdm
+import re
 from collections import Counter
-from pprint import pprint
+from shutil import rmtree
+from zipfile import ZIP_DEFLATED, ZipFile
+
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
-import re
+from tqdm import tqdm
 
 topic_map = {
     1: "Ordinary Life", 
@@ -141,7 +141,7 @@ def preprocess():
 
     ontology["dialogue_acts"]['binary'] = sorted([str({'user': speakers.get('user', False), 'system': speakers.get('system', False), 'intent':da[0],'domain':da[1], 'slot':da[2]}) for da, speakers in ontology["dialogue_acts"]['binary'].items()])
     dialogues = dialogues_by_split['train']+dialogues_by_split['validation']+dialogues_by_split['test']
-    json.dump(dialogues[:10], open(f'dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    json.dump(dialogues[:10], open('dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(ontology, open(f'{new_data_dir}/ontology.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(dialogues, open(f'{new_data_dir}/dialogues.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     with ZipFile('data.zip', 'w', ZIP_DEFLATED) as zf:

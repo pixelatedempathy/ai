@@ -1,11 +1,12 @@
-import os
+import argparse
+import concurrent.futures
 import glob
 import json
-import argparse
 import logging
+import os
+
 import tiktoken
 import tqdm
-import concurrent.futures
 
 
 def process_file(input_file, output_folder):

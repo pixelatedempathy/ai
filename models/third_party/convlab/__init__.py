@@ -1,12 +1,17 @@
 import os
-from convlab.nlu import NLU
-from convlab.dst import DST
-from convlab.policy import Policy
-from convlab.nlg import NLG
-from convlab.dialog_agent import Agent, PipelineAgent
-from convlab.dialog_agent import Session, BiSession, DealornotSession
-
 from os.path import abspath, dirname
+
+from convlab.dialog_agent import (
+    Agent,
+    BiSession,
+    DealornotSession,
+    PipelineAgent,
+    Session,
+)
+from convlab.dst import DST
+from convlab.nlg import NLG
+from convlab.nlu import NLU
+from convlab.policy import Policy
 
 
 def get_root_path():

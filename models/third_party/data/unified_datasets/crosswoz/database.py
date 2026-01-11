@@ -4,8 +4,7 @@ import os
 import re
 from zipfile import ZipFile
 
-from convlab.util.unified_datasets_util import (BaseDatabase,
-                                                download_unified_datasets)
+from convlab.util.unified_datasets_util import BaseDatabase, download_unified_datasets
 
 
 def contains(arr, s):
@@ -136,20 +135,20 @@ class Database(BaseDatabase):
         return res[:topk]
     
     def query_schema(self, field, args):
-        if not field in self.schema:
+        if field not in self.schema:
             raise Exception('Unknown field %s' % field)
         if not isinstance(args, dict):
             raise Exception('`args` must be dict')
         db = self.data.get(field)
         plan = self.schema[field]
         for key, value in args.items():
-            if not key in plan:
+            if key not in plan:
                 raise Exception('Unknown key %s' % key)
             value_type = plan[key].get('type')
             if value_type == 'between':
-                if not value[0] is None:
+                if value[0] is not None:
                     plan[key]['params'][0] = float(value[0])
-                if not value[1] is None:
+                if value[1] is not None:
                     plan[key]['params'][1] = float(value[1])
             else:
                 if not isinstance(value, str):
@@ -178,8 +177,8 @@ class Database(BaseDatabase):
                         return ['(终点) %s' % item[0], item[1]]
                     return None
 
-                return list(filter(lambda item: not item is None, list(map(func1, db)))) + list(
-                    filter(lambda item: not item is None, list(map(func2, db))))
+                return list(filter(lambda item: item is not None, list(map(func1, db)))) + list(
+                    filter(lambda item: item is not None, list(map(func2, db))))
 
         def func3(item):
             details = item[1]
@@ -190,12 +189,12 @@ class Database(BaseDatabase):
                 if options.get('type') == 'between':
                     L = options['params'][0]
                     R = options['params'][1]
-                    if not L is None:
+                    if L is not None:
                         if absence:
                             return False
                     else:
                         L = float('-inf')
-                    if not R is None:
+                    if R is not None:
                         if absence:
                             return False
                     else:
@@ -204,14 +203,14 @@ class Database(BaseDatabase):
                         return False
                 elif options.get('type') == 'in':
                     s = options['params']
-                    if not s is None:
+                    if s is not None:
                         if absence:
                             return False
                         if contains(val, s):
                             return False
                 elif options.get('type') == 'multiple_in':
                     s = options['params']
-                    if not s is None:
+                    if s is not None:
                         if absence:
                             return False
                         sarr = list(filter(lambda t: bool(t), s.split(' ')))
@@ -219,7 +218,7 @@ class Database(BaseDatabase):
                             return False
                 else:
                     s = options['params']
-                    if not s is None:
+                    if s is not None:
                         if absence:
                             return False
                         if val.find(s) < 0:

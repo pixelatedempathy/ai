@@ -3,31 +3,29 @@
 Created on Sun Jul 14 16:14:07 2019
 @author: lubis@hhu.de
 """
-from convlab.policy.tus.multiwoz.NUS import UserPolicy
-from convlab.dst.rule.multiwoz.usr_dst import UserRuleDST
 import json
-import random
+import os
 import pdb
-from tqdm import tqdm
-import torch as th
+import random
+import sys
 from argparse import ArgumentParser
-from convlab.util.analysis_tool.analyzer import Analyzer
+
+import numpy as np
+import torch
+import torch as th
+from convlab.dialog_agent.agent import PipelineAgent
+from convlab.dialog_agent.env import Environment
+from convlab.dst.rule.multiwoz import RuleDST
+from convlab.dst.rule.multiwoz.usr_dst import UserRuleDST
 from convlab.evaluator.multiwoz_eval import MultiWozEvaluator
 from convlab.nlg.template.multiwoz import TemplateNLG
-from convlab.policy.rlmodule import Memory_LAVA, Transition_LAVA
-from convlab.policy.lava.multiwoz import LAVA
-from convlab.policy.ppo import PPO
-from convlab.policy.rule.multiwoz import RulePolicy
-from convlab.dst.rule.multiwoz import RuleDST
 from convlab.nlu.jointBERT.multiwoz import BERTNLU
-from convlab.nlu.svm.multiwoz import SVMNLU
-from convlab.dialog_agent.env import Environment
-from convlab.dialog_agent.agent import PipelineAgent
+from convlab.policy.lava.multiwoz import LAVA
+from convlab.policy.rlmodule import Memory_LAVA, Transition_LAVA
+from convlab.policy.tus.multiwoz.NUS import UserPolicy
+from convlab.util.analysis_tool.analyzer import Analyzer
 from torch import multiprocessing as mp
-import torch
-import numpy as np
-import sys
-import os
+from tqdm import tqdm
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 # Lin's US

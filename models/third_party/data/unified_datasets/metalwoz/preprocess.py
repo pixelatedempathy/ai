@@ -1,10 +1,11 @@
 import json
 import os
-from zipfile import ZipFile, ZIP_DEFLATED
 import random
-import json_lines
 from collections import Counter
 from shutil import rmtree
+from zipfile import ZIP_DEFLATED, ZipFile
+
+import json_lines
 
 
 def preprocess():
@@ -83,7 +84,7 @@ def preprocess():
     dialogues = []
     for split in splits:
         dialogues += dialogues_by_split[split]
-    json.dump(dialogues[:10], open(f'dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    json.dump(dialogues[:10], open('dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(ontology, open(f'{new_data_dir}/ontology.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(dialogues, open(f'{new_data_dir}/dialogues.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     with ZipFile('data.zip', 'w', ZIP_DEFLATED) as zf:

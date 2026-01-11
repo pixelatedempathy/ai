@@ -1,12 +1,11 @@
-from zipfile import ZipFile, ZIP_DEFLATED
 import json
 import os
-from pprint import pprint
-from copy import deepcopy
-from collections import Counter
-from tqdm import tqdm
-from shutil import rmtree
 import re
+from copy import deepcopy
+from shutil import rmtree
+from zipfile import ZIP_DEFLATED, ZipFile
+
+from tqdm import tqdm
 
 digit2word = {
     '0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'five',
@@ -344,7 +343,7 @@ def preprocess():
     
     for da_type in ontology['dialogue_acts']:
         ontology["dialogue_acts"][da_type] = sorted([str({'user': speakers.get('user', False), 'system': speakers.get('system', False), 'intent':da[0],'domain':da[1], 'slot':da[2]}) for da, speakers in ontology["dialogue_acts"][da_type].items()])
-    json.dump(dialogues[:10], open(f'dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    json.dump(dialogues[:10], open('dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(ontology, open(f'{new_data_dir}/ontology.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(dialogues, open(f'{new_data_dir}/dialogues.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     with ZipFile('data.zip', 'w', ZIP_DEFLATED) as zf:

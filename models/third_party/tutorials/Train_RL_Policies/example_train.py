@@ -3,22 +3,22 @@
 Created on Sun Jul 14 16:14:07 2019
 @author: truthless
 """
-import sys, os
+import os
+import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from argparse import ArgumentParser
+
 import numpy as np
 import torch
-from torch import multiprocessing as mp
 from convlab.dialog_agent.agent import PipelineAgent
 from convlab.dialog_agent.env import Environment
-from convlab.nlu.svm.multiwoz import SVMNLU
 from convlab.dst.rule.multiwoz import RuleDST
-from convlab.policy.rule.multiwoz import RulePolicy
-from convlab.policy.ppo import PPO
-from convlab.policy.rlmodule import Memory, Transition
-from convlab.nlg.template.multiwoz import TemplateNLG
 from convlab.evaluator.multiwoz_eval import MultiWozEvaluator
-from argparse import ArgumentParser
+from convlab.policy.ppo import PPO
+from convlab.policy.rlmodule import Memory
+from convlab.policy.rule.multiwoz import RulePolicy
+from torch import multiprocessing as mp
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import random
-import torch
+
 import numpy as np
+import torch
+from torch import multiprocessing as mp
 
 from convlab.policy.rlmodule import Memory_evaluator
-from torch import multiprocessing as mp
 
 emotion_dict = {"satisfied": 1, "neutral": 0, "dissatisfied": -1, "abusive": -1}
 

@@ -1,16 +1,14 @@
-from turtle import st
-from zipfile import ZipFile, ZIP_DEFLATED
-from shutil import rmtree
 import json
 import os
-from tqdm import tqdm
-from collections import Counter
-from pprint import pprint
 import re
+from copy import deepcopy
+from shutil import rmtree
+from string import punctuation
+from zipfile import ZIP_DEFLATED, ZipFile
+
 import requests
 from dateutil import parser as date_parser
-from string import punctuation
-from copy import deepcopy
+from tqdm import tqdm
 
 
 def value_in_utt(value, utt):
@@ -74,7 +72,7 @@ def preprocess():
     slot2domain = {slot: domain for domain in domain2slot for slot in domain2slot[domain]}
 
     db = []
-    with archive.open(f'kvret_entities.json') as f:
+    with archive.open('kvret_entities.json') as f:
         entities = json.load(f)
         for slot, values in entities.items():
             domain = slot2domain[slot]
@@ -195,7 +193,7 @@ def preprocess():
     for da_type in ontology['dialogue_acts']:
         ontology["dialogue_acts"][da_type] = sorted([str({'user': speakers.get('user', False), 'system': speakers.get('system', False), 'intent':da[0],'domain':da[1], 'slot':da[2]}) for da, speakers in ontology["dialogue_acts"][da_type].items()])
     dialogues = dialogues_by_split['train']+dialogues_by_split['validation']+dialogues_by_split['test']
-    json.dump(dialogues[:10], open(f'dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    json.dump(dialogues[:10], open('dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(ontology, open(f'{new_data_dir}/ontology.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(dialogues, open(f'{new_data_dir}/dialogues.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(db, open(f'{new_data_dir}/db.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)

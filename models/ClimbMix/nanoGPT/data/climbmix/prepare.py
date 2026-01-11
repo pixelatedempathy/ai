@@ -1,12 +1,14 @@
 # saves the openwebtext dataset to a binary file for training. following was helpful:
 # https://github.com/HazyResearch/flash-attention/blob/main/training/src/datamodules/language_modeling_hf.py
 
+import argparse  # add argparse module
 import os
-from tqdm import tqdm
+
 import numpy as np
 import tiktoken
-from datasets import load_dataset # huggingface datasets
-import argparse  # add argparse module
+from tqdm import tqdm
+
+from datasets import load_dataset  # huggingface datasets
 
 # number of workers in .map() call
 # good number to use is ~order number of cpu cores // 2

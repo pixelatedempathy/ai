@@ -7,16 +7,16 @@ https://github.com/openai/gpt-2/blob/master/src/model.py
 https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/modeling_gpt2.py
 """
 
-import math
 import inspect
-from dataclasses import dataclass
+import math
 import os
 import pickle
+from dataclasses import dataclass
 
 import torch
 import torch.nn as nn
+from tokenizer import DictBasedTokenizer, TiktokenTokenizer
 from torch.nn import functional as F
-from tokenizer import TiktokenTokenizer, DictBasedTokenizer
 
 
 class LayerNorm(nn.Module):

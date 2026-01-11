@@ -19,13 +19,19 @@ import torch
 import uvicorn
 from fastapi import BackgroundTasks, FastAPI, Request
 from fastapi.responses import StreamingResponse
-from llava.mm_utils import KeywordsStoppingCriteria, load_image_from_base64, tokenizer_image_token
+from llava.mm_utils import (
+    KeywordsStoppingCriteria,
+    load_image_from_base64,
+    tokenizer_image_token,
+)
 from llava.utils import build_logger, pretty_print_semaphore, server_error_msg
 from transformers.generation.streamers import TextIteratorStreamer
 
 from llamavid.constants import IMAGE_TOKEN_INDEX, WORKER_HEART_BEAT_INTERVAL
 from llamavid.model.builder import load_pretrained_model
-from llamavid.train.llama_flash_attn_monkey_patch import replace_llama_attn_with_flash_attn
+from llamavid.train.llama_flash_attn_monkey_patch import (
+    replace_llama_attn_with_flash_attn,
+)
 
 GB = 1 << 30
 

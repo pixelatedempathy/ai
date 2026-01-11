@@ -1,8 +1,9 @@
-from kurtis_mlx import config
-from kurtis_mlx.utils.sound import record_until_enter
-from kurtis_mlx.utils.llm import get_llm_response, translate_text
-from kurtis_mlx.utils.stt import transcribe
 from rich.console import Console
+
+from kurtis_mlx import config
+from kurtis_mlx.utils.llm import get_llm_response, translate_text
+from kurtis_mlx.utils.sound import record_until_enter
+from kurtis_mlx.utils.stt import transcribe
 
 console = Console()
 

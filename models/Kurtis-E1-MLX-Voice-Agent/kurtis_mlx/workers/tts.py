@@ -1,6 +1,6 @@
 import nltk
-from TTS.api import TTS
 from rich.console import Console
+from TTS.api import TTS
 
 console = Console()
 

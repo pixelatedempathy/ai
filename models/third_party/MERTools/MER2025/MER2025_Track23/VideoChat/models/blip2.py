@@ -5,9 +5,10 @@ SPDX-License-Identifier: BSD-3-Clause
 For full license text, see the LICENSE_Lavis file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
 
-import sys
-import os
 import contextlib
+import os
+import sys
+
 import torch
 from torch import nn
 from transformers import BertTokenizer
@@ -17,10 +18,10 @@ from .Qformer import BertConfig, BertLMHeadModel
 
 # Add parent directory to sys.path for config import
 sys.path.append("../")
-import config  # noqa: E402
-
 # --- autocast compatibility for CUDA and CPU ---
 from typing import Any
+
+import config  # noqa: E402
 
 cuda_autocast: Any | None = None
 cpu_autocast: Any | None = None

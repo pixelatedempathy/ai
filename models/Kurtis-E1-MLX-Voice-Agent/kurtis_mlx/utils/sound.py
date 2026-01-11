@@ -1,8 +1,8 @@
 import threading
+
 import numpy as np
 import sounddevice as sd
 from rich.console import Console
-
 
 console = Console()
 
