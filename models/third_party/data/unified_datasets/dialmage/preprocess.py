@@ -1084,7 +1084,7 @@ def preprocess():
         booking_remapper.reset()
         belief_domains = ['attraction', 'restaurant',
                           'train', 'hotel', 'taxi', 'hospital']
-        entity_booked_dict = dict((domain, False) for domain in belief_domains)
+        dict((domain, False) for domain in belief_domains)
 
         for turn_id, turn in enumerate(ori_dialog['log']):
             # correct some grammar errors in the text, mainly following `tokenization.md` in MultiWOZ_2.1

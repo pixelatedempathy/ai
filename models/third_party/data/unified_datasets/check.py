@@ -295,7 +295,6 @@ def check_dialogues(name, dialogues, ontology):
                             ontology["da_dict"][da_type][(da["intent"], da["domain"], da["slot"])][
                                 turn["speaker"]
                             ]
-                            == True
                         )
                         if da_type == "binary":
                             assert "value" not in da, (
