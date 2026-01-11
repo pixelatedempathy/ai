@@ -1,9 +1,15 @@
-from argparse import ArgumentParser
-from convlab.util import load_dataset
-from convlab.util.custom_util import set_seed, get_config, env_config, create_goals, data_goals
-import torch
 import json
 import os
+from argparse import ArgumentParser
+
+import torch
+
+from convlab.util import load_dataset
+from convlab.util.custom_util import (
+    env_config,
+    get_config,
+    set_seed,
+)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

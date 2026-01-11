@@ -1,7 +1,8 @@
-from zipfile import ZipFile, ZIP_DEFLATED
-from shutil import copy2, rmtree
 import json
 import os
+from shutil import copy2, rmtree
+from zipfile import ZIP_DEFLATED, ZipFile
+
 from tqdm import tqdm
 
 MIN_OCCURENCE_ACT = 50

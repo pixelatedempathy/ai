@@ -1,8 +1,11 @@
-import re, os, time
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
+import os
+import re
+import time
 from copy import deepcopy
+
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
 
 
 def extract_performance(log_path, ppo=False):

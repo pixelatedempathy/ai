@@ -1,7 +1,8 @@
-import json
-import numpy as np
 import itertools
+import json
+
 import matplotlib.pyplot as plt
+import numpy as np
 
 possible_emotions = ["neutral", "satisfied", "dissatisfied", "abusive"]
 

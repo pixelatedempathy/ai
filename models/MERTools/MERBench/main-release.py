@@ -10,7 +10,11 @@ from omegaconf import OmegaConf
 from toolkit.dataloader import get_dataloaders
 from toolkit.globals import runtime_config
 from toolkit.models import get_models
-from toolkit.utils.functions import func_random_select, func_update_storage, merge_args_config
+from toolkit.utils.functions import (
+    func_random_select,
+    func_update_storage,
+    merge_args_config,
+)
 from toolkit.utils.loss import CELoss, MSELoss
 from toolkit.utils.metric import (
     average_folder_for_emos,

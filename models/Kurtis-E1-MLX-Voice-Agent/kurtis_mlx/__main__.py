@@ -1,13 +1,14 @@
+from multiprocessing import Process
+from multiprocessing import Queue as MPQueue
+
 import click
-from rich.console import Console
 from openai import OpenAI
-from multiprocessing import Process, Queue as MPQueue
+from rich.console import Console
 
 from kurtis_mlx import config
-from kurtis_mlx.workers.tts import tts_worker
-from kurtis_mlx.workers.sound import sd_worker
 from kurtis_mlx.handlers import handle_interaction
-
+from kurtis_mlx.workers.sound import sd_worker
+from kurtis_mlx.workers.tts import tts_worker
 
 console = Console()
 

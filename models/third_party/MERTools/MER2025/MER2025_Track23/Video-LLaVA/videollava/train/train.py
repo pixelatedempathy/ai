@@ -14,39 +14,34 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-import os
 import copy
-import random
-from dataclasses import dataclass, field
 import json
 import logging
+import os
 import pathlib
-from typing import Dict, Optional, Sequence, List
+import random
+from dataclasses import dataclass, field
+from typing import Dict, List, Optional, Sequence
 
 import torch
-
 import transformers
-
+from PIL import Image
+from torch.utils.data import Dataset
+from videollava import conversation as conversation_lib
 from videollava.constants import (
-    IGNORE_INDEX,
-    IMAGE_TOKEN_INDEX,
-    DEFAULT_IMAGE_TOKEN,
-    DEFAULT_IM_START_TOKEN,
     DEFAULT_IM_END_TOKEN,
-    DEFAULT_VIDEO_TOKEN,
-    DEFAULT_VID_START_TOKEN,
+    DEFAULT_IM_START_TOKEN,
+    DEFAULT_IMAGE_TOKEN,
     DEFAULT_VID_END_TOKEN,
+    DEFAULT_VID_START_TOKEN,
+    DEFAULT_VIDEO_TOKEN,
+    IGNORE_INDEX,
     MAX_IMAGE_LENGTH,
     MAX_VIDEO_LENGTH,
 )
-from torch.utils.data import Dataset
-from videollava.train.llava_trainer import LLaVATrainer
-
-from videollava import conversation as conversation_lib
-from videollava.model import *
 from videollava.mm_utils import tokenizer_image_token
-
-from PIL import Image
+from videollava.model import *
+from videollava.train.llava_trainer import LLaVATrainer
 from videollava.utils import order_pick_k
 
 local_rank = None
@@ -227,7 +222,7 @@ def safe_save_model_for_hf_trainer(trainer: transformers.Trainer, output_dir: st
                     weight_to_save, os.path.join(mm_projector_folder, f"{current_folder}.bin")
                 )
             else:
-                torch.save(weight_to_save, os.path.join(output_dir, f"mm_projector.bin"))
+                torch.save(weight_to_save, os.path.join(output_dir, "mm_projector.bin"))
         return
 
     if trainer.deepspeed:

@@ -3,29 +3,29 @@
 Created on Sun Jul 14 16:14:07 2019
 @author: lubis@hhu.de
 """
-import sys, os
+import os
+import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-import numpy as np
-import torch
-from torch import multiprocessing as mp
-from convlab.dialog_agent.agent import PipelineAgent
-from convlab.dialog_agent.env import Environment
-from convlab.nlu.svm.multiwoz import SVMNLU
-from convlab.nlu.jointBERT.multiwoz import BERTNLU
-from convlab.dst.rule.multiwoz import RuleDST
-from convlab.policy.rule.multiwoz import RulePolicy
-from convlab.policy.ppo import PPO
-from convlab.policy.lava.multiwoz import LAVA
-from convlab.policy.rlmodule import Memory_LAVA, Transition_LAVA
-from convlab.nlg.template.multiwoz import TemplateNLG
-from convlab.evaluator.multiwoz_eval import MultiWozEvaluator
-from convlab.util.analysis_tool.analyzer import Analyzer
-from argparse import ArgumentParser
-import torch as th
-from tqdm import tqdm
 import pdb
 import random
+from argparse import ArgumentParser
+
+import numpy as np
+import torch
+import torch as th
+from convlab.dialog_agent.agent import PipelineAgent
+from convlab.dialog_agent.env import Environment
+from convlab.dst.rule.multiwoz import RuleDST
+from convlab.evaluator.multiwoz_eval import MultiWozEvaluator
+from convlab.nlg.template.multiwoz import TemplateNLG
+from convlab.nlu.jointBERT.multiwoz import BERTNLU
+from convlab.policy.lava.multiwoz import LAVA
+from convlab.policy.rlmodule import Memory_LAVA, Transition_LAVA
+from convlab.policy.rule.multiwoz import RulePolicy
+from convlab.util.analysis_tool.analyzer import Analyzer
+from torch import multiprocessing as mp
+from tqdm import tqdm
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

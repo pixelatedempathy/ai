@@ -7,13 +7,17 @@ import os
 
 import numpy as np
 import torch
-from convlab.dialog_agent.agent import PipelineAgent
-from convlab.dialog_agent.session import BiSession
-from convlab.evaluator.multiwoz_eval import MultiWozEvaluator
+from tqdm import tqdm
+
 from convlab.policy.rule.multiwoz import RulePolicy
 from convlab.task.multiwoz.goal_generator import GoalGenerator
-from convlab.util.custom_util import set_seed, get_config, env_config, create_goals, data_goals
-from tqdm import tqdm
+from convlab.util.custom_util import (
+    create_goals,
+    data_goals,
+    env_config,
+    get_config,
+    set_seed,
+)
 
 
 def init_logging(log_dir_path, path_suffix=None):

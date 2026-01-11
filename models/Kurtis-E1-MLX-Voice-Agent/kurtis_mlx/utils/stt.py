@@ -1,5 +1,5 @@
-import numpy as np
 import mlx_whisper
+import numpy as np
 
 
 def transcribe(audio_np, stt_model_name):

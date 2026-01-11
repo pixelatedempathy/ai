@@ -2,9 +2,10 @@
 extract all value appear in dialog act and state, for translation.
 """
 import json
-import zipfile
 import re
+import zipfile
 from pprint import pprint
+
 
 def read_zipped_json(filepath, filename):
     archive = zipfile.ZipFile(filepath, 'r')
@@ -25,7 +26,7 @@ def extract_ontology(data):
                 intent_set.add(intent)
                 domain_set.add(domain)
                 slot_set.add(slot)
-                if not domain in value_set:
+                if domain not in value_set:
                     value_set[domain] = {}
                 elif slot not in value_set[domain]:
                     value_set[domain][slot] = set()
@@ -52,7 +53,7 @@ def extract_ontology(data):
                     slot_set.add(slot)
                     if isinstance(value, list):
                         for v in value:
-                            if not domain in value_set:
+                            if domain not in value_set:
                                 value_set[domain] = {}
                             elif slot not in value_set[domain]:
                                 value_set[domain][slot] = set()
@@ -75,7 +76,7 @@ def extract_ontology(data):
                                 value_set[domain][slot].add(v)
                     else:
                         assert isinstance(value, str)
-                        if not domain in value_set:
+                        if domain not in value_set:
                             value_set[domain] = {}
                         elif slot not in value_set[domain]:
                             value_set[domain][slot] = set()
@@ -104,7 +105,7 @@ def extract_ontology(data):
                             slot_set.add(slot)
                             if isinstance(value, list):
                                 for v in value:
-                                    if not domain in value_set:
+                                    if domain not in value_set:
                                         value_set[domain] = {}
                                     elif slot not in value_set[domain]:
                                         value_set[domain][slot] = set()
@@ -127,7 +128,7 @@ def extract_ontology(data):
                                         value_set[domain][slot].add(v)
                             else:
                                 assert isinstance(value, str)
-                                if not domain in value_set:
+                                if domain not in value_set:
                                     value_set[domain] = {}
                                 elif slot not in value_set[domain]:
                                     value_set[domain][slot] = set()

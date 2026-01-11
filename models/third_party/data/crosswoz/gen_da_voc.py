@@ -1,6 +1,6 @@
 import json
 import zipfile
-import os
+
 from convlab.util.crosswoz.lexicalize import delexicalize_da
 
 

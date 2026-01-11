@@ -1,11 +1,11 @@
 import json
 import os
-import random
-from fuzzywuzzy import fuzz
+from copy import deepcopy
 from itertools import chain
 from zipfile import ZipFile
-from copy import deepcopy
+
 from convlab.util.unified_datasets_util import BaseDatabase, download_unified_datasets
+from fuzzywuzzy import fuzz
 
 
 class Database(BaseDatabase):

@@ -1,6 +1,8 @@
 import os
+
 import numpy as np
 from tqdm import tqdm
+
 
 def merge_bin_files(input_files, output_file):
     """

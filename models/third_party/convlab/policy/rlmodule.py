@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
+import random
+from collections import namedtuple
+
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
-
-from collections import namedtuple
-import random
 
 
 class DiscretePolicy(nn.Module):

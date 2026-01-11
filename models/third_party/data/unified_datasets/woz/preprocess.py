@@ -1,8 +1,8 @@
 import copy
 import json
 import os
-from zipfile import ZipFile, ZIP_DEFLATED
 from shutil import rmtree
+from zipfile import ZIP_DEFLATED, ZipFile
 
 ontology = {
     'domains': {
@@ -217,7 +217,7 @@ def preprocess():
         ontology["dialogue_acts"][da_type] = sorted([str(
             {'user': speakers.get('user', False), 'system': speakers.get('system', False), 'intent': da[0],
              'domain': da[1], 'slot': da[2]}) for da, speakers in ontology["dialogue_acts"][da_type].items()])
-    json.dump(dialogues[:10], open(f'dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    json.dump(dialogues[:10], open('dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(ontology, open(f'{new_data_dir}/ontology.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(dialogues, open(f'{new_data_dir}/dialogues.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     with ZipFile('data.zip', 'w', ZIP_DEFLATED) as zf:

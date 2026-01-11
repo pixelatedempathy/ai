@@ -1,16 +1,11 @@
-from zipfile import ZipFile, ZIP_DEFLATED
+import copy
 import json
 import os
-import copy
-import zipfile
-from tqdm import tqdm
-import re
-from collections import Counter
-from shutil import rmtree
-from convlab.util.file_util import read_zipped_json, write_zipped_json
-from pprint import pprint
 import random
+from shutil import rmtree
+from zipfile import ZIP_DEFLATED, ZipFile
 
+from tqdm import tqdm
 
 descriptions = {
     "uber_lyft": {
@@ -301,7 +296,7 @@ def preprocess():
     for da_type in ontology['dialogue_acts']:
         ontology["dialogue_acts"][da_type] = sorted([str({'user': speakers.get('user', False), 'system': speakers.get('system', False), 'intent':da[0],'domain':da[1], 'slot':da[2]}) for da, speakers in ontology["dialogue_acts"][da_type].items()])
     dialogues = dialogues_by_split['train']+dialogues_by_split['validation']+dialogues_by_split['test']
-    json.dump(dialogues[:10], open(f'dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+    json.dump(dialogues[:10], open('dummy_data.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(ontology, open(f'{new_data_dir}/ontology.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     json.dump(dialogues, open(f'{new_data_dir}/dialogues.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     with ZipFile('data.zip', 'w', ZIP_DEFLATED) as zf:
