@@ -365,7 +365,7 @@ nbclient==0.10.4
     # via
     #   -r ai/pipelines/edge_case_pipeline_standalone/requirements.txt
     #   nbconvert
-nbconvert==7.16.6
+nbconvert==7.17.0
     # via
     #   -r ai/pipelines/edge_case_pipeline_standalone/requirements.txt
     #   jupyter
